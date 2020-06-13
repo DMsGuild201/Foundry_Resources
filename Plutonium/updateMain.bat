@@ -47,7 +47,7 @@ GOTO:EOF
    REM SET "_strRepl="require("init")(process.argv, global.paths, initLogging).then(() => {      require("plutonium-backend").init();});""
    TYPE main.js | FINDSTR /v %strFind% >> %TMP_OUT%
    ECHO require("init")(process.argv, global.paths, initLogging) >> %TMP_OUT%
-   ECHO         .then(() => { >> %TMP_OUT%
+   ECHO         .then(() =^> { >> %TMP_OUT%
    ECHO                 require("plutonium-backend").init(); >> %TMP_OUT%
    ECHO         }); >> %TMP_OUT%
    MOVE /Y %TMP_OUT% main.js > NUL
