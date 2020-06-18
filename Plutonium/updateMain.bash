@@ -8,7 +8,7 @@ DATA_PATH="$HOME/foundrydata"
 INSTALL_PATH="$HOME/foundryvtt/resources/app"
 ###############################################################################
 # DO NOT MODIFY ANYTHING BELOW THIS LINE
-VERSION = 0.1.1
+VERSION=0.1.1
 # Version 0.1.0 - Initial Version
 #         0.1.1 - Corrected path in sed command to use variable INSTALL_PATH
 SERVER_MOD=$DATA_PATH/Data/modules/plutonium/server/plutonium-backend.js
