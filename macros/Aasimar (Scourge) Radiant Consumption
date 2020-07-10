@@ -1,0 +1,163 @@
+/**
+ * === Scourge Aasimar: Radiant Consumption ===
+ * Requires "MinorQOL" module, with the following modification to expose `applyTokenDamage`:
+ * (L116)
+ * ```
+ * window.MinorQOL = {
+ * 	 checkSaves: checkSaves,
+ * ```
+ * to
+ * ```
+ * window.MinorQOL = {
+ * 	 checkSaves: checkSaves,
+ * 	 applyTokenDamage: applyTokenDamage,
+ * ```
+ */
+
+const cpy = o => JSON.parse(JSON.stringify(o));
+const getLvl = () => actor.items.filter(it => it.type === "class").map(it => it.data.data.levels).reduce((a, b) => a + b, 0);
+
+const isAffectedItem = item => (item.data.type === "spell" || item.data.type === "weapon") && item.data.data?.actionType !== "heal" && item.data.data?.damage?.parts?.length;
+
+/** Convert a token to its squares, as centred points. */
+const getSquares = token => {
+	const wPx = token.data.width * canvas.scene.data.grid;
+	const hPx = token.data.height * canvas.scene.data.grid;
+	const out = [];
+	for (let x = token.x; x < token.x + wPx; x += canvas.scene.data.grid) {
+		for (let y = token.y; y < token.y + hPx; y += canvas.scene.data.grid) {
+			out.push({x: x + (canvas.scene.data.grid / 2), y: y + (canvas.scene.data.grid / 2)});
+		}
+	}
+	return out;
+};
+
+(async () => {
+	if (!actor) return ui.notifications.error("Please select a token!");
+
+	window._asmrHooks = window._asmrHooks || {};
+
+	const doCleanupHooks = () => {
+		const oldUid = actor.getFlag("minor-qol", "asmr-hookId");
+		if (oldUid) {
+			const {hkDeleteCombat, hkUpdateCombat, hkCreateChatMessage} = window._asmrHooks[oldUid] || {};
+			hkDeleteCombat && Hooks.off("deleteCombat", hkDeleteCombat);
+			hkUpdateCombat && Hooks.off("updateCombat", hkUpdateCombat);
+			hkCreateChatMessage && Hooks.off("createChatMessage", hkCreateChatMessage);
+		}
+	};
+
+ 	const doRemoveExtraRadiant = async () => {
+/* 		if (!actor.getFlag("minor-qol", "asmr-extraDamage")) return;
+		await ChatMessage.create({content: `${actor.name}'s attacks are no longer radiant.`, user: game.userId, type: 1});
+		for (const item of actor.items) {
+			if (!isAffectedItem(item)) continue;
+			const ix = item.data.data.damage.parts.findIndex(([amount, type]) => `${amount}` === actor.getFlag("minor-qol", "asmr-extraDamage") && type === "radiant");
+			if (!~ix) continue;
+			await item.update({"data.damage.parts": cpy(item.data.data.damage.parts).filter((_, i) => i !== ix)});
+		}
+		await actor.unsetFlag("minor-qol", "asmr-extraDamage"); */
+	};
+
+	const doDeactivate = async () => {
+		await ChatMessage.create({content: `${actor.name} stops radiating.`, user: game.userId, type: 1});
+
+		await actor.unsetFlag("minor-qol", "asmr-turnsRemaining");
+		await doRemoveExtraRadiant();
+
+		if (actor.getFlag("minor-qol", "asmr-light")) {
+			const saved = actor.getFlag("minor-qol", "asmr-light");
+			await token.update({brightLight: saved.brightLight, dimLight: saved.dimLight, lightColor: saved.lightColor});
+			await actor.unsetFlag("minor-qol", "asmr-light");
+		}
+	};
+
+	doCleanupHooks();
+	if ((actor.getFlag("minor-qol", "asmr-turnsRemaining") || 0) > 0) {
+		await doDeactivate();
+		return;
+	}
+
+	await ChatMessage.create({content: `${actor.name} radiates...`, user: game.userId, type: 1});
+
+	const uid = Date.now();
+	await actor.setFlag("minor-qol", "asmr-hookId", uid);
+	await actor.setFlag("minor-qol", "asmr-turnsRemaining", 10);
+
+	let prevCombatant = null;
+	const hkDeleteCombat = () => prevCombatant = null;
+	const hkUpdateCombat = (combat, updateData, updateOpts) => {
+		if (!updateOpts.diff) return;
+
+		const activeCombatantId = ui.combat.combat?.current?.tokenId;
+		if (activeCombatantId === token.id) doTurnStart();
+		else if (prevCombatant === token.id) doTurnEnd();
+
+		prevCombatant = activeCombatantId;
+	};
+	const hkCreateChatMessage = (message, meta) => {
+		if (meta.rollMode !== "roll") return;
+		if (message.user.id !== game.userId) return;
+		// Remove extra radiant after we roll damage
+		if (message.data.flavor.includes("Damage Roll")) doRemoveExtraRadiant();
+	};
+
+	Hooks.on("deleteCombat", hkDeleteCombat);
+	Hooks.on("updateCombat", hkUpdateCombat);
+	Hooks.on("createChatMessage", hkCreateChatMessage);
+	Object.assign(window._asmrHooks, {[uid]: {hkDeleteCombat, hkUpdateCombat, hkCreateChatMessage}});
+
+	/** Add extra damage to our damage rolls on turn start. */
+	const doTurnStart = async () => {
+		/* const turnsRemaining = actor.getFlag("minor-qol", "asmr-turnsRemaining") || 0;
+		if (turnsRemaining <= 0) return;
+
+		await ChatMessage.create({content: `${actor.name}'s attacks are radiant!`, user: game.userId, type: 1});
+
+		await doRemoveExtraRadiant();
+
+		// Add new damage
+		const damageAmount = getLvl();
+		await actor.setFlag("minor-qol", "asmr-extraDamage", `${damageAmount}`);
+		for (const item of actor.items) {
+			if (!isAffectedItem(item)) continue;
+			await item.update({"data.damage.parts": [...cpy(item.data.data.damage.parts), [damageAmount, "radiant"]]});
+		} */
+	};
+
+	/** Burn surrounding tokens on turn end. */
+	const doTurnEnd = async () => {
+		const turnsRemaining = actor.getFlag("minor-qol", "asmr-turnsRemaining") || 0;
+		if (turnsRemaining <= 0) return;
+
+		await actor.setFlag("minor-qol", "asmr-turnsRemaining", turnsRemaining - 1);
+		await doRemoveExtraRadiant();
+
+		const damageAmount = Math.ceil(getLvl() / 2);
+		await ChatMessage.create({content: `${actor.name} sears for ${damageAmount} radiant damage! (${turnsRemaining - 1} turn${turnsRemaining - 1 === 1 ? "" : "s"} remain)`, user: game.userId, type: 1});
+		if (damageAmount) {
+			const sqPx = canvas.scene.data.grid / canvas.scene.data.gridDistance;
+			const aoe = new PIXI.Circle(token.center.x, token.center.y, Math.ceil((sqPx * 10) + (token.data.width * canvas.scene.data.grid / 2)));
+			const targets = canvas.tokens.placeables.filter(it => it.actor && getSquares(it).some(sq => aoe.contains(sq.x, sq.y)));
+			MinorQOL.applyTokenDamage([{damage: damageAmount, type: "radiant"}], 5, new Set(targets), 0, new Set());
+		}
+
+		if (turnsRemaining - 1 === 0) {
+			doCleanupHooks();
+			await doDeactivate();
+		}
+	};
+
+	// Lighting
+	if (!actor.getFlag("minor-qol", "asmr-light")) {
+		await actor.setFlag("minor-qol", "asmr-light", cpy(token.data));
+		await token.update({brightLight: Math.max(token.data.brightLight, 10), dimLight: Math.max(token.data.dimLight, 20), lightColor: "#faffd1"});
+	}
+
+	// If there's already a combat running and it's our turn, run
+	if (ui.combat.combat?.current?.tokenId) {
+		const activeCombatantId = ui.combat.combat.current.tokenId;
+		if (activeCombatantId === token.id) await doTurnStart();
+		prevCombatant = activeCombatantId;
+	}
+})();
