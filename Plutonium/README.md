@@ -6,6 +6,7 @@
 ### updatemain
 >  This script is to be run after updating Foundry main system; or in troubleshooting the backend for Plutonium.
 >  The script should be run as administrator and check for and update the files as needed.
+>  And requires BASH to be installed.
 
 *  *updateMain.bash* is for [mac/unix](https://www.cyberciti.biz/faq/run-execute-sh-shell-script/)
 
