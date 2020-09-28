@@ -1,6 +1,432 @@
 {
 	"module": [
 		{
+			"name": "🔌 DancingLights",
+			"source": "🔌DancingLights",
+			"manifesturl": "https://raw.githubusercontent.com/BlitzKraig/fvtt-DancingLights/master/module.json",
+			"entries": [
+				"The Ambient Light & Token Light toolkit to make your scenes pop!"
+			],
+			"version": "2.1.5",
+			"vttaddon": true,
+			"author": ["Blitzkraig"]
+		},
+		{
+			"name": "🔌 Multilevel Tokens",
+			"source": "🔌MultilevelTokens",
+			"manifesturl": "https://raw.githubusercontent.com/grandseiken/foundryvtt-multilevel-tokens/master/module.json",
+			"entries": [
+				"Adds several helpful token automation features, particularly (but not only) suited to maps with multiple levels.",
+				{
+					"type": "list",
+					"items": [				
+						"Teleport tokens to another location when they move into a particular region (e.g. from the bottom of a staircase to the top).",
+						"Clone tokens from one region to another, syncing movement and other property updates (e.g. allowing players to \"see\" what is happening on floors below).",
+						"Trigger macros when a token enters or leaves a particular region."
+					]
+				}
+			],
+			"version": "1.2.0",
+			"vttaddon": true,
+			"author": ["grandseiken"]
+		},
+		{
+			"name": "🔌 Parallaxia",
+			"source": "🔌Parallaxia",
+			"manifesturl": "https://gitlab.com/reichler/parallaxia/raw/master/parallaxia/module.json",
+			"entries": [
+				"Extend base Tile functionality to allow custom dynamic visuals. For example create the effect of movement of map elements like drifting clouds by rolling a wrapping texture. Have a shadow fly over the map. Create the illusion of depth by the name-lending parallax of layered tiles, etc."
+			],
+			"version": "0.2.9",
+			"vttaddon": true,
+			"author": ["wonko"]
+		},
+		{
+			"name": "🔌 Token HUD Wildcard",
+			"source": "🔌TokenHUDWildcard",
+			"manifesturl": "https://raw.githubusercontent.com/javieros105/FVTT-TokenHUDWildcard/master/token-hud-wildcard/module.json",
+			"entries": [
+				"This module adds a button to the Token HUD if the token has wildcard set and detects more than 1 image to choose from. Pressing the button displays a panel on the right side of the HUD with buttons for each image, pressing one of these allows to change the token image."
+			],
+			"version": "1.0.0",
+			"vttaddon": true,
+			"author": ["javieros"]
+		},
+		{
+			"name": "🔌 Forien's Unidentified Item",
+			"source": "🔌ForiensUnidentifiedItem",
+			"manifesturl": "https://raw.githubusercontent.com/Forien/foundryvtt-forien-unidentified-items/master/module.json",
+			"entries": [
+				"This module aims to provide system agnostic solution to handle unidentified items and their identification."
+			],
+			"version": "0.2.3",
+			"vttaddon": true,
+			"author": ["Forien"]
+		},
+		{
+			"name": "🔌 Pick-Up-Stix",
+			"source": "🔌PickUpStix",
+			"manifesturl": "https://raw.githubusercontent.com/kamcknig/pick-up-stix/v0.11.6/src/module.json",
+			"entries": [
+				"Pick-Up-Stix allows you to create items as Tokens that players can pick up. It will automatically add the items to the player's inventory.",
+				{
+					"type": "list",
+					"items": [
+						"Drop items from the items directory",
+						"Drop items from the compendiums without importing them",
+						"Create containers out of dropped items, lock them, add open and closed images",
+						"Players may pick items up",
+						"Players may drop items from their own inventories onto the map that other players can pick up",
+						"Drop Items directly onto a token to add it to the actor's inventory",
+						"Drag items from an actor's inventory onto another Token or another actor's inventory to transfer the item to that Actor's inventory"
+					]
+				}
+			],
+			"version": "0.11.6",
+			"vttaddon": true,
+			"author": ["Kyle McKnight"]
+		},
+		{
+			"name": "🔌 Card Support (unofficial)",
+			"source": "🔌CardSupportunofficial",
+			"manifesturl": "https://github.com/spacemandev-git/fvtt-card-support/releases/download/latest/module.json",
+			"entries": [
+				"Unofficial Card Support for Foundry VTT."
+			],
+			"version": "1.5.2",
+			"vttaddon": true,
+			"author": ["spacemandev"]
+		},
+		{
+			"name": "🔌 Polyglot",
+			"source": "🔌Polyglot",
+			"manifesturl": "https://raw.githubusercontent.com/kakaroto/fvtt-module-polyglot/v1.1.2/module.json",
+			"entries": [
+				"Talk to others using a language your selected character can understand and scrambles in-character text you can't understand."
+			],
+			"version": "1.1.2",
+			"vttaddon": true,
+			"author": ["KaKaRoTo"]
+		},
+		{
+			"name": "🔌 Loot Sheet NPC 5e",
+			"source": "🔌LootSheetNPC5e",
+			"manifesturl": "https://raw.githubusercontent.com/jopeek/fvtt-loot-sheet-npc-5e/master/module.json",
+			"entries": [
+				"This module adds an additional NPC sheet which can be used for loot containers such as chests. It also allows spells to be automatically converted into spell scrolls by dragging them onto this sheet."
+			],
+			"system": [ "DnD5e"],
+			"version": "2.1.1",
+			"vttaddon": true,
+			"author": ["Jan Ole Peek (ChalkOne)", "Charles Miller (Kage)"]
+		},
+		{
+			"name": "🔌 Deselection",
+			"source": "🔌Deselection",
+			"manifest": "https://raw.githubusercontent.com/Sky-Captain-13/foundry/master/deselection/deselection/module.json",
+			"entries": [
+				"The Deselection module disables the requirement to make a drag selection box on an empty part of the map to deselect a token or tokens. Instead, you can simply single click anywhere in an empty space to deselect an object."
+			],
+			"version": "1.4.4",
+			"vttaddon": true,
+			"author": ["Sky"]
+		},
+		{
+			"name" : "🔌 Token Action HUD",
+			"source": "🔌TokenActionHUD",
+			"manifesturl" : "https://github.com/espositos/fvtt-tokenactionhud/raw/master/module.json",
+			"entries": [
+				"This module populates a floating HUD, showing common actions for a controllable token. Supports DND5e, Pathfinder 2E, Dungeon World, Starfinder RPG, and WFRP4e. The information shown is system dependent. In DND5e, for example, it shows items, feats, ability checks, and spells. its intent is to save GMs and players from having to frequently open character sheets to access actions, and to allow people to focus on the table.",
+				"I don't have time to add every system, but it is designed to be easily extensible. If you have some programming knowledge and would like to add support for your system, please get in touch."
+			],
+			"author": ["Esposito"],
+			"system": [ "DnD5e","PF2e","sfrpg"],
+			"version": "0.7.0",
+			"vttaddon": true
+		},
+		{
+			"name" : "🔌 Better Rolls for 5e",
+			"source": "🔌BetterRollsfor5e",
+			"manifesturl" : "https://github.com/RedReign/FoundryVTT-BetterRolls5e/raw/1.1.11(Foundry-0.6.6)/betterrolls5e/module.json",
+			"entries": [
+				"Overhauls most rolls on the 5th edition character sheet, and provides a way to customize roll messages per-item.",
+				"See the [Github page](https://github.com/RedReign/FoundryVTT-BetterRolls5e) for a list of current and upcoming features."
+			],
+			"author": ["Red Reign"],
+			"system": [ "DnD5e"],
+			"version": "1.1.11",
+			"vttaddon": true
+		},
+		{
+			"name" : "🔌 I See You 5e",
+			"source": "🔌ISeeYou5e",
+			"manifesturl" : "https://github.com/herasrobert/icu5e/releases/download/1.4.1/module.json",
+			"entries": [
+				"Automate Perception Checks and reveal any hidden enemies within X units if the Perception of the controlled token is greater than the Stealth of the Hostile token. The number of units can be edited within the Module Settings window. Adds an icon in the token hud (right-click the token).",
+				"Handles multiple tokens selected. Simple - The token with the highest perception will be used. Per-Token - Each token will reveal what they can from their position",
+				"Variant Passive Degradation (Module Setting). I've added in an option for 'Variant Perception Degradation'. This implements the passive perception losing a score of 1 per 10 feet of distance. The further the target, the worse your perception.",
+				"Show Icon For (Module Setting) Disable tokenHUD icon on some tokens (Default: Characters). All - The Icon will appear on every token. Characters - Only appears on Characters. Friendlies - Only on tokens with a Friendly/Neutral disposition. The icon will only ever appear if you're GM, players do not have access to the icon.",
+				"Allow GM Stealth Override (Module Setting) - If enabled, Hostile tokens will now have an input box on the bottom right which will default to the tokens Passive Stealth. This input box is what will be checked against the Passive Perception to determine whether or not to reveal the token. It allows GM's who like to roll for Stealth as they're prepping a scene (like me) to use the number rolled rather than the Passive Stealth.",
+				"Roll Hostile Stealth (Module Setting) - Button that will roll a stealth check for the selected Hostile token and this is will be the value used against Perception to determine if the hostile token should be revealed.",
+				"Display Perception Results (Module Setting) - Print a chat message with each token revealed by which token. i.e. \"Donny revealed Shadow [14]\".",
+				"Account for Walls (Module Settings) - If there's a wall that blocks line of sight, the token will not be revealed.",
+				"Active Perception Roll Type (Module Setting) - Auto - The Perception check will be automatically rolled by the token. Request - The player will receive a prompt requesting that they roll a Perception Check.",
+				"Automatice Passive Perception Checks (Module Settings)[Experimental] - Automatically check nearby tokens to reveal them when token is moved.",
+				"Stealth Mode (Module Setting)[Experimental] - Player token is Hidden from everyone but remains visible to the GM and the token Owner to simulate the player stealthing from everyone else."
+			],
+			"author": ["Rib_Rob"],
+			"system": [ "DnD5e"],
+			"version": "1.4.1",
+			"vttaddon": true
+		},
+		{
+			"name" : "🔌 Jinker's Animated Art Pack",
+			"source": "🔌JinkersAnimatedArtPack",
+			"manifesturl" : "https://github.com/RedReign/FoundryVTT-BetterRolls5e/raw/1.1.11(Foundry-0.6.6)/betterrolls5e/module.json",
+			"entries": [
+				"Collection of Animated Art for use with VTT's in the top-down/overhead perspective. All files are in transparent webm format. Files will be located in your \"Data\\modules\\jaamod\\AnimatedArt\" folder. If you like my work consider becoming a Patron to ensure I keep creating content for Foundry.",
+				"{@link https://www.patreon.com/jinker}"
+			],
+			"author": ["Jinker"],
+			"version": "0.2",
+			"vttaddon": true
+		},
+		{
+			"name" : "🔌 Health Estimate",
+			"source": "🔌HealthEstimate",
+			"manifesturl" : "https://gitlab.com/tsuki.no.mai/healthestimate/-/raw/1.3.3/src/module.json",
+			"entries": [
+				"Apply damage/healing with a few keystrokes to all selected tokens at once."
+			],
+			"author": ["Shylight"],
+			"version": "1.3.3",
+			"vttaddon": true
+		},
+		{
+			"name": "🔌 Terrain Layer",
+			"source": "🔌TerrainLayer",
+			"manifest": "https://raw.githubusercontent.com/wsaunders1014/TerrainLayer/master/module.json",
+			"entries": [
+				"Adds a Terrain Layer to Foundry for use as a dependency for other modules that may want to incorporate Difficult Terrain into their modules. Does not currently work with GRIDLESS maps. As this is an Alpha, very open to feedback for features other module developers or users might like incorporated. Currently using the DnD5e Difficult Terrain 'Triangle' as an indicator.",
+				"Activate Terrain layer by selecting it from controls menu.",
+				"{@b VISIBILITY TOGGLE} - Set the visibility of the layer. Does not clear data.",
+				"{@b ADD MODE} - Left click to add, right click to delete. Left click and drag to select multiple squares to add. Hold CTRL down while dragging to REMOVE squares. Select on a previously laid tile to cycle through the terrain modifier multiple. Currently only 2 and 3.",
+				"{@b REMOVE MODE} - Left click to remove, click and drag to remove multiple.",
+				"{@b RESET TERRAIN} - Clears terrain layer.",
+				"This is still in very early stages still. Some ideas for the future of the mod include:",
+				{
+					"type": "list",
+					"items": [				
+						"customizable tile icon:shape,color,opacity, and possibly using an image instead.",
+						"Impassable tiles and/or \"dangerous\" tiles."
+					]
+				}
+			],
+			"version": "0.0.1",
+			"vttaddon": true,
+			"author": ["Will S"]
+		},
+		{
+			"name": "🔌 Pings",
+			"source": "🔌Pings",
+			"manifesturl": "https://gitlab.com/foundry-azzurite/pings/raw/master/src/module.json",
+			"entries": [
+				"Adds the ability to ping on the map to highlight points of interest. Default is Left Click to ping, Shift + Left Click to move everyone's screen to your ping."
+			],
+			"version": "1.2.8",
+			"vttaddon": true,
+			"author": ["Azzurite"]
+		},
+		{
+			"name": "🔌 Calendar/Weather",
+			"source": "🔌CalendarWeather",
+			"manifesturl": "https://raw.githubusercontent.com/DasSauerkraut/calendar-weather/master/package/module.json",
+			"entries": [
+				"A customizable module that accurately tracks and displays dates and time This module REQUIRES about-time installed and loaded to function correctly. If you want to have weather effects, you must have FXMaster by U~Man installed and loaded.", 
+				"Features:",
+				{
+					"type": "list",
+					"items": [
+						"Customizable and draggable calendar that handles arbitrarily long weeks, months, and years.",
+						"Intercalary day handling.",
+						"Real time time tracking at customizable speeds through about-time.",
+						"Moon Phase tracking for an arbitrary amount of moons. Moons can also have eclipses which have fun effects tied to them via FXMaster.",
+						"Event tracking: Calendar/Weather can handle reoccuring yearly events, like holidays as well as one time events that occur once before being deleted. One time events can also be triggered at a specific time, rather than the event triggering at midnight. You can drag and drop journal entries into the text field for events. Furthermore, events can fire macros when they're triggered. The @@JournalEntry[] syntax will send the contents of the journal entry to chat, rather than just the link.",
+						"Weather System: Clicking the sun/cloud icon will pull up a small widget that allows you to change between temperature systems, regenerate the days weather, and set the climate your party is currently in. Weather is generated every day at midnight. Each time weather is generated, a message will be displayed to chat, you can turn this off in the settings.",
+						"Day/Night Cycle: If the 'Calendar/Weather - Night Cycle and Weather Effects' setting is enabled, it will begin to grow dark at the specified dusk time for the season, and grow bright at the season's dawn time.",
+						"FXMaster Weather Integration: If you have U~man's FXmaster module installed, each time weather is generated, a corresponding effect will be applied to the current scene. This is enabled on a scene by scene basis by the 'Calendar/Weather - Night Cycle and Weather Effects' setting located in the scene config form."
+					]
+				}
+			],
+			"version": "2.6.1",
+			"vttaddon": true,
+			"author": ["DasSauerkraut"]
+		},
+		{
+			"name": "🔌 Combat Utility Belt",
+			"source": "🔌CombatUtilityBelt",
+			"manifesturl": "https://raw.githubusercontent.com/death-save/combat-utility-belt/master/module.json",
+			"entries": [
+				"Every GM needs gadgets to keep their game safe from dastardly players up to no good!",
+				"And where better to store those gadget than on your very own Combat Utility Belt!",
+				"This handy-dandy combat aid comes packed with a bunch of gadgets to ensure you get a TPK every time..."
+			],
+			"version": "1.2.2",
+			"vttaddon": true,
+			"author": ["errational"]
+		},
+		{
+			"name": "🔌 Permission Viewer",
+			"source": "🔌PermissionViewer",
+			"manifesturl": "https://raw.githubusercontent.com/kakaroto/fvtt-module-permission-viewer/v0.7/module.json",
+			"entries": [
+				"Quickly see which entities (Journal entries, Actors, etc..) are visible to all players or visible to a specific player.",
+				"It also adds a quick share button in the sidebars and when showing journal entries to players, will ask if you want to share them, show them to all or show them only to players who have permission to view it."
+			],
+			"version": "0.7.0",
+			"vttaddon": true,
+			"author": ["KaKaRoTo"]
+		},
+		{
+			"name": "🔌 Dynamic Effects",
+			"source": "🔌DynamicEffects",
+			"manifesturl": "https://gitlab.com/tposney/dynamiceffects/raw/master/package/module.json",
+			"entries": [
+				"With the impending release of 0.7.x work on dynamic effects will be limited to bug fixes and will probably not be made comaptible with versions greater than 0.7.0. Sometime after 0.7.2 is released I will release a replacement for dynamic effects that will build on the core active effect features. I am not yet sure how much of a module will be required to replicate most/all of the dynamic effects freatures.",
+				{
+					"type": "list",
+					"items": [
+						"Dynamic effects lets you apply item based effects to your character or targeted tokens, adding/decreasing attack/damage bonuses, increasing/decreasing maximum hit points, changing alignment, in fact almost any field on the character sheet can be adjusted by dynamiceffects.",
+						"The module is not dnd5e dependent, although there is additional support for dnd5e.",
+						"All of the changes exist in game only, the saved version of the actor remains unchanged, with the excpetion that active effect modifiers are stored in a flag so they can be reapplied when the game reloads."
+					]
+				},
+				"You must be on DND5e 0.95 or later if using this module with dnd.",
+				"Dynamiceffects changes the way saving throws are rolled for dnd5e and the standard ability saving throws. The save bonus for ability saves (as updated by dynamiceffects) is used rather than mod+proficiency. This change will be removed for foundry 0.7.x",
+				"Effects are created/edited from the item sheet which has an additional tab, Effects.",
+				"Please see the Readme.md and Overview.md for more information, there are lots of non-obvious behaviours in dynamiceffects and reading those documents will help you get better use of the module."
+			],
+			"version": "0.5.95",
+			"vttaddon": true,
+			"author": ["tim posney"]
+		},
+		{
+			"name": "🔌 Dynamic Effects SRD",
+			"source": "🔌DynamicEffectsSRD",
+			"manifesturl": "https://raw.githubusercontent.com/kandashi/Dynamic-Effects-SRD/master/module.json",
+			"entries": [
+				"A compendium pack of DnD 5e SRD items, spells and features all configured specificly for use with Dynamic Effects. Currently contains Spells upto level 6, most Items and a few Features. Easily automate your shield spells; barbarian rages; cloak of protection and many more (as they are added).",
+				"Midi QoL and Furnace (with advanced macros enabled) are needed for auto effect application (effects without macro calls do not need Furnace).",
+				"About Time is required for auto effect removal."
+			],
+			"version": "0.1.0",
+			"system": [ "DnD5e"],
+			"vttaddon": true,
+			"author": ["Kandashi"]
+		},
+		{
+			"name": "🔌 About Time",
+			"source": "🔌AboutTime",
+			"manifesturl": "https://gitlab.com/tposney/about-time/raw/master/package/module.json",
+			"entries": [
+				"A module to support a game time clock in Foundry VTT. Arbitrary calendars are supported Gregorian and Greyhawk supplied but it is easy to add your own. See notes in the Readme.md and please have a look at Gettingstarted.md it has more information.",
+				"DateTime Arithmentic is supported allowing calculations like DateTime.Now().add({days:1}) (increments can be negative, but must be integers)",
+				"DateTime represents a date and time comprising ({years, months, days, hours, minutes, seconds}) and repsents an actual date and time. DTMod is a class for representing time intervals, game.Gametime.DTMod.create({years, months, days, hours. minutes, seconds}) only represents an interval to be applied to a DateTime. Typically you would do things like DateTime.now().add({days: 5})",
+				"The gametime clock can bet set/advanced as you wish. The clock can also be set to run in real time at a multiple/fraction of real world time. The game clock is snchronised betwee all clients and time updates are broadcast to each client. You can register for them via Hooks.on(\"pseudoclockUpdate\"). When combat starts the clock enters a special mode that advances a fixed interval at the end of each combat round.",
+				"You can trigger fairly arbitrary events to occur at specified times or intervals.",
+				"The real use for the clock is having events fire at predefined times or intervals. You can call arbitrary code or macros based off the game time clock. Allowing things like game.Gametime.doEvery({hours:24}, \"Eat Food\")"
+			],
+			"version": "0.1.51",
+			"vttaddon": true,
+			"author": ["tim posney"]
+		},
+		{
+			"name": "🔌 FXMaster",
+			"source": "🔌FXMaster",
+			"manifesturl": "https://gitlab.com/mesfoliesludiques/foundryvtt-fxmaster/-/raw/master/module.json",
+			"entries": [
+				"FXMaster brings unique and configurable weather effects, filters and also special effects activated on click.",
+				"And yes, you can throw fireballs."
+			],
+			"version": "0.8.0",
+			"vttaddon": true,
+			"author": ["U-man"]
+		},
+		{
+			"name": "🔌 Furnace",
+			"source": "🔌Furnace",
+			"manifesturl": "https://raw.githubusercontent.com/kakaroto/fvtt-module-furnace/v2.2/module.json",
+			"entries": [
+				"No Foundry is complete without it's Furnace!",
+				"This module contains a set of features that improve the Quality of Life of the DM/Players. The current features are :",
+				"{@b Advanced Drawing Tools} :Improved drawing tools with different pattern fill types, new HUD, and various options.",
+				"{@b Advanced Macros} : Use async script macros, handlebars templating, recursive macro calls and call macros with arguments or directly from chat.",
+				"{@b Split Journal} : Select the split option from the context menu on a journal entry to split it into multiple entries.",
+				"{@b Tokens : As GM, you can enable/disable token vision for yourself. You can also drop an actor folder into a scene to deploy multiple tokens at once.",
+				"{@b Combat} : Double click the initiative value in the combat tracker to quickly modify it.",
+				"{@b Playlists} : Adds a 'Now Playing' section, and auto-hides sound controls until hovered. Helps in fine tuning of low level volumes."
+			],
+			"version": "0.2.2",
+			"vttaddon": true,
+			"author": ["KaKaRoTo"]
+		},
+		{
+			"name": "🔌 Midi Quality of Life Improvements (Midi QoL)",
+			"source": "🔌MidiQoL",
+			"manifesturl": "https://gitlab.com/tposney/midi-qol/raw/master/package/module.json",
+			"entries": [
+				"Attack/Damage/Saving throw automation.",
+				"Replaces minor-qol with a superset of the existing functionality. Requires dnd5e 0.95",
+				"Uses dnd5e system rolls for items, attack, damage and saves",
+				"Please see the changelog for changes.",
+				"Midi-qol goes through a standard sequence to complete the attack/spell cast. Midi-qol assumes that when you click the roll button you mean it. Midi-qol always applies damage/healing to the targeted tokens. If the item specifies a target of \"self\" midi-qol uses that instead (usually the targeted token).",
+				{
+					"type": "list",
+					"items": [
+						"Consume any resources that should be consumed (ammunition, charges, spell slot etc).",
+						"If the item specifies a target template place the template and if enabled select targets inside that template.",
+						"If the item has an attack roll the attack.",
+						"If auto check hits is enabled modify the set of targets to be only those that were hit by the attack roll if there was one. If disabled the attack is assumed to hit all targets.",
+						"Roll the damage if auto roll damage is enabled.",
+						"Roll any saving throws for the affected targets (note there are options for players to roll their own saves). If disabled it is assumed that all targets failed their save.",
+						"Apply damage if enabled taking into account damage resitance/immunities if enabled. Midi-qol knows that damage can have different types so supports 10 pts of slahsing damage and 15 points of fire damage and applies immunities to each part seperately."
+					]
+				},
+				"Known Bugs",
+				"probably many however....",
+				{
+					"type": "list",
+					"items": [
+						"add chat damage buttons does not work with merged cards - yet.",
+						"The combined card does not play nicely with dice-so-nice.",
+						"Language translations are not up to date.",
+						"Unselect targets at end of turn not implemented yet.",
+						"There are several incompatibilities with Mess."
+					]
+				}
+			],
+			"version": "0.2.9",
+			"vttaddon": true,
+			"author": ["tim posney"]
+		},
+		{
+			"name": "🔌 Token Magic",
+			"source": "🔌TokenMagic",
+			"manifesturl": "https://raw.githubusercontent.com/Feu-Secret/Tokenmagic/master/tokenmagic/module.json",
+			"entries": [
+				"Add visual effects to templates, drawings, tokens and tiles. The special effects can be animated. Token Magic FX comes with a compendium of macros for each effect, easily modifiable to suit your needs. A graphical interface is provided for templates. A graphical interface will be added in later version for other placeables.",
+				"The following FX are supported :",
+				"Bloom, distortion, old film effect, glow, outline, bevel, shadow drop, shadow zap, twist, blur, zoom blur, shockwave, bulge, pinch, inner rays, inner fog, color adjustment, spider webs, and many more advanced effects. All properties linked to these FX can be animated."
+			],
+			"version": "0.4.3",
+			"vttaddon": true,
+			"author": ["SecretFire"]
+		},
+
+
+
+
+		{
 			"name" : "NPC Resource Guide",
 			"source": "5eNPCs",
 			"manifesturl" : "https://foundry.5e.tools/plutonium/5eNPCs/module.json",
