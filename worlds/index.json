@@ -1,8 +1,8 @@
 {
 	"module": [
 		{
-			"name": "🔌 DancingLights",
-			"source": "🔌DancingLights",
+			"name": "DancingLights",
+			"source": "DancingLights",
 			"manifesturl": "https://raw.githubusercontent.com/BlitzKraig/fvtt-DancingLights/master/module.json",
 			"entries": [
 				"The Ambient Light & Token Light toolkit to make your scenes pop!"
