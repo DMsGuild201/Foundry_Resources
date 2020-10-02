@@ -1,0 +1,124 @@
+// THIS IS NOT A VALID JSON, it is a reference for copy pasting 
+
+	"version": "0.2.0",
+	"coreVersion": "0.6.6",
+	"minimumCoreVersion": "0.6.0",
+	"compatibleCoreVersion": "0.7.2",
+	"scripts": ["./checkdependencies.js"],
+	"dependencies": [
+		{
+			"name": "plutonium",
+			"manifest": "https://get.5e.tools/plutonium/module.json",
+			"version": "1.10.2",
+			"author": "Giddy"
+		},
+		{
+			"name": "DancingLights",
+			"manifest": "https://raw.githubusercontent.com/BlitzKraig/fvtt-DancingLights/master/module.json",
+			"version": "2.1.5",
+			"author": "Blitzkraig"
+		},
+		{
+			"name": "multilevel-tokens",
+			"manifest": "https://raw.githubusercontent.com/grandseiken/foundryvtt-multilevel-tokens/master/module.json",
+			"version": "1.2.0",
+			"author": "grandseiken"
+		},
+		{
+			"name": "parallaxia",
+			"manifest": "https://gitlab.com/reichler/parallaxia/raw/master/parallaxia/module.json",
+			"version": "0.2.9",
+			"author": "wonko"
+		},
+		{
+			"name": "Token HUD Wildcard",
+			"manifest": "https://raw.githubusercontent.com/javieros105/FVTT-TokenHUDWildcard/master/token-hud-wildcard/module.json",
+			"version": "1.0.0",
+			"author": "javieros"
+		},
+		{
+			"name": "Pick-Up-Stix",
+			"manifest": "https://raw.githubusercontent.com/kamcknig/pick-up-stix/v0.11.6/src/module.json",
+			"version": "0.11.3",
+			"author": "Kyle McKnight"
+		},
+		
+		{
+			"name": "Card Support (unofficial)",
+			"manifest": "https://github.com/spacemandev-git/fvtt-card-support/releases/download/latest/module.json",
+			"version": "1.5.2",
+			"author": "spacemandev"
+		},
+		{
+			"name": "polyglot",
+			"manifest": "https://raw.githubusercontent.com/kakaroto/fvtt-module-polyglot/v1.1.2/module.json",
+			"version": "1.1.2",
+			"author": "KaKaRoTo"
+		},
+		{
+			"name": "Loot Sheet NPC 5e",
+			"manifest": "https://raw.githubusercontent.com/jopeek/fvtt-loot-sheet-npc-5e/master/module.json",
+			"version": "2.1.1",
+			"author": "Jan Ole Peek (ChalkOne), Charles Miller (Kage)"
+		},
+		{
+			"name": "Forien's Unidentified Item",
+			"manifest": "https://raw.githubusercontent.com/Forien/foundryvtt-forien-unidentified-items/master/module.json",
+			"version": "0.2.3",
+			"author": "Forien"
+		},
+		{
+			"name": "trigger-happy",
+			"manifest": "https://raw.githubusercontent.com/kakaroto/fvtt-module-trigger-happy/master/module.json",
+			"version": "0.8.1",
+			"author": "KaKaRoTo, tposney"
+		}
+	],
+	"supportsmods": [
+		{
+			"name": "Pick-Up-Stix",
+			"manifest": "https://raw.githubusercontent.com/Forien/foundryvtt-forien-unidentified-items/master/module.json",
+			"version": "0.11.3",
+			"author": "Kyle McKnight"
+		}
+	],	
+	"esmodules": [],
+	"styles": [],
+	"packs": [],
+	"languages": [
+		{
+			"lang": "en",
+			"name": "English",
+			"path": "lang/en.json"
+		}
+	],
+	"authors": [
+		"WotC",
+		"Roll20",
+		"R20Converter"
+	],
+	"keywords": [
+		"adventure",
+		"campaign",
+		"forgotten realms",
+		"baldur's gate",
+		"content packs"
+	],
+	"minimumSystemVersion": "0.90",
+	"compatibleSystemVersion": "0.96",
+
+  "socket": false,
+  "url": "",
+	"manifest": "https://foundry.5e.tools/plutonium/#/world.json",
+	"download": "https://foundry.5e.tools/plutonium/#/#.zip",
+  "license": "",
+	"readme": "README.md",
+  "bugs": "",
+	"changelog": "https://wiki.5e.tools/index.php/Foundry:Changelog_Adventures",
+  "id": "#",
+  "system": "dnd5e",
+  "systemVersion": 0.96,
+  "unavailable": false,
+  "availability": 0,
+  "background": "worlds/#/scenes/backgrounds/startlogin.webp",
+
