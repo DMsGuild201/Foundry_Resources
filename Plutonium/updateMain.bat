@@ -7,13 +7,12 @@ REM # INSTALL_PATH - Path where foundry is actually installed to
 SET INSTALL_PATH=C:\Program Files\FoundryVTT\resources\app
 REM ###############################################################################
 REM # DO NOT MODIFY ANYTHING BELOW THIS LINE
-SET VERSION =  0.1.2
+SET VERSION =  0.1.3
 REM # Version  0.1.0 - Initial Version
 REM #          0.1.1 - Added Admin check
 REM #          0.1.2 - 0.7.2 Compatibility
+REM #          0.1.3 - 0.7.5 Compatibility
 SET PLUTONIUM_PATH=%DATA_PATH%\Data\modules\plutonium\server
-SET SERVER_MOD=%PLUTONIUM_PATH%\plutonium-backend.js
-SET miniorVersion=0.6.6
 REM # Check if the script was ran as an administrator
 ECHO Administrative permissions required. Detecting permissions...
  net session >nul 2>&1
@@ -27,6 +26,14 @@ ECHO Administrative permissions required. Detecting permissions...
 SET CWD=%CD%
 REM # check if foundry is installed
 IF EXIST "%INSTALL_PATH%" ( CD %INSTALL_PATH% ) ELSE ( GOTO:INSTALL_ERROR )
+
+for /f "delims=" %%a in ('Powershell -Nop -C "(Get-Content .\package.json|ConvertFrom-Json).version"') do set foundryVersion=%%a
+
+IF %foundryVersion% == 0.7.5 (
+   SET SERVER_MOD=%PLUTONIUM_PATH%\0.7.x\plutonium-backend.js
+) ELSE (
+   SET SERVER_MOD=%PLUTONIUM_PATH%\0.6.x\plutonium-backend.js
+)
 
 FIND "plutonium" main.js > NUL && (ECHO "Plutonium edit found") || ( CALL:INSTALL_MOD )
 
@@ -45,14 +52,13 @@ GOTO:EOF
 :INSTALL_MOD
    COPY /Y main.js main.js.bak > NUL
    ECHO "Plutonium edit not found, making edit"
-   for /f "delims=" %%a in ('Powershell -Nop -C "(Get-Content .\package.json|ConvertFrom-Json).version"') do set foundryVersion=%%a
    SET TMP_OUT=main.js.new
    
-   CALL :compareVersions %miniorVersion% %foundryVersion%
-   IF %errorlevel% == -1 (
+   IF %foundryVersion% == 0.7.5 (
       REM 0.7.2+
       SET var3=startupMessages
    ) ELSE (
+      REM 0.6.6
       SET var3=initLogging
    )
    SET strFind="require("init")(process.argv, global.paths, %var3%);"
@@ -63,45 +69,5 @@ GOTO:EOF
    ECHO                 require("plutonium-backend").init(); >> %TMP_OUT%
    ECHO         }); >> %TMP_OUT%
    MOVE /Y %TMP_OUT% main.js > NUL
-:compareVersions  version1  version2
-REM
-REM Compares two version numbers and returns the result in the ERRORLEVEL
-REM
-REM Returns 1 if version1 > version2
-REM         0 if version1 = version2
-REM        -1 if version1 < version2
-REM
-REM The nodes must be delimited by . or , or -
-REM
-REM Nodes are normally strictly numeric, without a 0 prefix. A letter suffix
-REM is treated as a separate node
-REM
-setlocal enableDelayedExpansion
-set "v1=%~1"
-set "v2=%~2"
-call :divideLetters v1
-call :divideLetters v2
-:loop
-call :parseNode "%v1%" n1 v1
-call :parseNode "%v2%" n2 v2
-if %n1% gtr %n2% exit /b 1
-if %n1% lss %n2% exit /b -1
-if not defined v1 if not defined v2 exit /b 0
-if not defined v1 exit /b -1
-if not defined v2 exit /b 1
-goto :loop
-
-
-:parseNode  version  nodeVar  remainderVar
-for /f "tokens=1* delims=.,-" %%A in ("%~1") do (
-  set "%~2=%%A"
-  set "%~3=%%B"
-)
-exit /b
-
-
-:divideLetters  versionVar
-for %%C in (a b c d e f g h i j k l m n o p q r s t u v w x y z) do set "%~1=!%~1:%%C=.%%C!"
-exit /b
 :NO_ADMIN
 PAUSE
