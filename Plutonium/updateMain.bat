@@ -54,7 +54,7 @@ GOTO:EOF
    ECHO "Plutonium edit not found, making edit"
    SET TMP_OUT=main.js.new
    
-   IF %foundryVersion% == 0.7.5 (
+   IF %foundryVersion% GEQ 0.7.3 (
       REM 0.7.2+
       SET var3=startupMessages
    ) ELSE (
