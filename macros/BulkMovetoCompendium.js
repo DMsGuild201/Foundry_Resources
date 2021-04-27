@@ -75,6 +75,11 @@
 					name: "Rollable Tables",
 					folderType: "RollTable",
 					collection: RollTable.collection
+				},
+				{
+					name: "Playlists",
+					folderType: "Playlist",
+					collection: Playlist.collection
 				}
 			];
 
