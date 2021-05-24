@@ -80,6 +80,11 @@
 					name: "Playlists",
 					folderType: "Playlist",
 					collection: Playlist.collection
+				},
+               			{
+					name: "Macros",
+					folderType: "Macro",
+					collection: Macro.collection
 				}
 			];
 
