@@ -8,8 +8,9 @@ from pathlib import Path
 
 ################################################################################
 # USER EDITABLE AREA
-# Foundry Data Worlds Location:
-foundry_data = str(Path.home()) + os.sep + "foundrydata" + os.sep + "Data" + os.sep + "worlds"
+# Foundry Data Worlds Location (Use ONE of the two formats below, leave the other commented):
+# foundry_data = str(Path.home()) + os.sep + "foundrydata" + os.sep + "Data" + os.sep + "worlds"
+foundry_data = "C:" + os.sep + "Users" + os.sep + "YourUserHere" + os.sep + "AppData" + os.sep + "Local" + os.sep + "FoundryVTT" + os.sep + "Data" + os.sep + "worlds"
 ################################################################################
 # DO NOT EDIT ANYTHING BELOW THIS LINE #
 # VERSION: 0.0.1 - Development Build
@@ -35,14 +36,15 @@ for root, directories, files in os.walk(directory, topdown=False):
       #print('File: %s' %fil)
       if mimetypes.guess_type(fil)[0] == 'text/plain':
 
-         open_file = open(fil, 'r')
+         open_file = open(fil, 'r', encoding="utf8")
+         # if search_string in open_file.read():
          if search_string in open_file.read():
             print('Found string in file: %s' %open_file)
             open_file.close()
 
             fh, abs_path = mkstemp()
-            with fdopen(fh, 'w') as new_file:
-               with open(fil) as old_file:
+            with fdopen(fh, 'w', encoding="utf8") as new_file:
+               with open(fil, encoding="utf8") as old_file:
                   for line in old_file:
                      new_file.write(line.replace(search_string, replace_string))
             # Copy over permissions from original
