@@ -35,14 +35,14 @@ for root, directories, files in os.walk(directory, topdown=False):
       #print('File: %s' %fil)
       if mimetypes.guess_type(fil)[0] == 'text/plain':
 
-         open_file = open(fil, 'r')
+         open_file = open(fil, mode='r', encoding='ignore')
          if search_string in open_file.read():
             print('Found string in file: %s' %open_file)
             open_file.close()
 
             fh, abs_path = mkstemp()
-            with fdopen(fh, 'w') as new_file:
-               with open(fil) as old_file:
+            with fdopen(fh, mode='w', encoding='ignore') as new_file:
+               with open(fil, encoding='ignore') as old_file:
                   for line in old_file:
                      new_file.write(line.replace(search_string, replace_string))
             # Copy over permissions from original
