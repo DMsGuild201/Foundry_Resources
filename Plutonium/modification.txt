@@ -1,0 +1,8 @@
+  await init.default({
+    args: process.argv,
+    root: root,
+    messages: startupMessages,
+    debug: isDebug
+  });
+  (await import("./plutonium-backend.mjs")).Plutonium.init();
+})();
