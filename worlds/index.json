@@ -3,7 +3,7 @@
 	"module": [
 		{
 			"name" : "🔌 About Time",
-			"source": "AboutTime",
+			"source": "about-time",
 			"manifesturl": "https://gitlab.com/tposney/about-time/raw/master/package/module.json",
 			"entries": [
 				"A module to support a game time clock in Foundry VTT. Arbitrary calendars are supported Gregorian and Greyhawk supplied but it is easy to add your own. See notes in the Readme.md and please have a look at Gettingstarted.md it has more information.",
@@ -13,9 +13,19 @@
 				"You can trigger fairly arbitrary events to occur at specified times or intervals.",
 				"The real use for the clock is having events fire at predefined times or intervals. You can call arbitrary code or macros based off the game time clock. Allowing things like game.Gametime.doEvery({hours:24}, \"Eat Food\")"
 			],
-			"version": "0.1.68",
-			"vttaddon": true,
-			"author": ["tim posney"]
+			"type": [ 
+				"plugin",
+				"resource"
+			],
+			"version": "0.8.5",
+			"authors": [{"name": "tim posney"}],
+			"coreVersion": "0.8.3",
+			"minimumCoreVersion": "0.6.6",
+			"compatibleCoreVersion": "0.8.5",
+			"system": [
+				"dnd5e"
+			],			
+			"size": 2288
 		},
 		{
 			"name" : "🔌 Animated Spell Effects",
@@ -24,9 +34,16 @@
 			"entries": [
 				"More than 450 (and growing!) animated effects for spells for use with various VTT's in the top-down/overhead perspective. All files are in transparent webm format. In Foundry VTT, fiiles will be located in your \"Data\\modules\\animated-spell-effects\\spell-effects\" folder. If you like my work, consider saying thanks on Discord: jackkerouac#0624."
 			],
+			"type": [ 
+				"plugin",
+				"resource"
+			],
 			"version": "0.6.8",
-			"vttaddon": true,
-			"author": ["jackkerouac"]
+			"authors": [{"name": "jackkerouac"}],
+			"coreVersion": "string",
+			"minimumCoreVersion": "0.5.5",
+			"compatibleCoreVersion": "0.7.9",
+			"size": 1076766
 		},
 		{
 			"name" : "🔌 Better NPC Sheet 5e",
@@ -35,9 +52,15 @@
 			"entries": [
 				"This module overwrites the default NPC sheet that comes shiped with the dnd5e system and brings it closer to the well known official template."
 			],
-			"version": "0.9.1",
-			"vttaddon": true,
-			"author": ["Felix"]
+			"type": [ 
+				"plugin",
+				"resource"
+			],
+			"version": "0.10.1",
+			"authors": [{"name": "Felix"}],
+			"minimumCoreVersion": "0.8.0",
+			"compatibleCoreVersion": "0.8.6",
+			"size": 577
 		},
 		{
 			"name" : "🔌 Better Rolls for 5e",
@@ -47,10 +70,16 @@
 				"Overhauls most rolls on the 5th edition character sheet, and provides a way to customize roll messages per-item.",
 				"See the [Github page](https://github.com/RedReign/FoundryVTT-BetterRolls5e) for a list of current and upcoming features."
 			],
-			"author": ["Red Reign"],
+			"type": [ 
+				"plugin",
+				"resource"
+			],
+			"authors": [{"name": "Red Reign"}],
 			"system": [ "DnD5e"],
-			"version": "1.4.7",
-			"vttaddon": true
+			"version": "1.5.9",
+			"minimumCoreVersion": "0.8.6",
+			"compatibleCoreVersion": "0.8.6",			
+			"size": 177
 		},
 		{
 			"name" : "🔌 Card Support (unofficial)",
@@ -59,9 +88,18 @@
 			"entries": [
 				"Unofficial Card Support for Foundry VTT."
 			],
-			"version": "1.5.2",
-			"vttaddon": true,
-			"author": ["spacemandev"]
+			"type": [ 
+				"plugin",
+				"resource"
+			],
+			"version": "1.6.1",
+			"authors": [
+				{"name": "spacemandev"},
+				{"name": "norc"}
+			],
+			"minimumCoreVersion": "0.8.5",
+			"compatibleCoreVersion": "0.8.6",
+			"size": 9904
 		},
 		{
 			"name" : "🔌 Combat Carousel",
@@ -70,33 +108,51 @@
 			"entries": [
 				"Adds a CRPG-style combat tracker to the top of the screen."
 			],
+			"type": [ 
+				"plugin",
+				"resource"
+			],
 			"version": "0.1.3",
-			"vttaddon": true,
-			"author": ["errational"]
+			"authors": [{"name": "errational"}],
+			"minimumCoreVersion": "0.6.6",
+			"compatibleCoreVersion": "0.7.3",
+			"size": 3734
 		},
 		{
 			"name" : "🔌 Combat Enhancements",
-			"source": "CombatUtilityBelt",
+			"source": "combat-enhancements",
 			"manifesturl": "https://gitlab.com/asacolips-projects/foundry-mods/combat-enhancements/raw/master/module.json",
 			"entries": [
 				"This small module adds a radial health bar, an editable HP field, and drag/drop re-ordering to the combat tracker."
 			],
-			"version": "0.1.8",
-			"vttaddon": true,
-			"author": ["Asacolips"]
+			"type": [ 
+				"plugin",
+				"resource"
+			],
+			"version": "1.0.0",
+			"authors": [{"name": "Asacolips"}],
+			"minimumCoreVersion": "0.8.3",
+			"compatibleCoreVersion": "0.8.6",
+			"size": 62
 		},
 		{
 			"name" : "🔌 Combat Utility Belt",
-			"source": "CombatUtilityBelt",
+			"source": "combat-utility-belt",
 			"manifesturl": "https://github.com/death-save/combat-utility-belt/releases/download/1.4.0/module.json",
 			"entries": [
 				"Every GM needs gadgets to keep their game safe from dastardly players up to no good!",
 				"And where better to store those gadget than on your very own Combat Utility Belt!",
 				"This handy-dandy combat aid comes packed with a bunch of gadgets to ensure you get a TPK every time..."
 			],
-			"version": "1.4.0",
-			"vttaddon": true,
-			"author": ["errational"]
+			"type": [ 
+				"plugin",
+				"resource"
+			],
+			"version": "1.5.0",
+			"authors": [{"name": "errational"}],
+			"minimumCoreVersion": "0.8.5",
+			"compatibleCoreVersion": "0.8.6",
+			"size": 296
 		},
 		{
 			"name" : "🔌 CommunityLighting",
@@ -106,9 +162,15 @@
 				"Community Lighting Animations and Shaders for 0.7.5+",
 				"Contributions welcome! Add your animations, or use the animations added by others in your game"
 			],
+			"type": [ 
+				"plugin",
+				"resource"
+			],
 			"version": "0.3.1",
-			"vttaddon": true,
-			"author": ["Blitzkraig"]
+			"authors": [{"name": "Blitzkraig"}],
+			"minimumCoreVersion": "0.8.6",
+			"compatibleCoreVersion": "0.8.6",
+			"size": 94
 		},
 		{
 			"name" : "🔌 DF Architech",
@@ -118,9 +180,15 @@
 				"Welcome to the great big Architect’s Tool Suite. This module provides many many many new Quality of Life features to the Foundry Walls and Lighting layers. As well as a few extras that are just fun to have and make life a little easier.",
 				"I hate big walls of text, so I’ve done my best to provide some animated previews of what each feature does. I hope you enjoy what this module brings to your FoundryVTT experience!"
 			],
+			"type": [ 
+				"plugin",
+				"resource"
+			],
 			"version": "1.1.0",
-			"vttaddon": true,
-			"author": ["flamewave000"]
+			"authors": [{"name": "flamewave000"}],
+			"minimumCoreVersion": "0.7.9",
+			"compatibleCoreVersion": "0.7.10",
+			"size": 78400
 		},
 		{
 			"name" : "🔌 DFreds Pocket Change",
@@ -129,13 +197,19 @@
 			"entries": [
 				"Automatically adds money to NPC character sheets when dropped on the canvas based on the DMG's individual treasures table. This is best used with Loot Sheet NPC 5e."
 			],
-			"version": "1.1.0",
-			"vttaddon": true,
-			"author": ["DFreds"]
+			"type": [ 
+				"plugin",
+				"resource"
+			],
+			"version": "2.0.2",
+			"authors": [{"name": "DFreds"}],
+			"minimumCoreVersion": "0.8.6",
+			"compatibleCoreVersion": "0.8.6",
+			"size": 10
 		},
 		{
 			"name" : "🔌 Dynamic Active Effects",
-			"source": "DynamicEffects",
+			"source": "dae",
 			"manifesturl": "https://gitlab.com/tposney/dynamiceffects/raw/master/package/module.json",
 			"entries": [
 				"DAE is the successor to Dyanmiceffects and dynamic effects does not work in 0.7+",
@@ -163,9 +237,17 @@
 					]
 				}
 			],
-			"version": "0.2.60",
-			"vttaddon": true,
-			"author": ["tim posney"]
+			"type": [ 
+				"plugin",
+				"resource"
+			],
+			"version": "0.8.9",
+			"authors": [{"name": "tim posney"}],
+			"compatibleCoreVersion": "0.8.6",
+			"minimumCoreVersion": "0.8.4",
+			"minimumSystemVersion": "1.3.2",
+			"systems": ["dnd5e", "sw5e"],
+			"size": 475
 		},
 		{
 			"name" : "🔌 Dynamic Active Effects SRD",
@@ -175,14 +257,20 @@
 				"A compendium pack of DnD 5e SRD items, spells and features all configured specificly for use with Dynamic Active Effects. Now includes items configured with Magic Items module too. Currently contains Spells upto level 6, most Items and a few Features. Easily automate your shield spells; barbarian rages; cloak of protection and many more (as they are added).",
 				"Midi QoL and Furnace (with advanced macros enabled) are needed for auto effect application (effects without macro calls do not need Furnace)."
 			],
-			"version": "4.1.12",
+			"type": [ 
+				"plugin",
+				"resource"
+			],
+			"version": "4.1.13",
 			"system": [ "DnD5e"],
-			"vttaddon": true,
-			"author": ["Kandashi"]
+			"authors": [{"name": "Kandashi"}],
+			"minimumCoreVersion": "0.7.5",
+			"compatibleCoreVersion": "0.7.9",
+			"size": 806
 		},
 		{
 			"name" : "🔌 Enhanced Terrain Layer",
-			"source": "TerrainLayer",
+			"source": "enhanced-terrain-layer",
 			"manifest": "https://github.com/ironmonk88/enhanced-terrain-layer/releases/latest/download/module.json",
 			"entries": [
 				"Adds a Terrain Layer to Foundry that can be used by other modules to calculate difficult terrain.",
@@ -194,9 +282,16 @@
 				"You can also set blocks of Terrain to be shown or not shown, so if the difficult terrain is only temporary or conditional you can control it.",
 				"As of version 1.0.21 you can set the colour of each environmental terrain as well as setting the default colour of terrain for a scene, and the overall default colour."
 			],
-			"version": "1.0.22",
-			"vttaddon": true,
-			"author": ["Ironmonk"]
+			"type": [ 
+				"plugin",
+				"resource"
+			],
+			"version": "1.0.28",
+			"authors": [{"name": "Ironmonk"}],
+			"minimumCoreVersion": "0.8.0",
+			"compatibleCoreVersion": "0.8.6",
+			"size": 284
+			
 		},
 		{
 			"name" : "🔌 Find the culprit!",
@@ -205,13 +300,19 @@
 			"entries": [
 				"This module helps you debug compatibility issues of modules, by finding the module that is responsible for the issue, without having to manually activate and deactivate all your modules yourself. Just click the Find the culprit button in Module Management to start the process."
 			],
-			"version": "1.3.2",
-			"vttaddon": true,
-			"author": ["Moerill"]
+			"type": [ 
+				"plugin",
+				"resource"
+			],
+			"version": "1.3.3",
+			"authors": [{"name": "Moerill"}],
+			"minimumCoreVersion": "0.6.0",
+			"compatibleCoreVersion": "1.0.0",
+			"size": 5
 		},
 		{
 			"name" : "🔌 Furnace",
-			"source": "Furnace",
+			"source": "furnace",
 			"manifesturl": "https://raw.githubusercontent.com/kakaroto/fvtt-module-furnace/v2.2/module.json",
 			"entries": [
 				"No Foundry is complete without it's Furnace!",
@@ -223,32 +324,99 @@
 				"{@b Combat} : Double click the initiative value in the combat tracker to quickly modify it.",
 				"{@b Playlists} : Adds a 'Now Playing' section, and auto-hides sound controls until hovered. Helps in fine tuning of low level volumes."
 			],
-			"version": "2.6.02",
-			"vttaddon": true,
-			"author": ["KaKaRoTo"]
+			"dependencies": [
+				{
+					"name": "advanced-macros",
+					"manifest": "https://github.com/League-of-Foundry-Developers/fvtt-advanced-macros/releases/latest/download/module.json"
+				},
+				{
+					"name": "initiative-double-click",
+					"manifest": "https://github.com/League-of-Foundry-Developers/fvtt-initiative-double-click/releases/latest/download/module.json"
+				},
+				{
+					"name": "dfreds-droppables",
+					"manifest": "https://github.com/DFreds/dfreds-droppables/releases/latest/download/module.json"
+				},
+				{
+					"name": "lessfog",
+					"manifest": "https://github.com/trdischat/lessfog/releases/latest/download/module.json"
+				},
+				{
+					"name": "split-journal",
+					"manifest": "https://github.com/League-of-Foundry-Developers/fvtt-split-journal/releases/latest/download/module.json"
+				}
+			],			
+			"version": "2.6.1",
+			"authors": [{"name": "KaKaRoTo"}],
+			"minimumCoreVersion": "0.8.4",
+			"compatibleCoreVersion": "0.8.6",
+			"size": 1
 		},
 		{
 			"name" : "🔌 FXMaster",
-			"source": "FXMaster",
+			"source": "fxmaster",
 			"manifesturl": "https://gitlab.com/mesfoliesludiques/foundryvtt-fxmaster/-/raw/master/module.json",
 			"entries": [
 				"FXMaster brings unique and configurable weather effects, filters and also special effects activated on click.",
 				"And yes, you can throw fireballs."
 			],
-			"version": "1.0.3",
-			"vttaddon": true,
-			"author": ["U-man"]
+			"type": [ 
+				"plugin",
+				"resource"
+			],
+			"version": "1.0.10",
+			"author": [{"name": "U-man"}],
+			"compatibleCoreVersion": "0.8.5",
+			"minimumCoreVersion": "0.8.6",
+			"size": 13737
 		},
 		{
 			"name" : "🔌 GM Screen",
-			"source": "foundryvtt-gmScreen",
+			"source": "gm-screen",
 			"manifesturl": "https://github.com/ElfFriend-DnD/foundryvtt-gmScreen/releases/download/v2.2.1/module.json",
 			"entries": [
 				"Creates a Configurable modular grid that GMs can populate with journal entries, rollable tables, actors, and items. Customize your \"GM Screen\" and have its information available at any time from a button on the bottom right of the UI, near the sidebar. Roll rollable tables, open linked entities, and even place actor sheets into these cells. Obviously the space constraints mean some sheets will work better than others."
 			],
-			"version": "2.4.0",
-			"vttaddon": true,
-			"author": ["calego"]
+			"type": [ 
+				"plugin",
+				"resource"
+			],
+			"version": "2.5.0",
+			"author": "Andrew Krigline (akrigline)",
+			"authors": [
+				{
+					"name": "Andrew Krigline",
+					"discord": "Calego#0914",
+					"url": "https://github.com/ElfFriend-DnD",
+					"patreon": "ElfFriend_DnD"
+				}
+			],
+			"compatibleCoreVersion": "0.8.3",
+			"minimumCoreVersion": "0.7.7",
+			"size": 26
+		},
+		{
+			"name" : "🔌 Grape Juice Isometrics",
+			"source": "grape_juice-isometrics",
+			"manifesturl": "https://gitlab.com/jesusafier/grape_juice-isometrics/-/raw/0.0.16-stable/module.json",
+			"entries": [
+				"Adds the isometric effect/structure to a game."
+			],
+			"type": [ 
+				"plugin",
+				"resource",
+				"isometric"
+			],
+			"version": "0.0.19.2",
+			"dependencies": [
+				{
+					"name": "lib-wrapper"
+				}
+			],
+			"authors": [{"name": "Grape Juice"}],
+			"minimumCoreVersion": "0.7.9",
+			"compatibleCoreVersion": "0.7.9",
+			"size": 115408
 		},
 		{
 			"name" : "🔌 Health Estimate",
@@ -257,9 +425,15 @@
 			"entries": [
 				"Apply damage/healing with a few keystrokes to all selected tokens at once."
 			],
-			"author": ["Shylight"],
-			"version": "2.5.2",
-			"vttaddon": true
+			"type": [ 
+				"plugin",
+				"resource"
+			],
+			"authors": [{"name": "Shylight"}],
+			"version": "2.5.8",
+			"minimumCoreVersion": "0.5.0",
+			"compatibleCoreVersion": "0.8.6",
+			"size": 81
 		},
 		{
 			"name" : "🔌 I See You 5e",
@@ -278,59 +452,93 @@
 				"Automatice Passive Perception Checks (Module Settings)[Experimental] - Automatically check nearby tokens to reveal them when token is moved.",
 				"Stealth Mode (Module Setting)[Experimental] - Player token is Hidden from everyone but remains visible to the GM and the token Owner to simulate the player stealthing from everyone else."
 			],
-			"author": ["Rib_Rob"],
+			"type": [ 
+				"plugin",
+				"resource"
+			],
+			"authors": [{"name": "Rib_Rob"}],
 			"system": [ "DnD5e"],
 			"version": "1.4.1",
-			"vttaddon": true
+			"minimumCoreVersion": "0.6.6",
+			"compatibleCoreVersion":"0.6.6",
+			"size": 7
 		},
 		{
 			"name" : "🔌 Innocenti Looting",
-			"source": "ISeeYou5e",
+			"source": "innocenti-looting",
 			"manifesturl" : "https://raw.githubusercontent.com/rinnocenti/innocenti-looting/main/module.json",
 			"entries": [
 				"A simple module to use for looting dead NPCs tokens. With it the token's targets will have their items moved to the user's sheet. (with the exception of some like natural weapons, feats and spells). Some items have a chance of not being in good use and will not be sent to the sheet (configurable percentage)."
 			],
-			"author": ["Innocenti"],
+			"type": [ 
+				"plugin",
+				"resource"
+			],
+			"authors": [{"name": "Innocenti"}],
 			"system": [ "DnD5e"],
-			"version": "0.2.6",
-			"vttaddon": true
+			"version": "0.3.1",
+			"minimumCoreVersion": "0.8.0",
+			"compatibleCoreVersion": "0.8.6",
+			"systems": [ "dnd5e" ],
+			"size": 442
 		},
 		{
 			"name" : "🔌 JB2A Animated Assets",
-			"source": "TokenMagic",
-			"manifesturl": "https://github.com/Jules-Bens-Aa/JB2A_DnD5e/releases/download/0.1.7/module.json",
+			"source": "JB2A_DnD5e",
+			"manifesturl": "https://github.com/Jules-Bens-Aa/JB2A_DnD5e/releases/latest/download/module.json",
 			"entries": [
 				"A Library of animated spell templates and tokens for DnD5e.",
 				"The module is system agnostic but we have defined the spells names, styles and sizes* from the DnD5e ruleset.",
 				"Now with compendiums of premade actors and macros to use our assets efficiently!"
 			],
-			"version": "0.1.7",
-			"vttaddon": true,
-			"author": ["Gazkhan"]
+			"type": [ 
+				"plugin",
+				"resource"
+			],
+			"version": "0.2.0",
+			"minimumCoreVersion": "0.7.0",
+			"compatibleCoreVersion": "0.7.9",
+			"authors": [
+				{"name": "Gazkhan#8192"}, 
+				{"name": "Wassily#8035"}
+			],
+			"size": 201623
 		},
 		{
 			"name" : "🔌 Jinker's Animated Art Pack",
-			"source": "JinkersAnimatedArtPack",
-			"manifesturl" : "https://github.com/RedReign/FoundryVTT-BetterRolls5e/raw/1.1.11(Foundry-0.6.6)/betterrolls5e/module.json",
+			"source": "jaamod",
+			"manifesturl" : "https://raw.githubusercontent.com/jinkergm/JAA/master/module.json",
 			"entries": [
 				"Collection of Animated Art for use with VTT's in the top-down/overhead perspective. All files are in transparent webm format. Files will be located in your \"Data\\modules\\jaamod\\AnimatedArt\" folder. If you like my work consider becoming a Patron to ensure I keep creating content for Foundry.",
 				"{@link https://www.patreon.com/jinker}"
 			],
-			"author": ["Jinker"],
+			"type": [ 
+				"plugin",
+				"resource"
+			],
+			"authors": [{"name": "Jinker (Jinker#8073)"}],
 			"version": "0.2",
-			"vttaddon": true
+			"minimumCoreVersion": "0.5.0",
+			"compatibleCoreVersion": "0.8.6",
+			"size": 243662
 		},
 		{
-			"name" : "🔌 Layers-Panel",
-			"source": "Bluesatin",
+			"name" : "🔌 Layers Panel",
+			"source": "layers-panel",
 			"manifesturl": "https://github.com/bluesatin/foundry-vtt-layers-panel/releases/latest/download/module.json",
 			"entries": [
 				"An NPC sheet for FoundryVTT designed to faithfully reproduce the apperance of D&D 5e monster statblocks.",
 				"A few quick settings can be toggled from the special cog menu in the upper left corner. This includes enabling and disabling certain features, themes, and a toggle for editing."
 			],
-			"version": "0.1.6",
-			"vttaddon": true,
-			"author": ["Bluesatin"]
+			"type": [ 
+				"plugin",
+				"resource"
+			],
+			"authors": [{"name": "Bluesatin"}],
+			"version": "0.2.0",
+			"minimumCoreVersion": "0.7.0",
+			"compatibleCoreVersion": "0.7.10",
+			"size": 72
 		},
 		{
 			"name" : "🔌 Let's Trade 5e",
@@ -339,9 +547,17 @@
 			"entries": [
 				"Let's Trade 5e allows players to trade items and currency with one another. Clicking the trade icon added to the character sheet next to the item or currency allows you to send a request to another player character who is online, and can accept the offer. After completion, a chat message is sent to all parties and the game masters informing them the transfer occurred."
 			],
-			"version": "0.1.2",
-			"vttaddon": true,
-			"author": ["Kage"]
+			"type": [ 
+				"plugin",
+				"resource"
+			],
+			"authors": [{"name": "Kage"}],
+			"system": ["dnd5e"],
+			"version": "0.2.2",
+			"minimumCoreVersion": "0.7.9",
+			"minimumSystemVersion": "1.2.0",
+			"compatibleCoreVersion": "0.8.6",
+			"size": 10
 		},
 		{
 			"name" : "🔌 Lib - ColorSettings",
@@ -350,9 +566,15 @@
 			"entries": [
 				"Adds color picker as settings option and form option in Foundry VTT to use as library for module developers."
 			],
+			"type": [ 
+				"plugin",
+				"resource"
+			],
 			"version": "2.5.9",
-			"vttaddon": true,
-			"author": ["ardittristan"]
+			"authors": [{"name": "ardittristan#0001"}],
+			"minimumCoreVersion": "0.5.5",
+			"compatibleCoreVersion": "0.8.1",
+			"size": 66
 		},
 		{
 			"name" : "🔌 Library: DF Hotkeys",
@@ -362,20 +584,43 @@
 				"Library for Foundry VTT module developers to use. It allows modules to register their own Keyboard Shortcuts and gives way for users to then customize those hotkey bindings.",
 				"This module comes with a single hotkey pre-assigned for the Select Tool mapped to the S key."
 			],
+			"type": [ 
+				"plugin",
+				"resource"
+			],
 			"version": "2.3.4",
-			"vttaddon": true,
-			"author": ["flamewave000"]
+			"authors": [{"name": "flamewave000#6766"}],
+			"minimumCoreVersion": "0.7.9",
+			"compatibleCoreVersion": "0.7.9",
+			"size": 36
 		},
 		{
 			"name" : "🔌 Library: Scene Packer",
-			"source": "scenepacker",
+			"source": "scene-packer",
 			"manifesturl" : "https://raw.githubusercontent.com/League-of-Foundry-Developers/scene-packer/master/module.json",
 			"entries": [
 				"A library to help other developers package up Scenes and Adventures to solve the following:"
 			],
-			"author": ["Blair"],
-			"version": "2.0.4",
-			"vttaddon": true
+			"authors": [
+				{
+					"name": "Blair McMillan",
+					"discord": "blair#9056",
+					"ko-fi": "blairm",
+					"patreon": "blairm"
+				},
+				{
+					"name": "The League of Extraordinary FoundryVTT Developers",
+					"url": "https://github.com/League-of-Foundry-Developers"
+				}
+			],
+			"type": [ 
+				"plugin",
+				"resource"
+			],
+			"version": "2.2.16",
+			"minimumCoreVersion": "0.7.9",
+			"compatibleCoreVersion": "0.8.6",
+			"size": 245
 		},
 		{
 			"name" : "🔌 LibWrapper",
@@ -384,21 +629,36 @@
 			"entries": [
 				"Library for Foundry VTT which provides module developers with a simple way to modify core Foundry VTT code, while reducing the likelihood of conflict with other modules."
 			],
-			"version": "1.5.2.0",
-			"vttaddon": true,
-			"author": ["rupin"]
+			"type": [ 
+				"plugin",
+				"resource"
+			],
+			"version": "1.6.2.0",
+			"authors": [{"name": "rupin"}],
+			"minimumCoreVersion": "0.6.5",
+			"compatibleCoreVersion": "0.8.6",
+			"size": 87
 		},
 		{
 			"name" : "🔌 Loot Sheet NPC 5e",
-			"source": "LootSheetNPC5e",
+			"source": "lootsheetnpc5e",
 			"manifesturl": "https://raw.githubusercontent.com/jopeek/fvtt-loot-sheet-npc-5e/master/module.json",
 			"entries": [
 				"This module adds an additional NPC sheet which can be used for loot containers such as chests. It also allows spells to be automatically converted into spell scrolls by dragging them onto this sheet."
 			],
+			"type": [ 
+				"plugin",
+				"resource"
+			],
 			"system": [ "DnD5e"],
 			"version": "3.0.3",
-			"vttaddon": true,
-			"author": ["Jan Ole Peek (ChalkOne)", "Charles Miller (Kage)"]
+			"authors": [
+				{"name": "Jan Ole Peek (ChalkOne)"}, 
+				{"name": "Charles Miller (Kage)"}
+			],
+			"minimumCoreVersion": "0.7.9",
+			"compatibleCoreVersion": "0.5.7",
+			"size": 962
 		},
 		{
 			"name" : "🔌 Loot Tavern Magic Item Compendium",
@@ -407,9 +667,14 @@
 			"entries": [
 				"If you enjoy these items, please consider supporting Loot Tavern on Patreon (https://www.patreon.com/LootTavern) for even more fantastic Foundry VTT items (60+ items, with 20 new items added each month)."
 			],
+			"type": [ 
+				"plugin",
+				"resource"
+			],
 			"version": "1.4.0",
-			"vttaddon": true,
-			"author": ["MrVauxs"]
+			"authors": [{"name": "MrVauxs"}],
+			"minimumCoreVersion": "0.7.4",
+			"compatibleCoreVersion": "0.7.10"
 		},
 		{
 			"name" : "🔌 Manny's Languages",
@@ -421,35 +686,53 @@
 				"On each journal there will be a new \"Language\" button that will allow you to choose the font you want. Note that the fonts are generalized due to there not being a seperate font for each language. If there ends up being more fonts for each language I will add them to the library for use.",
 				"Warning: symbols like , ! ( ) [ ] do not work with the language tags as the font does not contain those symbols."
 			],
+			"type": [ 
+				"plugin",
+				"resource"
+			],
 			"version": "1.0.3",
-			"vttaddon": true,
-			"author": ["Manny K SoSo"]
+			"authors": [{"name": "Manny K SoSo"}],
+			"compatibleCoreVersion": "0.7.3",
+			"minimumCoreVersion": "0.6.6",
+			"space": 243
 		},
 		{
 			"name" : "🔌 Math.js",
-			"source": "Mathjs",
+			"source": "_mathjs",
 			"manifesturl": "https://raw.githubusercontent.com/League-of-Foundry-Developers/mathjs-lib/master/module.json",
 			"entries": [
 				"Math.js is an extensive math library for JavaScript and Node.js. It features a flexible expression parser with support for symbolic computation, comes with a large set of built-in functions and constants, and offers an integrated solution to work with different data types like numbers, big numbers, complex numbers, fractions, units, and matrices. Powerful and easy to use."
 			],
+			"type": [ 
+				"plugin",
+				"resource"
+			],
 			"version": "7.5.1-fvtt2",
-			"vttaddon": true,
-			"author": ["zeel"]
+			"authors": [{"name": "zeel"}],
+			"minimumCoreVersion": "0.0.0",
+			"compatibleCoreVersion": "1.0.0",
+			"size": 740
 		},
 		{
 			"name" : "🔌 Merchant Sheet",
-			"source": "merhcantsheet",
+			"source": "merchantsheetnpc",
 			"manifesturl": "https://raw.githubusercontent.com/whelan/fvtt-merchant-sheet-npc/0.1.0/module.json",
 			"entries": [
 				"This module adds an additional NPC sheet that can be used for Merchant NPCs."
 			],
-			"version": "0.1.0",
-			"vttaddon": true,
-			"author": ["whelan"]
+			"type": [ 
+				"plugin",
+				"resource"
+			],
+			"version": "1.1.2",
+			"authors": [{"name": "whelan"}],
+			"minimumCoreVersion": "0.8.5",
+			"compatibleCoreVersion": "0.8.6",
+			"size": 644
 		},
 		{
 			"name" : "🔌 Midi Quality of Life Improvements (Midi QoL)",
-			"source": "MidiQoL",
+			"source": "midi-qol",
 			"manifesturl": "https://gitlab.com/tposney/midi-qol/raw/master/package/module.json",
 			"entries": [
 				"Attack/Damage/Saving throw automation.",
@@ -482,9 +765,16 @@
 					]
 				}
 			],
-			"version": "0.3.11",
-			"vttaddon": true,
-			"author": ["tim posney"]
+			"type": [ 
+				"plugin",
+				"resource"
+			],
+			"version": "0.8.3",
+			"authors": [{"name": "tim posney"}],
+			"minimumCoreVersion": "0.8.4",
+			"compatibleCoreVersion": "0.8.6",
+			"minimumSystemVersion": "1.3.2",
+			"size": 1174
 		},
 		{
 			"name" : "🔌 Monster Blocks",
@@ -494,13 +784,28 @@
 				"An NPC sheet for FoundryVTT designed to faithfully reproduce the apperance of D&D 5e monster statblocks.",
 				"A few quick settings can be toggled from the special cog menu in the upper left corner. This includes enabling and disabling certain features, themes, and a toggle for editing."
 			],
-			"version": "2.4.5",
-			"vttaddon": true,
-			"author": ["Zeel"]
+			"type": [ 
+				"plugin",
+				"resource"
+			],
+			"version": "100.3.0.0",
+			"authors": [{"name": "Zeel"}],
+			"dependencies": [
+				{
+					"name": "_mathjs",
+					"type": "module",
+					"manifest": "https://raw.githubusercontent.com/League-of-Foundry-Developers/mathjs-lib/master/module.json"
+				}
+			],			
+			"minimumCoreVersion": "0.6.6",
+			"compatibleCoreVersion": "0.8.6",
+			"systems": ["dnd5e"],
+			"minimumSystemVersion": "1.3.0",
+			"size": 63
 		},
 		{
 			"name" : "🔌 Multi-level Tokens",
-			"source": "MultilevelTokens",
+			"source": "multilevel-tokens",
 			"manifesturl": "https://raw.githubusercontent.com/grandseiken/foundryvtt-multilevel-tokens/master/module.json",
 			"entries": [
 				"Adds several helpful token automation features, particularly (but not only) suited to maps with multiple levels.",
@@ -513,9 +818,15 @@
 					]
 				}
 			],
-			"version": "1.4.1",
-			"vttaddon": true,
-			"author": ["grandseiken"]
+			"type": [ 
+				"plugin",
+				"resource"
+			],
+			"version": "1.5.0",
+			"authors": [{"name": "grandseiken"}],
+			"minimumCoreVersion": "0.6.6",
+			"compatibleCoreVersion": "0.8.6",
+			"size": 1766
 		},
 		{
 			"name" : "🔌 NPC Chatter",
@@ -526,9 +837,15 @@
 				"Chatter is displayed as ChatBubbles only, and won't dump to the Chat Log.",
 				"I recommend you turn off the Core \"Pan to Token Speaker\" setting or else risk whiplash."
 			],
-			"version": "2.0.2",
-			"vttaddon": true,
-			"author": ["Toon324"]
+			"type": [ 
+				"plugin",
+				"resource"
+			],
+			"version": "2.1.0",
+			"minimumCoreVersion": "0.6.2",
+			"compatibleCoreVersion": "0.8.5",
+			"authors": [{"name": "Cody Swendrowski <cody@swendrowski.us>"}],
+			"size": 2769
 		},
 		{
 			"name" : "🔌 Perfect Vision",
@@ -537,25 +854,37 @@
 			"entries": [
 				"Darkvision rules and other vision-related improvements."
 			],
-			"version": "1.8.6",
-			"vttaddon": true,
-			"author": ["dev7355608"]
+			"type": [ 
+				"plugin",
+				"resource"
+			],
+			"version": "1.9.4",
+			"authors": [{"name": "dev7355608"}],
+			"minimumCoreVersion": "0.7.8",
+			"compatibleCoreVersion": "0.8.6",
+			"size": 1918
 		},
 		{
 			"name" : "🔌 Permission Viewer",
-			"source": "PermissionViewer",
+			"source": "permission_viewer",
 			"manifesturl": "https://raw.githubusercontent.com/kakaroto/fvtt-module-permission-viewer/v0.7/module.json",
 			"entries": [
 				"Quickly see which entities (Journal entries, Actors, etc..) are visible to all players or visible to a specific player.",
 				"It also adds a quick share button in the sidebars and when showing journal entries to players, will ask if you want to share them, show them to all or show them only to players who have permission to view it."
 			],
-			"version": "0.8.5",
-			"vttaddon": true,
-			"author": ["KaKaRoTo"]
+			"type": [ 
+				"plugin",
+				"resource"
+			],
+			"version": "0.8.7",
+			"minimumCoreVersion": "0.4.4",
+			"compatibleCoreVersion": "0.8.6",
+			"authors": [{"name": "KaKaRoTo"}],
+			"size": 4
 		},
 		{
 			"name" : "🔌 Pick-Up-Stix",
-			"source": "PickUpStix",
+			"source": "pick-up-stix",
 			"manifesturl": "https://raw.githubusercontent.com/kamcknig/pick-up-stix/master/src/module.json",
 			"entries": [
 				"Pick-Up-Stix allows you to create items as Tokens that players can pick up. It will automatically add the items to the player's inventory.",
@@ -572,20 +901,32 @@
 					]
 				}
 			],
+			"type": [ 
+				"plugin",
+				"resource"
+			],
 			"version": "0.13.8",
-			"vttaddon": true,
-			"author": ["Kyle McKnight"]
+			"authors": [{"name": "Kyle McKnight"}],
+			"minimumCoreVersion": "0.7.5",
+			"compatibleCoreVersion": "0.7.7",
+			"size": 433
 		},
 		{
 			"name" : "🔌 Polyglot",
-			"source": "Polyglot",
+			"source": "polyglot",
 			"manifesturl": "https://raw.githubusercontent.com/kakaroto/fvtt-module-polyglot/v1.1.2/module.json",
 			"entries": [
 				"Talk to others using a language your selected character can understand and scrambles in-character text you can't understand."
 			],
-			"version": "1.1.2",
-			"vttaddon": true,
-			"author": ["KaKaRoTo"]
+			"type": [ 
+				"plugin",
+				"resource"
+			],
+			"version": "1.6.6",
+			"authors": [{"name": "KaKaRoTo"}],
+			"minimumCoreVersion": "0.7.6",
+			"compatibleCoreVersion": "0.8.6",
+			"size": 463
 		},
 		{
 			"name" : "🔌 Quick Insert - Search Widget",
@@ -595,20 +936,50 @@
 				"Quickly find characters, monsters, items, spells etc. and insert them wherever you need them right now - the map, character sheets, roll tables, journals, you name it.",
 				"Quick Insert provides a context-aware search/autocomplete tool that can be used in most parts of FoundryVTT. Integration with chat, character sheets (select systems), rich text editors, macro editors and the roll table editor."
 			],
-			"version": "2.4.1",
-			"vttaddon": true,
-			"author": ["Sunspots"]
+			"type": [ 
+				"plugin",
+				"resource"
+			],
+			"version": "2.4.7",
+			"authors": [{"name": "Sunspots"}],
+			"minimumCoreVersion": "0.6.5",
+			"compatibleCoreVersion": "0.8.6",
+			"size": 99
 		},
 		{
 			"name" : "🔌 Scene Transitions",
-			"source": "scenetransitions",
+			"source": "scene-transitions",
 			"manifesturl": "https://raw.githubusercontent.com/wsaunders1014/scene-transitions/master/module.json",
 			"entries": [
 				"Adds the ability to create transitions to play before activating scene. More settings and customization coming soon"
 			],
-			"version": "0.0.9",
-			"vttaddon": true,
-			"author": ["will s"]
+			"type": [ 
+				"plugin",
+				"resource"
+			],
+			"version": "0.1.3",
+			"minimumCoreVersion": "0.7.9",
+			"compatibleCoreVersion":"0.8.6",
+			"authors": [{"name": "DM_miX"}],
+			"size": 103
+		},
+		{
+			"name" : "🔌 Simple Calendar",
+			"source": "foundryvtt-simple-calendar",
+			"manifesturl": "https://github.com/vigoren/foundryvtt-simple-calendar/releases/download/v1.2.35/module.json",
+			"entries": [
+				"A simple calendar module for FoundryVTT that is system independent.",
+				"This module allows you to create a calendar with any number of months per year, any number of days per month and customizable hours, minutes and seconds for your game world. It is intended as a way for a GM to show a calendar like interface that maps to their in game world."
+			],
+			"type": [ 
+				"plugin",
+				"resource"
+			],
+			"version": "v1.2.63",
+			"authors": [{"name": "vigorator"}],
+			"minimumCoreVersion": "0.7.9",
+			"compatibleCoreVersion": "0.8.6",
+			"size": 68
 		},
 		{
 			"name" : "🔌 SoundBoard",
@@ -617,9 +988,15 @@
 			"entries": [
 				"Simple soundboard for the Gamemaster, broadcasted to all connected clients."
 			],
-			"version": "1.4.0",
-			"vttaddon": true,
-			"author": ["Blitz"]
+			"type": [ 
+				"plugin",
+				"resource"
+			],
+			"version": "1.5.2",
+			"authors": [{"name": "Blitz"}],
+			"minimumCoreVersion": "0.6.2",
+			"compatibleCoreVersion": "0.8.6",
+			"size": 1866
 		},
 		{
 			"name" : "🔌 Trigger Happy",
@@ -629,9 +1006,15 @@
 				"Automate everything in your world by creating triggers for your players to spring traps or anything you can think of!",
 				"Trigger Happy is a module which adds a powerful yet simple system for creating triggers and automating things within a world."
 			],
-			"version": "0.8.1",
-			"vttaddon": true,
-			"author": ["tim posney"]
+			"type": [ 
+				"plugin",
+				"resource"
+			],
+			"version": "0.8.6",
+			"authors": [{"name": "tim posney"}],
+			"minimumCoreVersion": "0.5.3",
+			"compatibleCoreVersion": "0.8.6",
+			"size": 15
 		},
 		{
 			"name" : "🔌 Token HUD Wildcard",
@@ -640,35 +1023,62 @@
 			"entries": [
 				"This module adds a button to the Token HUD if the token has wildcard set and detects more than 1 image to choose from. Pressing the button displays a panel on the right side of the HUD with buttons for each image, pressing one of these allows to change the token image."
 			],
+			"type": [ 
+				"plugin",
+				"resource"
+			],
+			"authors": [{"name": "javieros"}],
 			"version": "1.2.0",
-			"vttaddon": true,
-			"author": ["javieros"]
+			"minimumCoreVersion": "0.6.0",
+			"compatibleCoreVersion": "0.6.6",
+			"size": 6
 		},
 		{
 			"name" : "🔌 Token Action HUD",
-			"source": "TokenActionHUD",
+			"source": "token-action-hud",
 			"manifesturl" : "https://github.com/espositos/fvtt-tokenactionhud/raw/master/module.json",
 			"entries": [
 				"This module populates a floating HUD, showing common actions for a controllable token. Supports DND5e, Pathfinder 2E, Dungeon World, Starfinder RPG, and WFRP4e. The information shown is system dependent. In DND5e, for example, it shows items, feats, ability checks, and spells. its intent is to save GMs and players from having to frequently open character sheets to access actions, and to allow people to focus on the table.",
 				"I don't have time to add every system, but it is designed to be easily extensible. If you have some programming knowledge and would like to add support for your system, please get in touch."
 			],
-			"author": ["Esposito"],
-			"system": [ "DnD5e","PF2e","sfrpg"],
-			"version": "0.10.28",
-			"vttaddon": true
+			"type": [ 
+				"plugin",
+				"resource"
+			],
+			"authors": [{"name": "Esposito"}],
+			"systems":["dnd5e","dungeonworld","pf2e","wfrp4e","sfrpg","sw5e","demonlord","pf1","lancer","D35E","swade","starwarsffg","tormenta20","blades-in-the-dark","symbaroum","od6s","alienrpg","cthack"],
+			"version": "1.0.22",
+			"minimumCoreVersion":"0.6.0",
+			"compatibleCoreVersion":"0.7.9",
+			"size": 211
 		},
 		{
-			"name" : "🔌 Token Magic",
-			"source": "TokenMagic",
+			"name" : "🔌 Token Magic FX",
+			"source": "tokenmagic",
 			"manifesturl": "https://raw.githubusercontent.com/Feu-Secret/Tokenmagic/master/tokenmagic/module.json",
 			"entries": [
 				"Add visual effects to templates, drawings, tokens and tiles. The special effects can be animated. Token Magic FX comes with a compendium of macros for each effect, easily modifiable to suit your needs. A graphical interface is provided for templates. A graphical interface will be added in later version for other placeables.",
 				"The following FX are supported :",
 				"Bloom, distortion, old film effect, glow, outline, bevel, shadow drop, shadow zap, twist, blur, zoom blur, shockwave, bulge, pinch, inner rays, inner fog, color adjustment, spider webs, and many more advanced effects. All properties linked to these FX can be animated."
 			],
-			"version": "0.4.4",
-			"vttaddon": true,
-			"author": ["SecretFire"]
+			"type": [ 
+				"plugin",
+				"resource"
+			],
+			"authors": [
+				{ "name": "SecretFire"},
+				{ "name": "sPOiDar"},
+				{ "name": "Zimm"},
+				{ "name": "Lozalojo"},
+				{ "name": "Moerill"},
+				{ "name": "KLO"},
+				{ "name": "dev7355608"},
+				{ "name": "Mestre Digital"}
+			],
+			"version": "0.5.1",
+			"compatibleCoreVersion": "0.7.9",
+			"minimumCoreVersion": "0.8.6",
+			"size": 2488
 		},
 		{
 			"name" : "🔌 Tool Proficiencies for DnD5e",
@@ -678,25 +1088,37 @@
 				"This module adds a new tab to the actor sheet which allows the user to roll any tools proficiencies declared on their character sheet.",
 				"For macros and other modules, the Actor class has a new function which is 'rollTool' which allows you to roll any tool check even if the actor doesn't have proficiency."
 			],
-			"version": "0.1.1",
-			"vttaddon": true,
-			"author": ["MrRoAdd"]
+			"type": [ 
+				"plugin",
+				"resource"
+			],
+			"version": "0.2.1",
+			"authors": [{"name": "MrRoAdd"}],
+			"minimumCoreVersion": "0.7.0",
+			"compatibleCoreVersion": "0.7.9",
+			"size": 1096
 		},
 		{
 			"name" : "🔌 Turn Marker",
-			"source": "tool-proficiencies-5e",
+			"source": "turnmarker",
 			"manifesturl": "https://raw.githubusercontent.com/kckaiwei/TurnMarker-alt/v2.7.3/dist/module.json",
 			"entries": [
 				"Adds an image under a token who is currently active in the combat tracker. This is completely system agnostic, and fully customizable to fit right into your game."
 			],
+			"type": [ 
+				"plugin",
+				"resource"
+			],
+			"authors": [{"name": "kckaiwei"}],
 			"version": "2.7.3",
-			"vttaddon": true,
-			"author": ["AdagioT"]
+			"minimumCoreVersion": "0.7.5",
+			"compatibleCoreVersion": "0.7.9",
+			"size": 7469
 		},
 		
 		{
 			"name" : "BOK! Attack of the Giant Chicken",
-			"source": "bok-attack-of-the-giant-chicken",
+			"source": "baotgc",
 			"manifesturl" : "https://foundry.5e.tools/plutonium/bok-attack-of-the-giant-chicken/module.json",
 			"entries": [
 				{
@@ -709,14 +1131,20 @@
 					]
 				}
 			],
-			"author": [
-				"DMDave"
+			"authors": [{"name": "DMDave"}],
+			"type": [ 
+				"homebrew"
 			],
-			"system": [ "DND5e"],
-			"version": "0.3.1",
+			"system": [ "dnd5e"],
+			"level": {
+					"min": 2,
+					"max": 4
+				},
+			"length": "short",			
+			"version": "0.3.2",
 			"minimumCoreVersion": "0.7.9",
-			"compatibleCoreVersion": "0.8.1",
-			"systemVersion": "1.3.0",
+			"compatibleCoreVersion": "0.8.6",
+			"systemVersion": "1.3.2",
 			"minimumSystemVersion": "1.2.4",
 			"compatibleSystemVersion": "1.2.4"
 		},
@@ -746,17 +1174,26 @@
 					]
 				}
 			],
-			"author": [
-				"Wizards of the Coast",
-				"Chris Perkins",
-				"Kim Mohan",
-				"Jeremy Crawford",
-				"Kate Irwin",
-				"Tracy and Laura Hickman",
-				"Adam Lee", 
-				"Richard Whitters"
+			"type": [ 
+				"core"
+			],			
+			"length": "campaign",
+			"setting": "ravenloft",
+			"level": {
+				"min": 1,
+				"max": 10
+			},			
+			"authors": [
+				{"name": "Wizards of the Coast"},
+				{"name": "Chris Perkins"},
+				{"name": "Kim Mohan"},
+				{"name": "Jeremy Crawford"},
+				{"name": "Kate Irwin"},
+				{"name": "Tracy and Laura Hickman"},
+				{"name": "Adam Lee"},
+				{"name": "Richard Whitters"}
 			],
-			"system": [ "DND5e"],
+			"system": [ "dnd5e"],
 			"version": "0.3.4"
 		},
 		{
@@ -766,6 +1203,9 @@
 			"entries": [
 				"<p>A Collection of Various Decks for Tabletop Games, or as Accessories with another Games</p>"
 			],
+			"type": [ 
+				 "resource"
+			],			
 			"authors": [
 				{
 				  "name" : "Nord Game",
@@ -917,10 +1357,56 @@
 					]
 				}
 			],
-			"author": ["AAW (Adventure A Week)"],
-			"system": [ "DND5e"],
-			"thirdparty": true,
+			"authors": [{"name": "AAW (Adventure A Week)"}],
+			"type": [ 
+				"homebrew",
+				"collection"
+			],
+			"level": {
+					"min": 3,
+					"max": 5
+			},
+			"length": "one shot",
+			"coreVersion": "0.7.9",
+			"minimumCoreVersion": "0.5.3",
+			"compatibleCoreVersion": "0.8.6",
+			"systemVersion": "1.3.2",
+			"minimumSystemVersion": "1.2.4",
+			"compatibleSystemVersion": "1.3.2",
+			"system": [ "dnd5e"],
 			"version": "0.3.0"
+		},
+		{
+			"name": "The Delian Tomb",
+			"source": "tDT",
+			"manifesturl" : "https://foundry.5e.tools/plutonium/brw-tdt/module.json",
+			"entries": [
+				"The Delian Tomb is a low-level one-shot introduction adventure featuring a tomb of an ancient order of knights infested by goblins.",				
+				{
+					"type": "inset",
+					"name" : "Product Information",
+					"entries": [
+						"System: {@b 5E}",
+						"Starting Level: {@b Low} (1-3rd)",
+						"Length: {@b One Shot}"
+					]
+				}
+			],
+			"type": [ 
+				"homebrew"
+			],
+			"level": {
+					"min": 1,
+					"max": 3
+			},
+			"length": "one shot",
+			"authors": [{"name": "Foundry Worlds Team"}],
+			"minimumCoreVersion": "0.7.9",
+			"compatibleCoreVersion": "0.7.9",
+			"systemVersion": "1.2.4",
+			"minimumSystemVersion": "1.2.4",
+			"compatibleSystemVersion": "1.3.2",
+			"version": "0.3.5"
 		}
 	],
 	"world": [
@@ -939,10 +1425,10 @@
 					]
 				}
 			],
-			"author": [
-				"DMDave"
+			"authors": [
+				{"name": "DMDave"}
 			],
-			"system": [ "DND5e"],
+			"system": ["DND5e"],
 			"version": "0.3.1",
 			"minimumCoreVersion": "0.7.9",
 			"compatibleCoreVersion": "0.8.1",
@@ -976,15 +1462,34 @@
 					]
 				}
 			],
-			"author": [
-				"Wizards of the Coast",
-				"Chris Perkins",
-				"Kim Mohan",
-				"Jeremy Crawford",
-				"Kate Irwin",
-				"Tracy and Laura Hickman",
-				"Adam Lee", 
-				"Richard Whitters"
+			"authors": [
+				{
+					"name": "Wizards of the Coast"
+				},
+				{
+					"name": "Chris Perkins"
+				},
+				{
+					"name": "Kim Mohan"
+				},
+				{
+					"name": "Jeremy Crawford"
+				},
+				{
+					"name": "Kate Irwin"
+				},
+				{
+					"name": "Tracy and Laura Hickman"
+				},
+				{
+					"name": "Adam Lee"
+				}, 
+				{
+					"name": "Richard Whitters"
+				},
+				{
+					"name": "Foundry modules Team"
+				}
 			],
 			"system": [ "DND5e"],
 			"version": "0.3.4"
@@ -1032,10 +1537,10 @@
 			"system": [ "DND5e"],
 			"version": "0.3.0.2",
 			"minimumCoreVersion": "0.7.9",
-			"compatibleCoreVersion": "0.8.1",
-			"systemVersion": "1.3.0",
+			"compatibleCoreVersion": "0.8.6",
+			"systemVersion": "1.3.2",
 			"minimumSystemVersion": "1.2.4",
-			"compatibleSystemVersion": "1.2.4"		
+			"compatibleSystemVersion": "1.3.2"		
 		},
 		{
 			"name" : "Mini-Dungeon Collection",
@@ -1147,10 +1652,33 @@
 					]
 				}
 			],
-			"author": ["AAW (Adventure A Week)"],
+			"authors": [{"name": "AAW (Adventure A Week)"}],
 			"system": [ "DND5e"],
-			"thirdparty": true,
 			"version": "0.3.0"
+		},
+		{
+			"name": "The Delian Tomb",
+			"source": "tDT",
+			"manifesturl" : "https://foundry.5e.tools/plutonium/brw-tdt/world.json",
+			"entries": [
+				"The Delian Tomb is a low-level one-shot introduction adventure featuring a tomb of an ancient order of knights infested by goblins.",				
+				{
+					"type": "inset",
+					"name" : "Product Information",
+					"entries": [
+						"System: {@b 5E}",
+						"Starting Level: {@b Low} (1-3rd)",
+						"Length: {@b One Shot}"
+					]
+				}
+			],
+			"authors": [{"name": "Foundry Worlds Team"}],
+			"minimumCoreVersion": "0.7.9",
+			"compatibleCoreVersion": "0.7.10",
+			"systemVersion": "1.2.4",
+			"minimumSystemVersion": "1.2.4",
+			"compatibleSystemVersion": "1.3.3",
+			"version": "0.3.5"
 		}
 	]
 }
