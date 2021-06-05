@@ -1146,7 +1146,8 @@
 			"compatibleCoreVersion": "0.8.6",
 			"systemVersion": "1.3.2",
 			"minimumSystemVersion": "1.2.4",
-			"compatibleSystemVersion": "1.2.4"
+			"compatibleSystemVersion": "1.2.4",
+			"size": 186770
 		},
 		{
 			"name" : "Curse of Strahd",
@@ -1194,7 +1195,8 @@
 				{"name": "Richard Whitters"}
 			],
 			"system": [ "dnd5e"],
-			"version": "0.3.4"
+			"version": "0.3.4",
+			"size": 158792
 		},
 		{
 			"name" : "Deck Resources",
@@ -1245,7 +1247,8 @@
 			"compatibleCoreVersion": "0.8.1",
 			"systemVersion": "1.3.0",
 			"minimumSystemVersion": "1.2.4",
-			"compatibleSystemVersion": "1.2.4"		
+			"compatibleSystemVersion": "1.2.4",
+			"size": 214005		
 		},
 		{
 			"name" : "Mini-Dungeon Collection",
@@ -1374,7 +1377,8 @@
 			"minimumSystemVersion": "1.2.4",
 			"compatibleSystemVersion": "1.3.2",
 			"system": [ "dnd5e"],
-			"version": "0.3.0"
+			"version": "0.3.0",
+			"size": 265236
 		},
 		{
 			"name": "The Delian Tomb",
@@ -1406,7 +1410,8 @@
 			"systemVersion": "1.2.4",
 			"minimumSystemVersion": "1.2.4",
 			"compatibleSystemVersion": "1.3.2",
-			"version": "0.3.5"
+			"version": "0.3.5",
+			"size": 10279
 		}
 	],
 	"world": [
@@ -1434,7 +1439,8 @@
 			"compatibleCoreVersion": "0.8.1",
 			"systemVersion": "1.3.0",
 			"minimumSystemVersion": "1.2.4",
-			"compatibleSystemVersion": "1.2.4"
+			"compatibleSystemVersion": "1.2.4",
+			"size": 186770
 		},
 		{
 			"name" : "Curse of Strahd",
@@ -1492,7 +1498,8 @@
 				}
 			],
 			"system": [ "DND5e"],
-			"version": "0.3.4"
+			"version": "0.3.4",
+			"size": 158792
 		},
 		{
 			"name" : "Deck Resources",
@@ -1540,7 +1547,8 @@
 			"compatibleCoreVersion": "0.8.6",
 			"systemVersion": "1.3.2",
 			"minimumSystemVersion": "1.2.4",
-			"compatibleSystemVersion": "1.3.2"		
+			"compatibleSystemVersion": "1.3.2",
+			"size": 214005
 		},
 		{
 			"name" : "Mini-Dungeon Collection",
@@ -1654,7 +1662,8 @@
 			],
 			"authors": [{"name": "AAW (Adventure A Week)"}],
 			"system": [ "DND5e"],
-			"version": "0.3.0"
+			"version": "0.3.0",
+			"size": 265236
 		},
 		{
 			"name": "The Delian Tomb",
@@ -1678,7 +1687,8 @@
 			"systemVersion": "1.2.4",
 			"minimumSystemVersion": "1.2.4",
 			"compatibleSystemVersion": "1.3.3",
-			"version": "0.3.5"
+			"version": "0.3.5",
+			"size": 10279
 		}
 	]
 }
