@@ -18,6 +18,7 @@
 				"resource"
 			],
 			"version": "0.8.5",
+			"author": ["tim posney"],
 			"authors": [{"name": "tim posney"}],
 			"coreVersion": "0.8.3",
 			"minimumCoreVersion": "0.6.6",
@@ -39,6 +40,7 @@
 				"resource"
 			],
 			"version": "0.6.8",
+			"author": ["jackkerouac"],
 			"authors": [{"name": "jackkerouac"}],
 			"coreVersion": "string",
 			"minimumCoreVersion": "0.5.5",
@@ -57,6 +59,7 @@
 				"resource"
 			],
 			"version": "0.10.1",
+			"author": ["Felix"],
 			"authors": [{"name": "Felix"}],
 			"minimumCoreVersion": "0.8.0",
 			"compatibleCoreVersion": "0.8.6",
@@ -74,6 +77,7 @@
 				"plugin",
 				"resource"
 			],
+			"author": ["Red Reign"],
 			"authors": [{"name": "Red Reign"}],
 			"system": [ "DnD5e"],
 			"version": "1.5.9",
@@ -93,6 +97,7 @@
 				"resource"
 			],
 			"version": "1.6.1",
+			"author": ["spacemandev","norc"],
 			"authors": [
 				{"name": "spacemandev"},
 				{"name": "norc"}
@@ -113,6 +118,7 @@
 				"resource"
 			],
 			"version": "0.1.3",
+			"author": ["errational"],
 			"authors": [{"name": "errational"}],
 			"minimumCoreVersion": "0.6.6",
 			"compatibleCoreVersion": "0.7.3",
@@ -130,6 +136,7 @@
 				"resource"
 			],
 			"version": "1.0.0",
+			"author": ["Asacolips"],
 			"authors": [{"name": "Asacolips"}],
 			"minimumCoreVersion": "0.8.3",
 			"compatibleCoreVersion": "0.8.6",
@@ -149,6 +156,7 @@
 				"resource"
 			],
 			"version": "1.5.0",
+			"author": ["errational"],
 			"authors": [{"name": "errational"}],
 			"minimumCoreVersion": "0.8.5",
 			"compatibleCoreVersion": "0.8.6",
@@ -167,6 +175,7 @@
 				"resource"
 			],
 			"version": "0.3.1",
+			"author": ["Blitzkraig"],
 			"authors": [{"name": "Blitzkraig"}],
 			"minimumCoreVersion": "0.8.6",
 			"compatibleCoreVersion": "0.8.6",
@@ -185,6 +194,7 @@
 				"resource"
 			],
 			"version": "1.1.0",
+			"author": ["flamewave000"],
 			"authors": [{"name": "flamewave000"}],
 			"minimumCoreVersion": "0.7.9",
 			"compatibleCoreVersion": "0.7.10",
@@ -202,6 +212,7 @@
 				"resource"
 			],
 			"version": "2.0.2",
+			"author": ["DFreds"],
 			"authors": [{"name": "DFreds"}],
 			"minimumCoreVersion": "0.8.6",
 			"compatibleCoreVersion": "0.8.6",
@@ -242,6 +253,7 @@
 				"resource"
 			],
 			"version": "0.8.9",
+			"author": ["tim posney"],
 			"authors": [{"name": "tim posney"}],
 			"compatibleCoreVersion": "0.8.6",
 			"minimumCoreVersion": "0.8.4",
@@ -263,6 +275,7 @@
 			],
 			"version": "4.1.13",
 			"system": [ "DnD5e"],
+			"author": ["Kandashi"],
 			"authors": [{"name": "Kandashi"}],
 			"minimumCoreVersion": "0.7.5",
 			"compatibleCoreVersion": "0.7.9",
@@ -287,6 +300,7 @@
 				"resource"
 			],
 			"version": "1.0.28",
+			"author": ["Ironmonk"],
 			"authors": [{"name": "Ironmonk"}],
 			"minimumCoreVersion": "0.8.0",
 			"compatibleCoreVersion": "0.8.6",
@@ -305,6 +319,7 @@
 				"resource"
 			],
 			"version": "1.3.3",
+			"author": ["Moerill"],
 			"authors": [{"name": "Moerill"}],
 			"minimumCoreVersion": "0.6.0",
 			"compatibleCoreVersion": "1.0.0",
@@ -347,6 +362,7 @@
 				}
 			],			
 			"version": "2.6.1",
+			"author": ["KaKaRoTo"],
 			"authors": [{"name": "KaKaRoTo"}],
 			"minimumCoreVersion": "0.8.4",
 			"compatibleCoreVersion": "0.8.6",
@@ -365,7 +381,8 @@
 				"resource"
 			],
 			"version": "1.0.10",
-			"author": [{"name": "U-man"}],
+			"author": ["U-man"],
+			"authors": [{"name": "U-man"}],
 			"compatibleCoreVersion": "0.8.5",
 			"minimumCoreVersion": "0.8.6",
 			"size": 13737
@@ -413,6 +430,7 @@
 					"name": "lib-wrapper"
 				}
 			],
+			"author": ["Grape Juice"],
 			"authors": [{"name": "Grape Juice"}],
 			"minimumCoreVersion": "0.7.9",
 			"compatibleCoreVersion": "0.7.9",
@@ -429,6 +447,7 @@
 				"plugin",
 				"resource"
 			],
+			"author": ["Shylight"],
 			"authors": [{"name": "Shylight"}],
 			"version": "2.5.8",
 			"minimumCoreVersion": "0.5.0",
@@ -456,6 +475,7 @@
 				"plugin",
 				"resource"
 			],
+			"author": ["Rib_Rob"],
 			"authors": [{"name": "Rib_Rob"}],
 			"system": [ "DnD5e"],
 			"version": "1.4.1",
@@ -474,6 +494,7 @@
 				"plugin",
 				"resource"
 			],
+			"author": ["Innocenti"],
 			"authors": [{"name": "Innocenti"}],
 			"system": [ "DnD5e"],
 			"version": "0.3.1",
@@ -498,6 +519,7 @@
 			"version": "0.2.0",
 			"minimumCoreVersion": "0.7.0",
 			"compatibleCoreVersion": "0.7.9",
+			"author": ["Gazkhan#8192","Wassily#8035"],
 			"authors": [
 				{"name": "Gazkhan#8192"}, 
 				{"name": "Wassily#8035"}
@@ -516,6 +538,7 @@
 				"plugin",
 				"resource"
 			],
+			"author": ["Jinker (Jinker#8073)"],
 			"authors": [{"name": "Jinker (Jinker#8073)"}],
 			"version": "0.2",
 			"minimumCoreVersion": "0.5.0",
@@ -534,6 +557,7 @@
 				"plugin",
 				"resource"
 			],
+			"author": ["Bluesatin"],
 			"authors": [{"name": "Bluesatin"}],
 			"version": "0.2.0",
 			"minimumCoreVersion": "0.7.0",
@@ -551,6 +575,7 @@
 				"plugin",
 				"resource"
 			],
+			"author": ["Kage"],
 			"authors": [{"name": "Kage"}],
 			"system": ["dnd5e"],
 			"version": "0.2.2",
@@ -571,6 +596,7 @@
 				"resource"
 			],
 			"version": "2.5.9",
+			"author": ["ardittristan#0001"],
 			"authors": [{"name": "ardittristan#0001"}],
 			"minimumCoreVersion": "0.5.5",
 			"compatibleCoreVersion": "0.8.1",
@@ -589,6 +615,7 @@
 				"resource"
 			],
 			"version": "2.3.4",
+			"author": ["flamewave000#6766"],
 			"authors": [{"name": "flamewave000#6766"}],
 			"minimumCoreVersion": "0.7.9",
 			"compatibleCoreVersion": "0.7.9",
@@ -601,6 +628,7 @@
 			"entries": [
 				"A library to help other developers package up Scenes and Adventures to solve the following:"
 			],
+			"author": ["Blair McMillan","The League of Extraordinary FoundryVTT Developers"],
 			"authors": [
 				{
 					"name": "Blair McMillan",
@@ -634,6 +662,7 @@
 				"resource"
 			],
 			"version": "1.6.2.0",
+			"author": ["rupin"],
 			"authors": [{"name": "rupin"}],
 			"minimumCoreVersion": "0.6.5",
 			"compatibleCoreVersion": "0.8.6",
@@ -652,6 +681,7 @@
 			],
 			"system": [ "DnD5e"],
 			"version": "3.0.3",
+			"author": ["Jan Ole Peek (ChalkOne)","Charles Miller (Kage)"],
 			"authors": [
 				{"name": "Jan Ole Peek (ChalkOne)"}, 
 				{"name": "Charles Miller (Kage)"}
@@ -672,6 +702,7 @@
 				"resource"
 			],
 			"version": "1.4.0",
+			"author": ["MrVauxs"],
 			"authors": [{"name": "MrVauxs"}],
 			"minimumCoreVersion": "0.7.4",
 			"compatibleCoreVersion": "0.7.10"
@@ -691,6 +722,7 @@
 				"resource"
 			],
 			"version": "1.0.3",
+			"author": ["Manny K SoSo"],
 			"authors": [{"name": "Manny K SoSo"}],
 			"compatibleCoreVersion": "0.7.3",
 			"minimumCoreVersion": "0.6.6",
@@ -708,6 +740,7 @@
 				"resource"
 			],
 			"version": "7.5.1-fvtt2",
+			"author": ["zeel"],
 			"authors": [{"name": "zeel"}],
 			"minimumCoreVersion": "0.0.0",
 			"compatibleCoreVersion": "1.0.0",
@@ -725,6 +758,7 @@
 				"resource"
 			],
 			"version": "1.1.2",
+			"author": ["whelan"],
 			"authors": [{"name": "whelan"}],
 			"minimumCoreVersion": "0.8.5",
 			"compatibleCoreVersion": "0.8.6",
@@ -770,6 +804,7 @@
 				"resource"
 			],
 			"version": "0.8.3",
+			"author": ["tim posney"],
 			"authors": [{"name": "tim posney"}],
 			"minimumCoreVersion": "0.8.4",
 			"compatibleCoreVersion": "0.8.6",
@@ -789,6 +824,7 @@
 				"resource"
 			],
 			"version": "100.3.0.0",
+			"author": ["Zeel"],
 			"authors": [{"name": "Zeel"}],
 			"dependencies": [
 				{
@@ -823,6 +859,7 @@
 				"resource"
 			],
 			"version": "1.5.0",
+			"author": ["grandseiken"],
 			"authors": [{"name": "grandseiken"}],
 			"minimumCoreVersion": "0.6.6",
 			"compatibleCoreVersion": "0.8.6",
@@ -844,6 +881,7 @@
 			"version": "2.1.0",
 			"minimumCoreVersion": "0.6.2",
 			"compatibleCoreVersion": "0.8.5",
+			"author": ["Cody Swendrowski <cody@swendrowski.us>"],
 			"authors": [{"name": "Cody Swendrowski <cody@swendrowski.us>"}],
 			"size": 2769
 		},
@@ -859,6 +897,7 @@
 				"resource"
 			],
 			"version": "1.9.4",
+			"author": ["dev7355608"],
 			"authors": [{"name": "dev7355608"}],
 			"minimumCoreVersion": "0.7.8",
 			"compatibleCoreVersion": "0.8.6",
@@ -879,6 +918,7 @@
 			"version": "0.8.7",
 			"minimumCoreVersion": "0.4.4",
 			"compatibleCoreVersion": "0.8.6",
+			"author": ["KaKaRoTo"],
 			"authors": [{"name": "KaKaRoTo"}],
 			"size": 4
 		},
@@ -906,6 +946,7 @@
 				"resource"
 			],
 			"version": "0.13.8",
+			"author": ["Kyle McKnight"],
 			"authors": [{"name": "Kyle McKnight"}],
 			"minimumCoreVersion": "0.7.5",
 			"compatibleCoreVersion": "0.7.7",
@@ -923,6 +964,7 @@
 				"resource"
 			],
 			"version": "1.6.6",
+			"author": ["KaKaRoTo"],
 			"authors": [{"name": "KaKaRoTo"}],
 			"minimumCoreVersion": "0.7.6",
 			"compatibleCoreVersion": "0.8.6",
@@ -941,6 +983,7 @@
 				"resource"
 			],
 			"version": "2.4.7",
+			"author": ["Sunspots"],
 			"authors": [{"name": "Sunspots"}],
 			"minimumCoreVersion": "0.6.5",
 			"compatibleCoreVersion": "0.8.6",
@@ -960,6 +1003,7 @@
 			"version": "0.1.3",
 			"minimumCoreVersion": "0.7.9",
 			"compatibleCoreVersion":"0.8.6",
+			"author": ["DM_miX"],
 			"authors": [{"name": "DM_miX"}],
 			"size": 103
 		},
@@ -976,6 +1020,7 @@
 				"resource"
 			],
 			"version": "v1.2.63",
+			"author": ["vigorator"],
 			"authors": [{"name": "vigorator"}],
 			"minimumCoreVersion": "0.7.9",
 			"compatibleCoreVersion": "0.8.6",
@@ -993,6 +1038,7 @@
 				"resource"
 			],
 			"version": "1.5.2",
+			"author": ["Blitz"],
 			"authors": [{"name": "Blitz"}],
 			"minimumCoreVersion": "0.6.2",
 			"compatibleCoreVersion": "0.8.6",
@@ -1011,6 +1057,7 @@
 				"resource"
 			],
 			"version": "0.8.6",
+			"author": ["tim posney"],
 			"authors": [{"name": "tim posney"}],
 			"minimumCoreVersion": "0.5.3",
 			"compatibleCoreVersion": "0.8.6",
@@ -1027,6 +1074,7 @@
 				"plugin",
 				"resource"
 			],
+			"author": ["javieros"],
 			"authors": [{"name": "javieros"}],
 			"version": "1.2.0",
 			"minimumCoreVersion": "0.6.0",
@@ -1045,6 +1093,7 @@
 				"plugin",
 				"resource"
 			],
+			"author": ["Esposito"],
 			"authors": [{"name": "Esposito"}],
 			"systems":["dnd5e","dungeonworld","pf2e","wfrp4e","sfrpg","sw5e","demonlord","pf1","lancer","D35E","swade","starwarsffg","tormenta20","blades-in-the-dark","symbaroum","od6s","alienrpg","cthack"],
 			"version": "1.0.22",
@@ -1065,6 +1114,7 @@
 				"plugin",
 				"resource"
 			],
+			"author": ["SecretFire","sPOiDar","Zimm","Lozalojo","Moerill","KLO","dev7355608","Mestre Digital"],
 			"authors": [
 				{ "name": "SecretFire"},
 				{ "name": "sPOiDar"},
@@ -1093,6 +1143,7 @@
 				"resource"
 			],
 			"version": "0.2.1",
+			"author": ["MrRoAdd"],
 			"authors": [{"name": "MrRoAdd"}],
 			"minimumCoreVersion": "0.7.0",
 			"compatibleCoreVersion": "0.7.9",
@@ -1109,13 +1160,13 @@
 				"plugin",
 				"resource"
 			],
+			"author": ["kckaiwei"],
 			"authors": [{"name": "kckaiwei"}],
 			"version": "2.7.3",
 			"minimumCoreVersion": "0.7.5",
 			"compatibleCoreVersion": "0.7.9",
 			"size": 7469
 		},
-
 		{
 			"name" : "BOK! Attack of the Giant Chicken",
 			"source": "baotgc",
@@ -1123,6 +1174,7 @@
 			"description": [
 				"<h1>BOK! Attack of the Giant Chicken</h1>\n<p>Help a farmer with his giant chicken in this unusual adventure!</p>\n<p> </p>\n<p>Bok! Attack of the Giant Chicken is a Fifth Edition adventure designed for three-to-five 2nd-to-4th-level characters and is optimized for a party of four 2nd-level characters. This side quest fits easily into any campaign setting. Higher-level parties—especially those with access to dispel magic—won’t find this adventure challenging. Characters of 2nd level who complete this adventure should earn enough experience to advance to 3rd level. Award 3rd- and 4th-level parties experience points based on the adventure’s challenges.</p>\n<p> </p>\n<h2>Backstory</h2>\n<p>Farmer Hershel’s prize chicken, Hershel Junior, somehow got into an experimental potion of growth, causing Hershel Junior to go from a Tiny fowl to a Huge bird of doom. Herschel now stands over 20-feet tall!</p>\n<p> </p>\n<p>Supposedly, the potion will last for no longer than four hours. Trouble is, Hershel Junior in his bigger state is now extremely hard to control. To make things worse, Hershel Junior thinks everyone looks like an insect—and chickens eat insects!</p>\n<p> </p>\n<h2>Features</h2>\n<p>As a DMDave adventure, you can expect the following features and benefits:</p>\n<ul>\n<li><strong>Original Artwork</strong>. DMDave-brand products include their own original artwork for you to enjoy.</li>\n<li><strong>Professional Cartography.</strong> Tom Cartos designed the encounter maps around the farm in this adventure. His maps bring life to every adventure location with remarkable attention to detail.</li>\n<li><strong>One-Click Macros.</strong> Run faster combat sessions with one click macros. Simply select the token and watch as macros for core features pop up. The macro auto rolls the initiative, saving throws, and resistances to make your game run smoother.</li>\n<li><strong>Endless Customization Options</strong>. Thanks to its adaptable nature, the various locations in Ostenwold can fit into any campaign setting.</li>\n</ul>\n<p> </p>\n<h3>Product Information</h3>\n<blockquote>\n<ul>\n<li>System: <strong>D&amp;D 5E </strong></li>\n<li>Starting Level: <strong>Low (2-4)</strong></li>\n<li>Length: <strong>Long Campaign</strong></li>\n</ul>\n</blockquote>\n<p> </p>\n<hr />\n<p><strong>DISCLAIMER:</strong> The use of this is meant for use for your personal use, and only if you legally possess such in accordance with your local laws.</p>"		
 			],
+			"author": ["DMDave"],
 			"authors": [{"name": "DMDave"}],
 			"type": [ 
 				"homebrew"
@@ -1157,6 +1209,7 @@
 				"min": 1,
 				"max": 10
 			},			
+			"author": ["Wizards of the Coast","Chris Perkins","Kim Mohan","Jeremy Crawford","Kate Irwin","Tracy and Laura Hickman","Adam Lee","Richard Whitters"],
 			"authors": [
 				{"name": "Wizards of the Coast"},
 				{"name": "Chris Perkins"},
@@ -1180,7 +1233,8 @@
 			],
 			"type": [ 
 				 "resource"
-			],			
+			],		
+			"author": ["Nord Game","Paul Weber","WotC","Paizo","Deck of Many (HitPoint Press)","VoivodeVukodlak","Epic Isometric (Alex Drummand)"],	
 			"authors": [
 				{
 				  "name" : "Nord Game",
@@ -1230,6 +1284,7 @@
 			"entries": [
 				"<h1>10 Mini Adventures for Level 3 Heroes</h1>\n<p>From the depths of the darkest dungeons to primal dangers of the untamed wilderness, these adventures bind ancient mysteries, forgotten lore, and the allure of epic quests. Adventurers will explore realms unknown, face deadly foes, and discover tantalizing treasures and magnificent artifacts.</p>\n<p>&nbsp;</p>\n<p>AAW Games brings you this collection of 10 complete and ready-to-run scenarios designed especially for discerning Game Masters who want exciting adventures and need them now. Begin the next chapter of your campaign!</p>\n<p>&nbsp;</p>\n<p>Themed and organized for convenience, the Mini-Dungeon Tome for Level 3 PCs provides setting-neutral fantasy adventures suitable for parties at level 3. With all reference material included, this add-on holds everything you for hours of adventuring.</p>\n<p>&nbsp;</p>\n<p>Offering contributions from all-star authors and game designers, the Mini-Dungeon Tome for Roll20 is the series you have been searching for. Always have a new adventure at the ready and test the mettle of even the most experienced players!</p>\n<p>&nbsp;</p>\n<p>The following adventures are included in this add-on:</p>\n<p>&nbsp;</p>\n<h2>The Case of the Scrupulous Pawnbroker</h2>\n<p style=\"text-align: right;\"><em>by Stefanos Patelis for 4 heroes at level 3</em></p>\n<p>The PCs may have used the services of a local half-elven pawnbroker, Latricus, known to be stern but fair in his dealings. Now they find his store open, none of his assistants present, and the door to his basement office (where serious transactions took place) invitingly ajar. Maron, a nasty sorcerer, and her thugs have recently decided to change the nature of their transaction with the pawnbroker and the PCs are just in time.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<h2>The Blight</h2>\n<p style=\"text-align: right;\"><em>by Colin Stricklin for 4 heroes at level 3</em></p>\n<p>For nearly a thousand years this mighty oak stood as monarch of the forest, with its dryad as proud steward. When a self-absorbed local druid sought a new home, however, both dryad and tree became ill. This once-comfortable treetop dwelling now lies at the heart of a rotting forest. For even the greatest trees can die, going slowly bad from within.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<h2>The Unquenched Thirst</h2>\n<p style=\"text-align: right;\"><em>by Michael Allen for 4-5 heroes at level 3</em></p>\n<p>The tiny isle of Sandspit is a favorite place to maroon recalcitrant shipmates, for across the bay, the headland falls are visible to castaways. Wicked currents prevent escape from Sandspit, and the unfortunates discarded there slowly die of thirst in sight of the lifegiving waters. One such piece of tortured jetsam was Captain Staid Merrik, who rose as a wight and walked under the currents to reach the cup of life long denied. The foul magic of undeath clinging to Merrik ripped the sustenance out of the waters at the base of the falls, and as long as Merrik's shade resides in a cave behind them, will continue to do so, to the detriment of creatures native to the headland, or watering parties from passing vessels.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<h2>The Phase Spider Lair</h2>\n<p style=\"text-align: right;\"><em>by JJonathan Ely for 4-6 heroes at level 3</em></p>\n<p>TThe mountain town of Kraga has changed hands many times; strategically important for its location close to rich veins of iron and copper, it was originally a dwarven community who built structures both above and deep below the ground. Periodically attacked and razed by various tribes of orcs, ogres, stone giants, and humans, it has been rebuilt at least four times, leaving the deepest and most ancient structures accessible only by the sewers and subterranean water courses.</p>\n<p>&nbsp;</p>\n<p>Now a heavily defended border town providing refuge for many travelers passing through the mountains, it also purifies much of the ore pulled from the many mines near the town. Recently the town militia have noted a number of missing people who have entered the town but have never left&mdash;investigations have led them to the warren of ancient tunnels and sewers under the city, and they will pay handsomely for adventurers to investigate these disappearances&hellip;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<h2>Lair of the Mad Druid</h2>\n<p style=\"text-align: right;\"><em>by Louis Agresta for 4-6 heroes at level 3</em></p>\n<p>The forest primeval. Brave settlers seeking better lives gather their families and venture beneath her branches. They walk her leaf-dappled aisles, violate her ancient green stillness. They fell trees, build homes, plow the earth, and&hellip;vanish.</p>\n<p>&nbsp;</p>\n<p>The local magistrate, tired of discovering blood-smeared doorways where she should find cringing taxpayers, hires the party to investigate the disappearances. Of course, she fails to mention her first wave of would-be settlers massacred a tribe of forest gnomes in the very valley where her peasants now disappear, nor does she know a forest gnome druid survived. A Mad Druid bent on vengeance for his murdered people.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<h2>Neotomas' Paradise</h2>\n<p style=\"text-align: right;\"><em>by Michael Smith for 3-4 heroes at level 3-4</em></p>\n<p>Recently, the homeless of the city have begun to disappear. Few seem to care, and many are actually happy to see them gone. The local magistrate is not, however, and wants these disappearances looked into. Rumors have circulated that, under the cover of night, someone, or something, has been seen descending into the sewers below the market district via a grate in the street. The magistrate has tasked the PCs with investigating the sewers to see if any clues can be found relating to the recent disappearances.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<h2>Fitcher's</h2>\n<p style=\"text-align: right;\"><em>by Stephen Yeardley for 3-4 heroes at level 3-4</em></p>\n<p>\"Fitcher\" Lintu is a necromancer, avant-garde taxidermist, and one of the most intelligent, successful, and evil people in Morsain. Outwardly helpful about undead, he's a serial killer that happily sources &ldquo;raw materials&rdquo; himself.</p>\n<p>&nbsp;</p>\n<p>Lintu has almost finished his masterpiece secret tableau: two idealized humanoids as aerial lovers. But he can't resist adding &ldquo;perfect&rdquo; body parts, and he goes to bizarre lengths to get them. Every hook has happened recently; the PCs effectively follow up on all three.</p>\n<p>&nbsp;</p>\n<p>Additionally, Lintu wants part of a charismatic PC. Unless the PCs are careful, they might walk into a trap. His raven familiar secretly watches for approaching humanoids from a hidden perch, informs Lintu of arrivals via a talk-tube before they enter, and then chats to people while Lintu prepares. This is a no-holds-barred show-down with a powerful caster&mdash;the PCs had best take care!</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<h2>When Goblins Die, No Comets Are Seen</h2>\n<p style=\"text-align: right;\"><em>by Stephen Yeardley for 4-6 heroes at level 3-4</em></p>\n<p>After delving into the upper tunnels of a recently abandoned mine pursuing mutated goblins (in Doubt Not the Stars Are Fire), the party follows some buckled minecart rails, finding rough tunnels with unexpected chambers at their end. A palpable sense of fear pervades the area.</p>\n<p>&nbsp;</p>\n<p>The last members of a decimated tribe fled into these depths, but have no idea what to do now. They reached Area 5, but felt the sudden appearance of a worked room meant more trouble. Infamous amongst their kind, and fearing an unheralded death, they're currently psyching themselves to fight back to the surface.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<h2>Last Stand of the Forgotten Pirate</h2>\n<p style=\"text-align: right;\"><em>by Michael McCarthy for 4 heroes at level 3-5</em></p>\n<p>After losing his ship, his crew, and his leg to a sea monster, the pirate Gnarltooth retired to a much more peaceful profession: fishing. Yet even after two decades spent mostly ashore, Gnarltooth never quite forgot about the creature that scuttled him, nor did it forget him. The pair clashed repeatedly over the years, until Gnarltooth decided to end things one way or another. He hired a druid to call and bind &ldquo;The Beast&rdquo; here until one of them finally bested the other for good.</p>\n<p>&nbsp;</p>\n<p>That same druid has asked the PCs to check in on Gnarltooth. The old orc had made a lot of promises about what he'd do after The Beast was finally put down, and his few friends would like to see him able to pay out. Of course if he didn't make it, there was no telling what treasures the old salt still had hidden in his modest shack.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<h2>With a Candlestick</h2>\n<p style=\"text-align: right;\"><em>by Michael McCarthy for 4 heroes at level 3-5</em></p>\n<p>Lord and Lady Scarlet are wealthy, well connected and generally well liked&mdash;for nobility. Their social talents have lead to them hosting a national embassy on their estate, which now see a constant exchange of visiting nobility of all stripes.</p>\n<p>&nbsp;</p>\n<p>As one of the most well connected people in politics, Lord Scarlet is a perfect person to ask for a favor that requires political clout, which is why the PCs are paying him a visit. Yet they arrive at an unfortunate time. Mere minutes ago, Lord Scarlet was found dead in the library of his own embassy, in the middle of hosting a small group of business partners to discuss an upcoming venture.</p>\n<p>&nbsp;</p>\n<p>This Version of MDT 5E: Level 3 Adventures includes the entire content of these 5e adventures, fully integrated into the platform.&nbsp;</p>\n<ul>\n<li>10 encounter maps with Dynamic Lighting, Advanced Fog of War, and location numbers separated onto the GM layer</li>\n<li>47 NPCs and monsters linked to Character entries in the Journal, with Roll20 5th Edition OGL character sheets and clickable actions</li>\n<li>Cross-linked handouts throughout the adventure with links into the 5e compendium and automated damage dice rolls for traps</li>\n<li>Rollable tables for random events and shapeshifters</li>\n</ul>\n<p>&nbsp;</p>\n<hr />\n<p><strong>DISCLAIMER:</strong>&nbsp;The use of this is meant for use for your personal use, and only if you legally possess such in accordance with your local laws.</p>"
 			],
+			"author": ["AAW (Adventure A Week)"],
 			"authors": [{"name": "AAW (Adventure A Week)"}],
 			"type": [ 
 				"homebrew",
@@ -1255,7 +1310,7 @@
 			"source": "tDT",
 			"manifesturl" : "https://foundry.5e.tools/plutonium/brw-tdt/module.json",
 			"description": [
-				"The Delian Tomb is a low-level one-shot introduction adventure featuring a tomb of an ancient order of knights infested by goblins.\n\n<blockquote>\n<em>System: <strong>D&amp;D 5E<br/></strong></em>\n\n<em>Starting Level: <strong>1st-3rd</strong></em>\n\n<em>Length: <strong>One Shot</strong></em>\n</blockquote>\n\nThe Delian Tomb is an adventure originally outlined in <a href=\"https://www.youtube.com/watch?v=zTD2RZz6mlo\" target=\"_blank\">Matt Colville's first running the game video</a>."
+				"The Delian Tomb is a low-level one-shot introduction adventure featuring a tomb of an ancient order of knights infested by goblins.\n\n<blockquote>\n<em>System: <strong>D&amp;D 5E<br/></strong></em>\n\n<em>Starting Level: <strong>1st-3rd</strong></em>\n\n<em>Length: <strong>One Shot</strong></em>\n</blockquote>\n\nThe Delian Tomb is an adventure originally outlined in <a href=\"https://www.youtube.com/watch?v=zTD2RZz6mlo \" target=\"_blank\">Matt Colville's first running the game video</a>."
 			],
 			"type": [ 
 				"homebrew"
@@ -1265,6 +1320,7 @@
 					"max": 3
 			},
 			"length": "one shot",
+			"author": ["Foundry Worlds Team"],
 			"authors": [{"name": "Foundry Worlds Team"}],
 			"minimumCoreVersion": "0.7.9",
 			"compatibleCoreVersion": "0.7.9",
@@ -1283,6 +1339,7 @@
 			"description": [
 				"<h1>BOK! Attack of the Giant Chicken</h1>\n<p>Help a farmer with his giant chicken in this unusual adventure!</p>\n<p> </p>\n<p>Bok! Attack of the Giant Chicken is a Fifth Edition adventure designed for three-to-five 2nd-to-4th-level characters and is optimized for a party of four 2nd-level characters. This side quest fits easily into any campaign setting. Higher-level parties—especially those with access to dispel magic—won’t find this adventure challenging. Characters of 2nd level who complete this adventure should earn enough experience to advance to 3rd level. Award 3rd- and 4th-level parties experience points based on the adventure’s challenges.</p>\n<p> </p>\n<h2>Backstory</h2>\n<p>Farmer Hershel’s prize chicken, Hershel Junior, somehow got into an experimental potion of growth, causing Hershel Junior to go from a Tiny fowl to a Huge bird of doom. Herschel now stands over 20-feet tall!</p>\n<p> </p>\n<p>Supposedly, the potion will last for no longer than four hours. Trouble is, Hershel Junior in his bigger state is now extremely hard to control. To make things worse, Hershel Junior thinks everyone looks like an insect—and chickens eat insects!</p>\n<p> </p>\n<h2>Features</h2>\n<p>As a DMDave adventure, you can expect the following features and benefits:</p>\n<ul>\n<li><strong>Original Artwork</strong>. DMDave-brand products include their own original artwork for you to enjoy.</li>\n<li><strong>Professional Cartography.</strong> Tom Cartos designed the encounter maps around the farm in this adventure. His maps bring life to every adventure location with remarkable attention to detail.</li>\n<li><strong>One-Click Macros.</strong> Run faster combat sessions with one click macros. Simply select the token and watch as macros for core features pop up. The macro auto rolls the initiative, saving throws, and resistances to make your game run smoother.</li>\n<li><strong>Endless Customization Options</strong>. Thanks to its adaptable nature, the various locations in Ostenwold can fit into any campaign setting.</li>\n</ul>\n<p> </p>\n<h3>Product Information</h3>\n<blockquote>\n<ul>\n<li>System: <strong>D&amp;D 5E </strong></li>\n<li>Starting Level: <strong>Low (2-4)</strong></li>\n<li>Length: <strong>Long Campaign</strong></li>\n</ul>\n</blockquote>\n<p> </p>\n<hr />\n<p><strong>DISCLAIMER:</strong> The use of this is meant for use for your personal use, and only if you legally possess such in accordance with your local laws.</p>"
 			],
+			"author": ["DMDave"],
 			"authors": [
 				{"name": "DMDave"}
 			],
@@ -1302,6 +1359,7 @@
 			"description": [
 				"<p>Unravel the mysteries of Ravenloft in this dread adventure for the world’s greatest roleplaying game</p>\n<p> </p>\n<p>Under raging storm clouds, the vampire Count Strahd von Zarovich stands silhouetted against the ancient walls of Castle Ravenloft. Rumbling thunder pounds the castle spires. The wind’s howling increases as he turns his gaze down toward the village of Barovia. A lightning flash rips through the darkness, but Strahd is gone. Only the howling of the wind fills the midnight air. The master of Castle Ravenloft is having guests for dinner—and you are invited.</p>\n<p> </p>\n<p>• A fantasy-horror adventure for characters levels 1-10, Curse of Strahd provides everything a Dungeon Master needs to create an exciting and memorable play experience.</p>\n<p>• Fans of the Dungeons &amp; Dragons Roleplaying Game can have additional adventures in Ravenloft by participating in the D&amp;D Adventurers League organized play program.</p>\n<p>• Included: a 54-card deck by Gale Force Nine representing the Tarokka cards, used by the fortune-teller Madam Eva in the adventure to randomly determine key aspects of the adventure. Also available from GF9 is a Curse of Strahd Dungeon Master's Screen.</p>\n<p>• Written in consultation with Tracy Hickman and Laura Hickman, creators of the original Ravenloft adventure.</p>\n<p> </p>\n<p>Product Information</p>\n<p>System: D&amp;D 5E (Ravenloft)</p>\n<p>Starting Level: Low (1-10)</p>\n<p>Length: Long Campaign</p>\n<p>Installation: World</p>\n<p> </p>\n<p>Curse of Strahd is produced by Wizards of the Coast. It was written by Chris Perkins, edited by Kim Mohan and Jeremy Crawford, and art directed by Kate Irwin. The adventure incorporates material from the original Ravenloft adventure as well as new story content created by Tracy and Laura Hickman, Chris Perkins, Adam Lee, Richard Whitters, and Jeremy Crawford.</p>\n<p> </p>\n<p><strong>DISCLAIMER:</strong> The use of this is meant for your personal use, and only if you legally possess such in accordance with your local laws.</p>"
 			],
+			"author": ["Wizards of the Coast", "Chris Perkins", "Kim Mohan","Jeremy Crawford","Kate Irwin","Tracy and Laura Hickman","Adam Lee","Richard Whitters","Foundry modules Team"],
 			"authors": [
 				{
 					"name": "Wizards of the Coast"
@@ -1342,6 +1400,7 @@
 			"description": [
 				"<p>A Collection of Various Decks for Tabletop Games, or as Accessories with another Games</p>"
 			],
+			"author": ["Nord Game","Paul Weber","WotC","Nord Game","Paizo","Deck of Many (HitPoint Press)","VoivodeVukodlak","Epic Isometric (Alex Drummand)"],
 			"authors": [
 				{
 				  "name" : "Nord Game",
@@ -1391,6 +1450,7 @@
 			"description": [
 				"<h1>10 Mini Adventures for Level 3 Heroes</h1>\n<p>From the depths of the darkest dungeons to primal dangers of the untamed wilderness, these adventures bind ancient mysteries, forgotten lore, and the allure of epic quests. Adventurers will explore realms unknown, face deadly foes, and discover tantalizing treasures and magnificent artifacts.</p>\n<p>&nbsp;</p>\n<p>AAW Games brings you this collection of 10 complete and ready-to-run scenarios designed especially for discerning Game Masters who want exciting adventures and need them now. Begin the next chapter of your campaign!</p>\n<p>&nbsp;</p>\n<p>Themed and organized for convenience, the Mini-Dungeon Tome for Level 3 PCs provides setting-neutral fantasy adventures suitable for parties at level 3. With all reference material included, this add-on holds everything you for hours of adventuring.</p>\n<p>&nbsp;</p>\n<p>Offering contributions from all-star authors and game designers, the Mini-Dungeon Tome for Roll20 is the series you have been searching for. Always have a new adventure at the ready and test the mettle of even the most experienced players!</p>\n<p>&nbsp;</p>\n<p>The following adventures are included in this add-on:</p>\n<p>&nbsp;</p>\n<h2>The Case of the Scrupulous Pawnbroker</h2>\n<p style=\"text-align: right;\"><em>by Stefanos Patelis for 4 heroes at level 3</em></p>\n<p>The PCs may have used the services of a local half-elven pawnbroker, Latricus, known to be stern but fair in his dealings. Now they find his store open, none of his assistants present, and the door to his basement office (where serious transactions took place) invitingly ajar. Maron, a nasty sorcerer, and her thugs have recently decided to change the nature of their transaction with the pawnbroker and the PCs are just in time.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<h2>The Blight</h2>\n<p style=\"text-align: right;\"><em>by Colin Stricklin for 4 heroes at level 3</em></p>\n<p>For nearly a thousand years this mighty oak stood as monarch of the forest, with its dryad as proud steward. When a self-absorbed local druid sought a new home, however, both dryad and tree became ill. This once-comfortable treetop dwelling now lies at the heart of a rotting forest. For even the greatest trees can die, going slowly bad from within.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<h2>The Unquenched Thirst</h2>\n<p style=\"text-align: right;\"><em>by Michael Allen for 4-5 heroes at level 3</em></p>\n<p>The tiny isle of Sandspit is a favorite place to maroon recalcitrant shipmates, for across the bay, the headland falls are visible to castaways. Wicked currents prevent escape from Sandspit, and the unfortunates discarded there slowly die of thirst in sight of the lifegiving waters. One such piece of tortured jetsam was Captain Staid Merrik, who rose as a wight and walked under the currents to reach the cup of life long denied. The foul magic of undeath clinging to Merrik ripped the sustenance out of the waters at the base of the falls, and as long as Merrik's shade resides in a cave behind them, will continue to do so, to the detriment of creatures native to the headland, or watering parties from passing vessels.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<h2>The Phase Spider Lair</h2>\n<p style=\"text-align: right;\"><em>by JJonathan Ely for 4-6 heroes at level 3</em></p>\n<p>TThe mountain town of Kraga has changed hands many times; strategically important for its location close to rich veins of iron and copper, it was originally a dwarven community who built structures both above and deep below the ground. Periodically attacked and razed by various tribes of orcs, ogres, stone giants, and humans, it has been rebuilt at least four times, leaving the deepest and most ancient structures accessible only by the sewers and subterranean water courses.</p>\n<p>&nbsp;</p>\n<p>Now a heavily defended border town providing refuge for many travelers passing through the mountains, it also purifies much of the ore pulled from the many mines near the town. Recently the town militia have noted a number of missing people who have entered the town but have never left&mdash;investigations have led them to the warren of ancient tunnels and sewers under the city, and they will pay handsomely for adventurers to investigate these disappearances&hellip;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<h2>Lair of the Mad Druid</h2>\n<p style=\"text-align: right;\"><em>by Louis Agresta for 4-6 heroes at level 3</em></p>\n<p>The forest primeval. Brave settlers seeking better lives gather their families and venture beneath her branches. They walk her leaf-dappled aisles, violate her ancient green stillness. They fell trees, build homes, plow the earth, and&hellip;vanish.</p>\n<p>&nbsp;</p>\n<p>The local magistrate, tired of discovering blood-smeared doorways where she should find cringing taxpayers, hires the party to investigate the disappearances. Of course, she fails to mention her first wave of would-be settlers massacred a tribe of forest gnomes in the very valley where her peasants now disappear, nor does she know a forest gnome druid survived. A Mad Druid bent on vengeance for his murdered people.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<h2>Neotomas' Paradise</h2>\n<p style=\"text-align: right;\"><em>by Michael Smith for 3-4 heroes at level 3-4</em></p>\n<p>Recently, the homeless of the city have begun to disappear. Few seem to care, and many are actually happy to see them gone. The local magistrate is not, however, and wants these disappearances looked into. Rumors have circulated that, under the cover of night, someone, or something, has been seen descending into the sewers below the market district via a grate in the street. The magistrate has tasked the PCs with investigating the sewers to see if any clues can be found relating to the recent disappearances.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<h2>Fitcher's</h2>\n<p style=\"text-align: right;\"><em>by Stephen Yeardley for 3-4 heroes at level 3-4</em></p>\n<p>\"Fitcher\" Lintu is a necromancer, avant-garde taxidermist, and one of the most intelligent, successful, and evil people in Morsain. Outwardly helpful about undead, he's a serial killer that happily sources &ldquo;raw materials&rdquo; himself.</p>\n<p>&nbsp;</p>\n<p>Lintu has almost finished his masterpiece secret tableau: two idealized humanoids as aerial lovers. But he can't resist adding &ldquo;perfect&rdquo; body parts, and he goes to bizarre lengths to get them. Every hook has happened recently; the PCs effectively follow up on all three.</p>\n<p>&nbsp;</p>\n<p>Additionally, Lintu wants part of a charismatic PC. Unless the PCs are careful, they might walk into a trap. His raven familiar secretly watches for approaching humanoids from a hidden perch, informs Lintu of arrivals via a talk-tube before they enter, and then chats to people while Lintu prepares. This is a no-holds-barred show-down with a powerful caster&mdash;the PCs had best take care!</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<h2>When Goblins Die, No Comets Are Seen</h2>\n<p style=\"text-align: right;\"><em>by Stephen Yeardley for 4-6 heroes at level 3-4</em></p>\n<p>After delving into the upper tunnels of a recently abandoned mine pursuing mutated goblins (in Doubt Not the Stars Are Fire), the party follows some buckled minecart rails, finding rough tunnels with unexpected chambers at their end. A palpable sense of fear pervades the area.</p>\n<p>&nbsp;</p>\n<p>The last members of a decimated tribe fled into these depths, but have no idea what to do now. They reached Area 5, but felt the sudden appearance of a worked room meant more trouble. Infamous amongst their kind, and fearing an unheralded death, they're currently psyching themselves to fight back to the surface.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<h2>Last Stand of the Forgotten Pirate</h2>\n<p style=\"text-align: right;\"><em>by Michael McCarthy for 4 heroes at level 3-5</em></p>\n<p>After losing his ship, his crew, and his leg to a sea monster, the pirate Gnarltooth retired to a much more peaceful profession: fishing. Yet even after two decades spent mostly ashore, Gnarltooth never quite forgot about the creature that scuttled him, nor did it forget him. The pair clashed repeatedly over the years, until Gnarltooth decided to end things one way or another. He hired a druid to call and bind &ldquo;The Beast&rdquo; here until one of them finally bested the other for good.</p>\n<p>&nbsp;</p>\n<p>That same druid has asked the PCs to check in on Gnarltooth. The old orc had made a lot of promises about what he'd do after The Beast was finally put down, and his few friends would like to see him able to pay out. Of course if he didn't make it, there was no telling what treasures the old salt still had hidden in his modest shack.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<h2>With a Candlestick</h2>\n<p style=\"text-align: right;\"><em>by Michael McCarthy for 4 heroes at level 3-5</em></p>\n<p>Lord and Lady Scarlet are wealthy, well connected and generally well liked&mdash;for nobility. Their social talents have lead to them hosting a national embassy on their estate, which now see a constant exchange of visiting nobility of all stripes.</p>\n<p>&nbsp;</p>\n<p>As one of the most well connected people in politics, Lord Scarlet is a perfect person to ask for a favor that requires political clout, which is why the PCs are paying him a visit. Yet they arrive at an unfortunate time. Mere minutes ago, Lord Scarlet was found dead in the library of his own embassy, in the middle of hosting a small group of business partners to discuss an upcoming venture.</p>\n<p>&nbsp;</p>\n<p>This Version of MDT 5E: Level 3 Adventures includes the entire content of these 5e adventures, fully integrated into the platform.&nbsp;</p>\n<ul>\n<li>10 encounter maps with Dynamic Lighting, Advanced Fog of War, and location numbers separated onto the GM layer</li>\n<li>47 NPCs and monsters linked to Character entries in the Journal, with Roll20 5th Edition OGL character sheets and clickable actions</li>\n<li>Cross-linked handouts throughout the adventure with links into the 5e compendium and automated damage dice rolls for traps</li>\n<li>Rollable tables for random events and shapeshifters</li>\n</ul>\n<p>&nbsp;</p>\n<hr />\n<p><strong>DISCLAIMER:</strong>&nbsp;The use of this is meant for use for your personal use, and only if you legally possess such in accordance with your local laws.</p>"
 			],
+			"author": ["AAW (Adventure A Week)"],
 			"authors": [{"name": "AAW (Adventure A Week)"}],
 			"system": [ "DND5e"],
 			"version": "0.3.0",
@@ -1401,8 +1461,9 @@
 			"source": "tDT",
 			"manifesturl" : "https://foundry.5e.tools/plutonium/brw-tdt/world.json",
 			"description": [
-				"The Delian Tomb is a low-level one-shot introduction adventure featuring a tomb of an ancient order of knights infested by goblins.\n\n<blockquote>\n<em>System: <strong>D&amp;D 5E<br/></strong></em>\n\n<em>Starting Level: <strong>1st-3rd</strong></em>\n\n<em>Length: <strong>One Shot</strong></em>\n</blockquote>\n\nThe Delian Tomb is an adventure originally outlined in <a href=\"https://www.youtube.com/watch?v=zTD2RZz6mlo\" target=\"_blank\">Matt Colville's first running the game video</a>."
+				"The Delian Tomb is a low-level one-shot introduction adventure featuring a tomb of an ancient order of knights infested by goblins.\n\n<blockquote>\n<em>System: <strong>D&amp;D 5E<br/></strong></em>\n\n<em>Starting Level: <strong>1st-3rd</strong></em>\n\n<em>Length: <strong>One Shot</strong></em>\n</blockquote>\n\nThe Delian Tomb is an adventure originally outlined in <a href=\"https://www.youtube.com/watch?v=zTD2RZz6mlo \" target= \"_blank\">Matt Colville's first running the game video</a>."
 			],
+			"author": ["Foundry Worlds Team"],
 			"authors": [{"name": "Foundry Worlds Team"}],
 			"minimumCoreVersion": "0.7.9",
 			"compatibleCoreVersion": "0.7.10",
