@@ -1278,6 +1278,47 @@
 			"size": 214005		
 		},
 		{
+			"name" : "Tales from the Yawning Portal: The Forge of Fury",
+			"source": "cor-tftyp-tfof",
+			"manifesturl" : "https://foundry.5e.tools/plutonium/cor-tftyp-tfof/module.json",
+			"description": [
+				"<p>The Forge of Fury, written by Richard Baker, was published in 2000 shortly after The Sunless Citadel. Characters who succeeded in that mission and advanced to 3rd level were now ready to take on the challenges of a ruined dwarven fortress.</p>\n<p> </p>\n<p>Like its predecessor, The Forge of Fury is tailored to provide increasingly tougher threats as the characters make their way through the fortress. Those who survive the experience can expect to advance to 5th level—seasoned adventurers ready to strive for greater glory and renown.</p>\n<p> </p>\n<p>You can purchase this adventure individually, or buy all seven adventures at once in the full bundle of Tales from the Yawning Portal.</p>\n<p> </p>\n<h3>Product Information</h3>\n<blockquote>\n<ul>\n<li>System: <strong>D&amp;D 5E</strong></li>\n<li>Starting Level: <strong>Low (3)</strong></li>\n<li>Length: <strong>One Shot</strong></li>\n</ul>\n</blockquote>\n<p> </p>\n<p> </p>\n<hr />\n<p><strong>DISCLAIMER:</strong> The use of this is meant for use for your personal use, and only if you legally possess such in accordance with your local laws.</p>"
+			],
+			"type": [ 
+				"core"
+			],
+			"level": {
+					"min": 3,
+					"max": 3
+			},
+			"length": "one shot",
+		    "author":[
+				"Richard Baker",
+				"WotC", 
+				"Foundry Worlds Team" 
+		    ],
+			"authors": [
+				{
+				  "name" : "Richard Baker"
+				},
+				{
+				  "name" : "WotC",
+				  "url": "https://www.wizards.com"
+				},
+				{
+				  "name" : "Foundry Worlds Team"
+				}
+			],
+			"system": [ "DND5e"],
+			"version":"0.3.0",
+			"coreVersion":"0.7.10",
+			"minimumCoreVersion":"0.7.9",
+			"compatibleCoreVersion":"0.7.10",
+			"minimumSystemVersion":"1.2.2",
+			"compatibleSystemVersion":"1.2.4",
+			"size": 158911
+		},
+		{
 			"name" : "Mini-Dungeon Collection",
 			"source": "min-dun",
 			"manifesturl" : "https://foundry.5e.tools/plutonium/min-dun/module.json",
@@ -1442,6 +1483,47 @@
 			"minimumSystemVersion": "1.2.4",
 			"compatibleSystemVersion": "1.3.2",
 			"size": 214005
+		},
+		{
+			"name" : "Tales from the Yawning Portal: The Forge of Fury",
+			"source": "cor-tftyp-tfof",
+			"manifesturl" : "https://foundry.5e.tools/plutonium/cor-tftyp-tfof/world.json",
+			"description": [
+				"<p>The Forge of Fury, written by Richard Baker, was published in 2000 shortly after The Sunless Citadel. Characters who succeeded in that mission and advanced to 3rd level were now ready to take on the challenges of a ruined dwarven fortress.</p>\n<p> </p>\n<p>Like its predecessor, The Forge of Fury is tailored to provide increasingly tougher threats as the characters make their way through the fortress. Those who survive the experience can expect to advance to 5th level—seasoned adventurers ready to strive for greater glory and renown.</p>\n<p> </p>\n<p>You can purchase this adventure individually, or buy all seven adventures at once in the full bundle of Tales from the Yawning Portal.</p>\n<p> </p>\n<h3>Product Information</h3>\n<blockquote>\n<ul>\n<li>System: <strong>D&amp;D 5E</strong></li>\n<li>Starting Level: <strong>Low (3)</strong></li>\n<li>Length: <strong>One Shot</strong></li>\n</ul>\n</blockquote>\n<p> </p>\n<p> </p>\n<hr />\n<p><strong>DISCLAIMER:</strong> The use of this is meant for use for your personal use, and only if you legally possess such in accordance with your local laws.</p>"
+			],
+			"type": [ 
+				"core"
+			],
+			"level": {
+					"min": 3,
+					"max": 5
+			},
+			"length": "one shot",
+		    "author":[
+				"Richard Baker",
+				"WotC", 
+				"Foundry Worlds Team" 
+		    ],
+			"authors": [
+				{
+				  "name" : "Richard Baker"
+				},
+				{
+				  "name" : "WotC",
+				  "url": "https://www.wizards.com"
+				},
+				{
+				  "name" : "Foundry Worlds Team"
+				}
+			],
+			"system": [ "DND5e"],
+			"version":"0.3.0",
+			"coreVersion":"0.7.10",
+			"minimumCoreVersion":"0.7.9",
+			"compatibleCoreVersion":"0.7.10",
+			"minimumSystemVersion":"1.2.2",
+			"compatibleSystemVersion":"1.2.4",
+			"size": 158911
 		},
 		{
 			"name" : "Mini-Dungeon Collection",
