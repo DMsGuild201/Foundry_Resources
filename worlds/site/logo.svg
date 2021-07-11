@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="height:512px;width:512px">
+  <defs>
+    <linearGradient id="a" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0461b1"/>
+      <stop offset="100%" stop-color="#3648b8"/>
+    </linearGradient>
+    <radialGradient id="b">
+      <stop offset="0%" stop-color="#fc9f1c"/>
+      <stop offset="100%" stop-color="#fa491c"/>
+    </radialGradient>
+    <filter id="c" width="300%" height="300%" x="-100%" y="-100%">
+      <feFlood flood-color="rgba(4, 4, 4, 1)" result="flood"/>
+      <feComposite in="flood" in2="SourceGraphic" operator="atop" result="composite"/>
+      <feGaussianBlur in="composite" result="blur" stdDeviation="2"/>
+      <feOffset dx="5" dy="5" result="offset"/>
+      <feComposite in="SourceGraphic" in2="offset"/>
+    </filter>
+    <filter id="d" width="300%" height="300%" x="-100%" y="-100%">
+      <feFlood flood-color="rgba(4, 4, 4, 1)" result="flood"/>
+      <feComposite in="flood" in2="SourceGraphic" operator="atop" result="composite"/>
+      <feGaussianBlur in="composite" result="blur" stdDeviation="2"/>
+      <feOffset dx="5" dy="5" result="offset"/>
+      <feComposite in="SourceGraphic" in2="offset"/>
+    </filter>
+  </defs>
+  <circle r="256" fill="url(#a)" cx="256" cy="256"/>
+  <g>
+    <path xmlns="http://www.w3.org/2000/svg" fill="url(#b)" d="M225 26a136 136 0 0018 267c8-7 19-11 31-12h18a28 28 0 0131-21c6 0 11 2 16 5v1c32-25 52-63 53-106l-19-17-21-23-45-2 20 24-27 11-20-28 25 60-17 67-34-1-15-63-53-11 20-59h69l3-6-36-20-42 19-1-41s22-19 22-25l4-19z M256 22l-17 1 25 20 28-16c-12-3-24-5-36-5z" filter="url(#c)"/>
+    <path fill="#efd28d" d="M321 278l-7 1c-2 1-3 3-4 6v1l-14 53-8-1c-12-2-26-2-33-1-5 2-7 5-8 6 0 2 0 3 2 4a153 153 0 0053 8c4-1 5-3 4-1 14-30 17-46 22-74a14 14 0 00-7-2z M280 298l-4 1c-9 1-17 4-22 8s-7 8-7 11l1 3 3-1v-1h31l6-20-8-1z M231 309c-32 13-67 49-73 88 8 14 16 25 42 29 20 2 36-4 53-12-5 27-9 55-22 82l61 2-2-12-37-4c11-28 34-59 28-89-18-3-37-6-69 2 3-8 13-21 26-34a22 22 0 01-5-29 25 25 0 01-2-23z M165 430c6 15 13 28 20 42-17-11-58-15-64-14-3 17-11 26-25 35l15 3 19-23c27 15 75 31 85 20 0-10 0-29-6-50-17 1-32-5-44-13z" filter="url(#d)"/>
+  </g>
+</svg>
