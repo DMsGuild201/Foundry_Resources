@@ -66,7 +66,7 @@ GOTO:EOF
    TYPE main.js | FINDSTR /v %strFind% >> %TMP_OUT%
    ECHO require("init")(process.argv, global.paths, %var3%) >> %TMP_OUT%
    ECHO         .then(() =^> { >> %TMP_OUT%
-   ECHO                 require("plutonium-backend.js").init(); >> %TMP_OUT%
+   ECHO                 require("plutonium-backend").init(); >> %TMP_OUT%
    ECHO         }); >> %TMP_OUT%
    MOVE /Y %TMP_OUT% main.js > NUL
 :NO_ADMIN
