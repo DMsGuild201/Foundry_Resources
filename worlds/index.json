@@ -339,6 +339,10 @@
 				"{@b Combat} : Double click the initiative value in the combat tracker to quickly modify it.",
 				"{@b Playlists} : Adds a 'Now Playing' section, and auto-hides sound controls until hovered. Helps in fine tuning of low level volumes."
 			],
+			"type": [ 
+				"plugin",
+				"resource"
+			],
 			"dependencies": [
 				{
 					"name": "advanced-macros",
