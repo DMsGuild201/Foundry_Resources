@@ -1,0 +1,163 @@
+// replace all instances of `project-name` with the product code/name of world you are building
+// Be aware that it will be the directory that Foundry will use to seek the related files, for
+// clarity's sake you may wish to make it human readable and avoid spaces or punctuation beyond `-` or `_` 
+// 
+// see 5etools wiki for their suggested naming conventions if you are confused.  
+// This guide assumes you will be hosting the world on a personal git (such as github) so 
+// the `github_user` is being used a placeholder for find/replace
+//
+// You will need to remove all comments to make it valid JSON
+// worldtemplate.json contains an uncommented version of this file for cut and paste use.
+
+{
+  "name": "project-name",
+	"id": "project-name",
+	"title": "TITLE OF THE WORK",
+  
+// DESCRIPTION: This is an HTML encoded description of the world, Its suggested to include the following for consistency, example follows
+  "description": "<p>Game: <strong>5e&nbsp; NPC Compendium</strong></p>\n<p>&nbsp;</p>\n<p>description</p>\n<p>&nbsp;</p>\n<h3>Product Information</h3>\n<blockquote>\n<ul>\n<li>System:&nbsp;<strong>D&amp;D 5E&nbsp;(setting)</strong></li>\n<li>Starting Level:&nbsp;<strong>Low/Med/High (level) # Characters</strong></li>\n<li>Length:&nbsp;<strong>One Shot/Short/Medium/Campaign Adventure</strong></li>\n</ul>\n</blockquote>\n<p>&nbsp;</p>\n<hr />\n<p><strong>DISCLAIMER:</strong>&nbsp; The use of this is meant for use for your personal use, and only if you legally possess such in accordance with your local laws.</p>", 
+	
+// LINKS: These are the various links to documents
+	"manifest": "https://raw.githubusercontent.com/github_user/project-name/world.json",
+	"download": "https://raw.githubusercontent.com/github_user/project-name/project-name.zip",	
+  //It Suggested that the readme be included to the local world so if there are issues and user is offline they have basic steps to local
+	"readme": "./README.md",
+	"bugs": "https://url.for.the.location.to.report.bugs.or.learn.more",
+	"changelog": "https://raw.githubusercontent.com/github_user/project-name/CHANGELOG.md",
+	"url": "https://url.for.the.source.material",
+
+  // Useful for listing on or thru TheForge's bazzar as it will pull a picture to identify your project.
+  "media": [
+    {
+      "type": "cover",
+      "url": "https://raw.githubusercontent.com/<repository>/<Project>/cover.webp"
+    }
+  ],
+    
+  "author": ["Name of the author"],
+  "authors": [
+    {
+      "name": "Name of the author",
+      "url": "https://website.com/of/the/author",
+      "email": "email@example.com",
+      "discord": "discordID#0001",
+      "ko-fi": "kofiName",
+      "patreon": "patreonName",
+      "reddit": "u/RedditUsername",
+      "twitter": "@TwitterHandle",
+    }
+  ],
+  
+// FLAGS:  WHile not used yet, these would be keywords to help find in searches.
+// Suggestions  
+// TYPE <Adventure/Resource> SYSTEM <Game system> LANGUAGE <language> POWER <level restriction>
+// LENGTH <One Shot, Short Adventure (1-3 level of growth), Adventure (3-8 levels), Campaign (10+)>
+	"flags": [ "adventure", "5e" ],
+  
+
+	"languages": [
+		{
+		  "lang": "en",
+		  "name": "English",
+		  "path": "lang/en.json"
+		}
+	],
+  
+// Version data, of those "version" and "system" are the required ones, the rest will mostly autopopulate 
+// if you feel lazy, and in truth marking down a compatible version can be annoying to have to keep updateing
+// the manifest  
+  "version": "0.8.x",
+	"system": "dnd5e",
+	"systemVersion": "1.4.2",
+	"minimumSystemVersion": "1.3.6",
+	"compatibleSystemVersion": "1.4.2",
+	"minimumCoreVersion": "0.7.10",
+	"compatibleCoreVersion": "0.7.9",
+
+// This is optional, but if you are building worlds with module dependencies that impact performance and behavior, 
+// you likely will want to ensure the world runs with the modules with which it was designed.
+  "scripts": [
+		"./checkdependencies.js"
+	],
+	"esmodules": [],
+
+// If you are using the checkdependencies script, this section is relevant, otherwise as of foundry 0.8.x
+// this section is largely ignored UNLESS plutonium is loaded. the following is provided as common examples for default builds
+	"dependencies": [
+		{
+			"name": "plutonium",
+			"manifest": "https://get.5e.tools/plutonium/module.json",
+			"version": "1.35.1",
+			"author": "Giddy",
+			"type": "module"
+		},
+		{
+			"name": "multilevel-tokens",
+			"manifest": "https://raw.githubusercontent.com/grandseiken/foundryvtt-multilevel-tokens/v1.5.2/module.json",
+			"version": "1.5.2",
+			"author": "grandfunk",
+			"type": "module"
+		},
+		{
+			"name": "token-hud-wildcard",
+			"manifest": "https://raw.githubusercontent.com/javieros105/FVTT-TokenHUDWildcard/master/token-hud-wildcard/module.json",
+			"version": "1.2.0",
+			"author": "Javieros"
+		},
+		{
+			"name": "lootsheetnpc5e",
+			"manifest": "https://raw.githubusercontent.com/jopeek/fvtt-loot-sheet-npc-5e/master/module.json",
+			"version": "3.1.0",
+			"author": "enso#0361",
+			"type": "module"
+		},
+		{
+			"name": "betterroofs",
+			"manifest": "https://github.com/theripper93/Better-Roofs/releases/download/0.9.8.2/module.json",
+			"version": "0.9.8.2",
+			"author": "theripper93",
+			"type": "module"
+		},
+		{
+			"name": "lib-wrapper",
+			"manifest": "https://github.com/ruipin/fvtt-lib-wrapper/releases/latest/download/module.json",
+			"version": "1.8.0.0",
+			"author": "Rui Pinheiro",
+			"type": "module"
+		},
+		{
+			"name": "wall-height",
+			"manifest": "https://raw.githubusercontent.com/erithtotl/FVTT-Wall-Height/master/module.json",
+			"version": "3.5.3.9",
+			"author": "Ian Murphy (Erithtotl#5139), forked from Cole Schultz (cole#9640)",
+			"type": "module"
+		},
+		{
+			"name": "enhanced-terrain-layer",
+			"manifest": "https://raw.githubusercontent.com/erithtotl/FVTT-Wall-Height/master/module.json",
+			"version": "1.0.32",
+			"author": "IronMonk, ironmonk88#4075",
+			"type": "module"
+		},
+		{
+			"name": "monks-active-tiles",
+			"manifest": "https://github.com/ironmonk88/monks-active-tiles/releases/latest/download/module.json",
+			"version": "1.0.26",
+			"author": "IronMonk, ironmonk88#4075",
+			"type": "module"
+		}
+	],
+
+// Compendia Data location - absolute path isn't needed, and its suggested to remove it so the world is portable
+	"packs": [],
+  
+  "socket": false,
+	"protected": false,
+	"background": "worlds/project-name/cover.webp",
+	"nextSession": null,
+	"styles": [],
+	"manifestPlusVersion": "1.2.0",
+	"allowBugReporter": false,
+  "resetKeys": false,
+	"safeMode": false
+}
