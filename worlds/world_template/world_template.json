@@ -1,0 +1,123 @@
+{
+  "name": "project-name",
+	"id": "project-name",
+	"title": "TITLE OF THE WORK",
+  "description": "<p>Game: <strong>5e&nbsp; NPC Compendium</strong></p>\n<p>&nbsp;</p>\n<p>description</p>\n<p>&nbsp;</p>\n<h3>Product Information</h3>\n<blockquote>\n<ul>\n<li>System:&nbsp;<strong>D&amp;D 5E&nbsp;(setting)</strong></li>\n<li>Starting Level:&nbsp;<strong>Low/Med/High (level) # Characters</strong></li>\n<li>Length:&nbsp;<strong>One Shot/Short/Medium/Campaign Adventure</strong></li>\n</ul>\n</blockquote>\n<p>&nbsp;</p>\n<hr />\n<p><strong>DISCLAIMER:</strong>&nbsp; The use of this is meant for use for your personal use, and only if you legally possess such in accordance with your local laws.</p>", 
+	"manifest": "https://raw.githubusercontent.com/github_user/project-name/world.json",
+	"download": "https://raw.githubusercontent.com/github_user/project-name/project-name.zip",	
+	"readme": "./README.md",
+	"bugs": "https://url.for.the.location.to.report.bugs.or.learn.more",
+	"changelog": "https://raw.githubusercontent.com/github_user/project-name/CHANGELOG.md",
+	"url": "https://url.for.the.source.material",
+  "media": [
+    {
+      "type": "cover",
+      "url": "https://raw.githubusercontent.com/<repository>/<Project>/cover.webp"
+    }
+  ],
+    
+  "author": ["Name of the author"],
+  "authors": [
+    {
+      "name": "Name of the author",
+      "url": "https://website.com/of/the/author",
+      "email": "email@example.com",
+      "discord": "discordID#0001",
+      "ko-fi": "kofiName",
+      "patreon": "patreonName",
+      "reddit": "u/RedditUsername",
+      "twitter": "@TwitterHandle",
+    }
+  ],
+	"flags": [ "type", "length", "gamesystem", "levels" ],
+	"languages": [
+		{
+		  "lang": "en",
+		  "name": "English",
+		  "path": "lang/en.json"
+		}
+	],
+  "version": "1.0.0",
+	"system": "dnd5e",
+	"systemVersion": "1.4.2",
+	"minimumSystemVersion": "1.3.6",
+	"minimumCoreVersion": "0.7.10",
+  "scripts": [
+		"./checkdependencies.js"
+	],
+	"esmodules": [],
+	"dependencies": [
+		{
+			"name": "plutonium",
+			"manifest": "https://get.5e.tools/plutonium/module.json",
+			"version": "1.35.1",
+			"author": "Giddy",
+			"type": "module"
+		},
+		{
+			"name": "multilevel-tokens",
+			"manifest": "https://raw.githubusercontent.com/grandseiken/foundryvtt-multilevel-tokens/v1.5.2/module.json",
+			"version": "1.5.2",
+			"author": "grandfunk",
+			"type": "module"
+		},
+		{
+			"name": "token-hud-wildcard",
+			"manifest": "https://raw.githubusercontent.com/javieros105/FVTT-TokenHUDWildcard/master/token-hud-wildcard/module.json",
+			"version": "1.2.0",
+			"author": "Javieros"
+		},
+		{
+			"name": "lootsheetnpc5e",
+			"manifest": "https://raw.githubusercontent.com/jopeek/fvtt-loot-sheet-npc-5e/master/module.json",
+			"version": "3.1.0",
+			"author": "enso#0361",
+			"type": "module"
+		},
+		{
+			"name": "betterroofs",
+			"manifest": "https://github.com/theripper93/Better-Roofs/releases/download/0.9.8.2/module.json",
+			"version": "0.9.8.2",
+			"author": "theripper93",
+			"type": "module"
+		},
+		{
+			"name": "lib-wrapper",
+			"manifest": "https://github.com/ruipin/fvtt-lib-wrapper/releases/latest/download/module.json",
+			"version": "1.8.0.0",
+			"author": "Rui Pinheiro",
+			"type": "module"
+		},
+		{
+			"name": "wall-height",
+			"manifest": "https://raw.githubusercontent.com/erithtotl/FVTT-Wall-Height/master/module.json",
+			"version": "3.5.3.9",
+			"author": "Ian Murphy (Erithtotl#5139), forked from Cole Schultz (cole#9640)",
+			"type": "module"
+		},
+		{
+			"name": "enhanced-terrain-layer",
+			"manifest": "https://raw.githubusercontent.com/erithtotl/FVTT-Wall-Height/master/module.json",
+			"version": "1.0.32",
+			"author": "IronMonk, ironmonk88#4075",
+			"type": "module"
+		},
+		{
+			"name": "monks-active-tiles",
+			"manifest": "https://github.com/ironmonk88/monks-active-tiles/releases/latest/download/module.json",
+			"version": "1.0.26",
+			"author": "IronMonk, ironmonk88#4075",
+			"type": "module"
+		}
+	],
+	"packs": [], 
+  "socket": false,
+	"protected": false,
+	"background": "worlds/project-name/cover.webp",
+	"nextSession": null,
+	"styles": [],
+	"manifestPlusVersion": "1.2.0",
+	"allowBugReporter": false,
+  "resetKeys": false,
+	"safeMode": false
+}
