@@ -61,9 +61,15 @@ Click [here](https://wiki.5e.tools/index.php/Foundry_Worlds) for info other grou
 ## Credits
 
 Art/Graphics:
+
  - token/icons -
+
  - Map
+
 Audio - 
+
  - Title (Composer)
+
 Macros - 
+
 Project Converter: Name
