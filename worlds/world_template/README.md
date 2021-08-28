@@ -2,16 +2,16 @@
 
 ## Version
 
-WORLD VERSION: 1.0.0
-MODULE VERSION: 1.0.0
+- WORLD VERSION: 1.0.0
+- MODULE VERSION: 1.0.0
 
-**System:** DnD5e, 
-
-**Starting Level:** n/a
-
-**Length:** varies
-
-**Language:** english
+> **System:** DnD5e, 
+>
+> **Starting Level:** n/a
+>
+> **Length:** varies
+>
+> **Language:** english
 
 ## Setup
 
