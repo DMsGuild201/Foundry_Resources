@@ -1,5 +1,5 @@
 {
-	"supportURL": "https://discord.gg/7RJFVjt5Bf",
+	"supportURL": "https://discord.gg/tTeWvUHev4",
 	"module": [
 		{
 			"name" : "🔌 About Time",
@@ -17,12 +17,12 @@
 				"plugin",
 				"resource"
 			],
-			"version": "0.8.5",
+			"version": "10.0.0.1",
 			"author": ["tim posney"],
 			"authors": [{"name": "tim posney"}],
-			"coreVersion": "0.8.3",
-			"minimumCoreVersion": "0.6.6",
-			"compatibleCoreVersion": "0.8.5",
+			"coreVersion": "10",
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion": "10",
 			"system": [
 				"dnd5e"
 			],			
@@ -31,7 +31,7 @@
 		{
 			"name" : "🔌 Animated Spell Effects",
 			"source": "animated-spell-effects",
-			"manifesturl": "https://raw.githubusercontent.com/jackkerouac/animated-spell-effects/master/module.json",
+			"manifesturl": "https://github.com/jackkerouac/animated-spell-effects-cartoon/releases/download/latest/module.json",
 			"entries": [
 				"More than 450 (and growing!) animated effects for spells for use with various VTT's in the top-down/overhead perspective. All files are in transparent webm format. In Foundry VTT, fiiles will be located in your \"Data\\modules\\animated-spell-effects\\spell-effects\" folder. If you like my work, consider saying thanks on Discord: jackkerouac#0624."
 			],
@@ -44,90 +44,51 @@
 			"authors": [{"name": "jackkerouac"}],
 			"coreVersion": "string",
 			"minimumCoreVersion": "0.5.5",
-			"compatibleCoreVersion": "0.7.9",
+			"compatibleCoreVersion": "10",
 			"size": 1076766
 		},
 		{
-			"name" : "🔌 Better NPC Sheet 5e",
-			"source": "",
-			"manifesturl": "https://raw.githubusercontent.com/syl3r86/BetterNPCSheet5e/v0.9.1/module.json",
+			"name" : "🔌 Monarch",
+			"source": "monarch",
+			"manifesturl": "https://github.com/zeel01/monarch/releases/download/v0.4.1/module.json",
 			"entries": [
-				"This module overwrites the default NPC sheet that comes shiped with the dnd5e system and brings it closer to the well known official template."
+				"Monarch is currently in beta. There are some rough edges and incomplete features. Feel free to open issues if you find problems.                Monarch is an enhanced card UI for Foundry VTT v9+ which provides replacements for card, hand, deck, and pile sheets."
 			],
 			"type": [ 
 				"plugin",
 				"resource"
 			],
-			"version": "0.10.1",
-			"author": ["Felix"],
-			"authors": [{"name": "Felix"}],
-			"minimumCoreVersion": "0.8.0",
-			"compatibleCoreVersion": "0.8.6",
-			"size": 577
-		},
-		{
-			"name" : "🔌 Better Rolls for 5e",
-			"source": "BetterRollsfor5e",
-			"manifesturl" : "https://github.com/RedReign/FoundryVTT-BetterRolls5e/raw/1.1.11(Foundry-0.6.6)/betterrolls5e/module.json",
-			"entries": [
-				"Overhauls most rolls on the 5th edition character sheet, and provides a way to customize roll messages per-item.",
-				"See the [Github page](https://github.com/RedReign/FoundryVTT-BetterRolls5e) for a list of current and upcoming features."
-			],
-			"type": [ 
-				"plugin",
-				"resource"
-			],
-			"author": ["Red Reign"],
-			"authors": [{"name": "Red Reign"}],
-			"system": [ "DnD5e"],
-			"version": "1.5.9",
-			"minimumCoreVersion": "0.8.6",
-			"compatibleCoreVersion": "0.8.6",			
-			"size": 177
-		},
-		{
-			"name" : "🔌 Card Support (unofficial)",
-			"source": "CardSupportunofficial",
-			"manifesturl": "https://github.com/spacemandev-git/fvtt-card-support/releases/download/latest/module.json",
-			"entries": [
-				"Unofficial Card Support for Foundry VTT."
-			],
-			"type": [ 
-				"plugin",
-				"resource"
-			],
-			"version": "1.6.1",
-			"author": ["spacemandev","norc"],
+			"version": "0.4.1",
+			"author": ["zeel"],
 			"authors": [
-				{"name": "spacemandev"},
-				{"name": "norc"}
+				{"name": "zeel"}
 			],
-			"minimumCoreVersion": "0.8.5",
-			"compatibleCoreVersion": "0.8.6",
-			"size": 9904
+			"minimumCoreVersion": "9",
+			"compatibleCoreVersion": "10",
+			"size": 41900
 		},
 		{
 			"name" : "🔌 Combat Carousel",
 			"source": "combat-carousel",
 			"manifesturl": "https://raw.githubusercontent.com/death-save/combat-carousel-public/main/module.json",
 			"entries": [
-				"Adds a CRPG-style combat tracker to the top of the screen."
+				"A Foundry VTT module to display CRPG-style Combatant cards in carousel-like format."
 			],
 			"type": [ 
 				"plugin",
 				"resource"
 			],
-			"version": "0.1.3",
+			"version": "0.3.1",
 			"author": ["errational"],
 			"authors": [{"name": "errational"}],
-			"minimumCoreVersion": "0.6.6",
-			"compatibleCoreVersion": "0.7.3",
-			"size": 3734
+			"minimumCoreVersion": "10.275",
+			"compatibleCoreVersion": "10.290",
+			"size": 3690000
 		},
 		{
 			"name" : "🔌 Combat Enhancements",
 			"source": "combat-enhancements",
-			"manifesturl": "https://gitlab.com/asacolips-projects/foundry-mods/combat-enhancements/raw/master/module.json",
+			"manifesturl": "https://gitlab.com/asacolips-projects/foundry-mods/combat-enhancements/raw/1.2.0/module.json",
 			"entries": [
 				"This small module adds a radial health bar, an editable HP field, and drag/drop re-ordering to the combat tracker."
 			],
@@ -135,51 +96,48 @@
 				"plugin",
 				"resource"
 			],
-			"version": "1.0.0",
+			"version": "1.2.0",
 			"author": ["Asacolips"],
 			"authors": [{"name": "Asacolips"}],
-			"minimumCoreVersion": "0.8.3",
-			"compatibleCoreVersion": "0.8.6",
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion": "10.273",
 			"size": 62
 		},
 		{
-			"name" : "🔌 Combat Utility Belt",
-			"source": "combat-utility-belt",
-			"manifesturl": "https://github.com/death-save/combat-utility-belt/releases/download/1.4.0/module.json",
+			"name" : "🔌 DF Scene Enhancements",
+			"source": "df-scene-enhance",
+			"manifesturl": "https://dragonflagon.cafe/mods/man/df-scene-enhance",
 			"entries": [
-				"Every GM needs gadgets to keep their game safe from dastardly players up to no good!",
-				"And where better to store those gadget than on your very own Combat Utility Belt!",
-				"This handy-dandy combat aid comes packed with a bunch of gadgets to ensure you get a TPK every time..."
+				"A few enhancements to scene management for players and GMs."
 			],
 			"type": [ 
 				"plugin",
 				"resource"
 			],
-			"version": "1.5.0",
-			"author": ["errational"],
-			"authors": [{"name": "errational"}],
-			"minimumCoreVersion": "0.8.5",
-			"compatibleCoreVersion": "0.8.6",
-			"size": 296
+			"version": "3.6.0",
+			"author": ["flamewave000"],
+			"authors": [{"name": "flamewave000"}],
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion": "10.288",
+			"size": 78400
 		},
 		{
-			"name" : "🔌 CommunityLighting",
-			"source": "CommunityLighting",
-			"manifesturl": "https://raw.githubusercontent.com/BlitzKraig/fvtt-CommunityLighting/master/module.json",
+			"name" : "🔌 DF Active Lights",
+			"source": "df-active-lights",
+			"manifesturl": "https://dragonflagon.cafe/mods/man/df-active-lights",
 			"entries": [
-				"Community Lighting Animations and Shaders for 0.7.5+",
-				"Contributions welcome! Add your animations, or use the animations added by others in your game"
+				"Lights can now have complex animations attached to their various properties such as the direction or colour."
 			],
 			"type": [ 
 				"plugin",
 				"resource"
 			],
-			"version": "0.3.1",
-			"author": ["Blitzkraig"],
-			"authors": [{"name": "Blitzkraig"}],
-			"minimumCoreVersion": "0.8.6",
-			"compatibleCoreVersion": "0.8.6",
-			"size": 94
+			"version": "1.3.1",
+			"author": ["flamewave000"],
+			"authors": [{"name": "flamewave000"}],
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion": "10.290",
+			"size": 78400
 		},
 		{
 			"name" : "🔌 DF Architech",
@@ -193,35 +151,72 @@
 				"plugin",
 				"resource"
 			],
-			"version": "1.1.0",
+			"version": "4.0.0",
 			"author": ["flamewave000"],
 			"authors": [{"name": "flamewave000"}],
-			"minimumCoreVersion": "0.7.9",
-			"compatibleCoreVersion": "0.7.10",
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion": "10.286",
 			"size": 78400
 		},
 		{
-			"name" : "🔌 DFreds Pocket Change",
-			"source": "dfreds-pocket-change",
-			"manifesturl": "https://raw.githubusercontent.com/DFreds/dfreds-pocket-change/main/module.json",
+			"name" : "🔌 DF Curvy Walls",
+			"source": "df-curvy-walls",
+			"manifesturl": "https://dragonflagon.cafe/mods/man/df-curvy-walls",
 			"entries": [
-				"Automatically adds money to NPC character sheets when dropped on the canvas based on the DMG's individual treasures table. This is best used with Loot Sheet NPC 5e."
+				"Creates wall segments along a Bezier Cubic or Quadratic curve, an ellipse, or a rectangle."
 			],
 			"type": [ 
 				"plugin",
 				"resource"
 			],
-			"version": "2.0.2",
+			"version": "3.4.0",
+			"author": ["flamewave000"],
+			"authors": [{"name": "flamewave000"}],
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion": "10.288",
+			"size": 78400
+		},
+		{
+			"name" : "🔌 DFreds Droppables",
+			"source": "dfreds-droppables",
+			"manifesturl": "https://github.com/DFreds/dfreds-droppables/releases/download/v2.0.5/module.json",
+			"entries": [
+				"DFreds Droppables is a FoundryVTT module which allows you to drag and drop an entire folder of tokens or journal entries onto the canvas."
+			],
+			"type": [ 
+				"plugin",
+				"resource"
+			],
+			"version": "2.0.5",
 			"author": ["DFreds"],
 			"authors": [{"name": "DFreds"}],
-			"minimumCoreVersion": "0.8.6",
-			"compatibleCoreVersion": "0.8.6",
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion": "10.291",
+			"size": 10
+		},
+		{
+			"name" : "🔌 DFreds Pocket Change",
+			"source": "dfreds-pocket-change",
+			"manifesturl": "https://github.com/DFreds/dfreds-pocket-change/releases/download/v4.0.1/module.json",
+			"entries": [
+				"Have you ever watched as the peaceful NPCs of the town you've lovingly crafted get slaughtered by your players, only for them to ask how much money was in their pockets so they could loot them afterwards? Well, now you can automate that part. The money part. Not the slaughter. That would be weird.",
+                "Oh yeah. This module is useless without Loot Sheet NPC 5e by ChalkOne. So get that bad boy."
+			],
+			"type": [ 
+				"plugin",
+				"resource"
+			],
+			"version": "4.0.1",
+			"author": ["DFreds"],
+			"authors": [{"name": "DFreds"}],
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion": "10.286",
 			"size": 10
 		},
 		{
 			"name" : "🔌 Dynamic Active Effects",
 			"source": "dae",
-			"manifesturl": "https://gitlab.com/tposney/dynamiceffects/raw/master/package/module.json",
+			"manifesturl": "https://gitlab.com/tposney/dae/raw/v10/package/module.json",
 			"entries": [
 				"DAE is the successor to Dyanmiceffects and dynamic effects does not work in 0.7+",
 				"You do not need to use DAE for most of the active effect funcitonality to work. You might choose to use it if you want one or more or of:",
@@ -252,19 +247,19 @@
 				"plugin",
 				"resource"
 			],
-			"version": "0.8.9",
+			"version": "10.0.20",
 			"author": ["tim posney"],
 			"authors": [{"name": "tim posney"}],
-			"compatibleCoreVersion": "0.8.6",
-			"minimumCoreVersion": "0.8.4",
-			"minimumSystemVersion": "1.3.2",
+			"compatibleCoreVersion": "10.279",
+			"minimumCoreVersion": "10",
+			"minimumSystemVersion": "2.1.5",
 			"systems": ["dnd5e", "sw5e"],
 			"size": 475
 		},
 		{
 			"name" : "🔌 Dynamic Active Effects SRD",
 			"source": "Dynamic-Effects-SRD",
-			"manifesturl": "https://raw.githubusercontent.com/kandashi/Dynamic-Effects-SRD/master/module.json",
+			"manifesturl": "https://github.com/kandashi/Dynamic-Effects-SRD/releases/latest/download/module.json",
 			"entries": [
 				"A compendium pack of DnD 5e SRD items, spells and features all configured specificly for use with Dynamic Active Effects. Now includes items configured with Magic Items module too. Currently contains Spells upto level 6, most Items and a few Features. Easily automate your shield spells; barbarian rages; cloak of protection and many more (as they are added).",
 				"Midi QoL and Furnace (with advanced macros enabled) are needed for auto effect application (effects without macro calls do not need Furnace)."
@@ -273,12 +268,12 @@
 				"plugin",
 				"resource"
 			],
-			"version": "4.1.13",
+			"version": "6.0.01",
 			"system": [ "DnD5e"],
 			"author": ["Kandashi"],
 			"authors": [{"name": "Kandashi"}],
-			"minimumCoreVersion": "0.7.5",
-			"compatibleCoreVersion": "0.7.9",
+			"minimumCoreVersion": "9",
+			"compatibleCoreVersion": "9",
 			"size": 806
 		},
 		{
@@ -299,18 +294,18 @@
 				"plugin",
 				"resource"
 			],
-			"version": "1.0.28",
+			"version": "10.6",
 			"author": ["Ironmonk"],
 			"authors": [{"name": "Ironmonk"}],
-			"minimumCoreVersion": "0.8.0",
-			"compatibleCoreVersion": "0.8.6",
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion": "10",
 			"size": 284
 			
 		},
 		{
 			"name" : "🔌 Find the culprit!",
 			"source": "find-the-culprit",
-			"manifesturl": "https://raw.githubusercontent.com/Moerill/fvtt-find-the-culprit/master/module.json",
+			"manifesturl": "https://raw.githubusercontent.com/Moerill/fvtt-find-the-culprit/v1.4.3/module.json",
 			"entries": [
 				"This module helps you debug compatibility issues of modules, by finding the module that is responsible for the issue, without having to manually activate and deactivate all your modules yourself. Just click the Find the culprit button in Module Management to start the process."
 			],
@@ -318,64 +313,17 @@
 				"plugin",
 				"resource"
 			],
-			"version": "1.3.3",
+			"version": "1.4.3",
 			"author": ["Moerill"],
 			"authors": [{"name": "Moerill"}],
-			"minimumCoreVersion": "0.6.0",
-			"compatibleCoreVersion": "1.0.0",
+			"minimumCoreVersion": "9",
+			"compatibleCoreVersion": "10",
 			"size": 5
-		},
-		{
-			"name" : "🔌 Furnace",
-			"source": "furnace",
-			"manifesturl": "https://raw.githubusercontent.com/kakaroto/fvtt-module-furnace/v2.2/module.json",
-			"entries": [
-				"No Foundry is complete without it's Furnace!",
-				"This module contains a set of features that improve the Quality of Life of the DM/Players. The current features are :",
-				"{@b Advanced Drawing Tools} :Improved drawing tools with different pattern fill types, new HUD, and various options.",
-				"{@b Advanced Macros} : Use async script macros, handlebars templating, recursive macro calls and call macros with arguments or directly from chat.",
-				"{@b Split Journal} : Select the split option from the context menu on a journal entry to split it into multiple entries.",
-				"{@b Tokens : As GM, you can enable/disable token vision for yourself. You can also drop an actor folder into a scene to deploy multiple tokens at once.",
-				"{@b Combat} : Double click the initiative value in the combat tracker to quickly modify it.",
-				"{@b Playlists} : Adds a 'Now Playing' section, and auto-hides sound controls until hovered. Helps in fine tuning of low level volumes."
-			],
-			"type": [ 
-				"plugin",
-				"resource"
-			],
-			"dependencies": [
-				{
-					"name": "advanced-macros",
-					"manifest": "https://github.com/League-of-Foundry-Developers/fvtt-advanced-macros/releases/latest/download/module.json"
-				},
-				{
-					"name": "initiative-double-click",
-					"manifest": "https://github.com/League-of-Foundry-Developers/fvtt-initiative-double-click/releases/latest/download/module.json"
-				},
-				{
-					"name": "dfreds-droppables",
-					"manifest": "https://github.com/DFreds/dfreds-droppables/releases/latest/download/module.json"
-				},
-				{
-					"name": "lessfog",
-					"manifest": "https://github.com/trdischat/lessfog/releases/latest/download/module.json"
-				},
-				{
-					"name": "split-journal",
-					"manifest": "https://github.com/League-of-Foundry-Developers/fvtt-split-journal/releases/latest/download/module.json"
-				}
-			],			
-			"version": "2.6.1",
-			"author": ["KaKaRoTo"],
-			"authors": [{"name": "KaKaRoTo"}],
-			"minimumCoreVersion": "0.8.4",
-			"compatibleCoreVersion": "0.8.6",
-			"size": 1
 		},
 		{
 			"name" : "🔌 FXMaster",
 			"source": "fxmaster",
-			"manifesturl": "https://gitlab.com/mesfoliesludiques/foundryvtt-fxmaster/-/raw/master/module.json",
+			"manifesturl": "https://github.com/ghost-fvtt/fxmaster/releases/download/v3.5.2/module.json",
 			"entries": [
 				"FXMaster brings unique and configurable weather effects, filters and also special effects activated on click.",
 				"And yes, you can throw fireballs."
@@ -384,42 +332,17 @@
 				"plugin",
 				"resource"
 			],
-			"version": "1.0.10",
-			"author": ["U-man"],
+			"version": "3.5.2",
+			"author": ["U-man", "Ghost"],
 			"authors": [{"name": "U-man"}],
-			"compatibleCoreVersion": "0.8.5",
-			"minimumCoreVersion": "0.8.6",
+			"compatibleCoreVersion": "10.278",
+			"minimumCoreVersion": "10",
 			"size": 13737
-		},
-		{
-			"name" : "🔌 GM Screen",
-			"source": "gm-screen",
-			"manifesturl": "https://github.com/ElfFriend-DnD/foundryvtt-gmScreen/releases/download/v2.2.1/module.json",
-			"entries": [
-				"Creates a Configurable modular grid that GMs can populate with journal entries, rollable tables, actors, and items. Customize your \"GM Screen\" and have its information available at any time from a button on the bottom right of the UI, near the sidebar. Roll rollable tables, open linked entities, and even place actor sheets into these cells. Obviously the space constraints mean some sheets will work better than others."
-			],
-			"type": [ 
-				"plugin",
-				"resource"
-			],
-			"version": "2.5.0",
-			"author": "Andrew Krigline (akrigline)",
-			"authors": [
-				{
-					"name": "Andrew Krigline",
-					"discord": "Calego#0914",
-					"url": "https://github.com/ElfFriend-DnD",
-					"patreon": "ElfFriend_DnD"
-				}
-			],
-			"compatibleCoreVersion": "0.8.3",
-			"minimumCoreVersion": "0.7.7",
-			"size": 26
 		},
 		{
 			"name" : "🔌 Grape Juice Isometrics",
 			"source": "grape_juice-isometrics",
-			"manifesturl": "https://gitlab.com/jesusafier/grape_juice-isometrics/-/raw/0.0.16-stable/module.json",
+			"manifesturl": "https://gitlab.com/jesusafier/grape_juice-isometrics/-/raw/0.10.291.0/module.json",
 			"entries": [
 				"Adds the isometric effect/structure to a game."
 			],
@@ -428,7 +351,7 @@
 				"resource",
 				"isometric"
 			],
-			"version": "0.0.19.2",
+			"version": "0.10.291.0",
 			"dependencies": [
 				{
 					"name": "lib-wrapper"
@@ -436,61 +359,32 @@
 			],
 			"author": ["Grape Juice"],
 			"authors": [{"name": "Grape Juice"}],
-			"minimumCoreVersion": "0.7.9",
-			"compatibleCoreVersion": "0.7.9",
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion": "10",
 			"size": 115408
 		},
 		{
 			"name" : "🔌 Health Estimate",
 			"source": "HealthEstimate",
-			"manifesturl" : "https://gitlab.com/tsuki.no.mai/healthestimate/-/raw/1.3.3/src/module.json",
+			"manifesturl" : "https://github.com/mclemente/healthEstimate/releases/latest/download/module.json",
 			"entries": [
-				"Apply damage/healing with a few keystrokes to all selected tokens at once."
+				"A simple module for showing estimated health level of an enemy on mouseover, similar to Baldur's Gate games. Comes with a wide array of options to customize its behavior."
 			],
 			"type": [ 
 				"plugin",
 				"resource"
 			],
-			"author": ["Shylight"],
-			"authors": [{"name": "Shylight"}],
-			"version": "2.5.8",
-			"minimumCoreVersion": "0.5.0",
-			"compatibleCoreVersion": "0.8.6",
+			"author": ["Shylight", "Matheus Clemente"],
+			"authors": [{"name": "Shylight"},{"name": "Matheus Clemente"}],
+			"version": "29",
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion": "10",
 			"size": 81
-		},
-		{
-			"name" : "🔌 I See You 5e",
-			"source": "icu5e",
-			"manifesturl" : "https://github.com/herasrobert/icu5e/releases/download/1.4.1/module.json",
-			"entries": [
-				"Automate Perception Checks and reveal any hidden enemies within X units if the Perception of the controlled token is greater than the Stealth of the Hostile token. The number of units can be edited within the Module Settings window. Adds an icon in the token hud (right-click the token).",
-				"Handles multiple tokens selected. Simple - The token with the highest perception will be used. Per-Token - Each token will reveal what they can from their position",
-				"Variant Passive Degradation (Module Setting). I've added in an option for 'Variant Perception Degradation'. This implements the passive perception losing a score of 1 per 10 feet of distance. The further the target, the worse your perception.",
-				"Show Icon For (Module Setting) Disable tokenHUD icon on some tokens (Default: Characters). All - The Icon will appear on every token. Characters - Only appears on Characters. Friendlies - Only on tokens with a Friendly/Neutral disposition. The icon will only ever appear if you're GM, players do not have access to the icon.",
-				"Allow GM Stealth Override (Module Setting) - If enabled, Hostile tokens will now have an input box on the bottom right which will default to the tokens Passive Stealth. This input box is what will be checked against the Passive Perception to determine whether or not to reveal the token. It allows GM's who like to roll for Stealth as they're prepping a scene (like me) to use the number rolled rather than the Passive Stealth.",
-				"Roll Hostile Stealth (Module Setting) - Button that will roll a stealth check for the selected Hostile token and this is will be the value used against Perception to determine if the hostile token should be revealed.",
-				"Display Perception Results (Module Setting) - Print a chat message with each token revealed by which token. i.e. \"Donny revealed Shadow [14]\".",
-				"Account for Walls (Module Settings) - If there's a wall that blocks line of sight, the token will not be revealed.",
-				"Active Perception Roll Type (Module Setting) - Auto - The Perception check will be automatically rolled by the token. Request - The player will receive a prompt requesting that they roll a Perception Check.",
-				"Automatice Passive Perception Checks (Module Settings)[Experimental] - Automatically check nearby tokens to reveal them when token is moved.",
-				"Stealth Mode (Module Setting)[Experimental] - Player token is Hidden from everyone but remains visible to the GM and the token Owner to simulate the player stealthing from everyone else."
-			],
-			"type": [ 
-				"plugin",
-				"resource"
-			],
-			"author": ["Rib_Rob"],
-			"authors": [{"name": "Rib_Rob"}],
-			"system": [ "DnD5e"],
-			"version": "1.4.1",
-			"minimumCoreVersion": "0.6.6",
-			"compatibleCoreVersion":"0.6.6",
-			"size": 7
 		},
 		{
 			"name" : "🔌 Innocenti Looting",
 			"source": "innocenti-looting",
-			"manifesturl" : "https://raw.githubusercontent.com/rinnocenti/innocenti-looting/main/module.json",
+			"manifesturl" : "https://raw.githubusercontent.com/rinnocenti/innocenti-loot/master/module.json",
 			"entries": [
 				"A simple module to use for looting dead NPCs tokens. With it the token's targets will have their items moved to the user's sheet. (with the exception of some like natural weapons, feats and spells). Some items have a chance of not being in good use and will not be sent to the sheet (configurable percentage)."
 			],
@@ -501,16 +395,16 @@
 			"author": ["Innocenti"],
 			"authors": [{"name": "Innocenti"}],
 			"system": [ "DnD5e"],
-			"version": "0.3.1",
-			"minimumCoreVersion": "0.8.0",
-			"compatibleCoreVersion": "0.8.6",
+			"version": "0.2.43",
+			"minimumCoreVersion": "0.9.5",
+			"compatibleCoreVersion": "10",
 			"systems": [ "dnd5e" ],
 			"size": 442
 		},
 		{
 			"name" : "🔌 JB2A Animated Assets",
 			"source": "JB2A_DnD5e",
-			"manifesturl": "https://github.com/Jules-Bens-Aa/JB2A_DnD5e/releases/latest/download/module.json",
+			"manifesturl": "https://github.com/Jules-Bens-Aa/JB2A_DnD5e/releases/download/0.5.4/module.json",
 			"entries": [
 				"A Library of animated spell templates and tokens for DnD5e.",
 				"The module is system agnostic but we have defined the spells names, styles and sizes* from the DnD5e ruleset.",
@@ -520,9 +414,9 @@
 				"plugin",
 				"resource"
 			],
-			"version": "0.2.0",
-			"minimumCoreVersion": "0.7.0",
-			"compatibleCoreVersion": "0.7.9",
+			"version": "0.5.4",
+			"minimumCoreVersion": "0.8.0",
+			"compatibleCoreVersion": "10",
 			"author": ["Gazkhan#8192","Wassily#8035"],
 			"authors": [
 				{"name": "Gazkhan#8192"}, 
@@ -544,34 +438,15 @@
 			],
 			"author": ["Jinker (Jinker#8073)"],
 			"authors": [{"name": "Jinker (Jinker#8073)"}],
-			"version": "0.2",
-			"minimumCoreVersion": "0.5.0",
-			"compatibleCoreVersion": "0.8.6",
+			"version": "0.8",
+			"minimumCoreVersion": "0.7.5",
+			"compatibleCoreVersion": "10",
 			"size": 243662
-		},
-		{
-			"name" : "🔌 Layers Panel",
-			"source": "layers-panel",
-			"manifesturl": "https://github.com/bluesatin/foundry-vtt-layers-panel/releases/latest/download/module.json",
-			"entries": [
-				"An NPC sheet for FoundryVTT designed to faithfully reproduce the apperance of D&D 5e monster statblocks.",
-				"A few quick settings can be toggled from the special cog menu in the upper left corner. This includes enabling and disabling certain features, themes, and a toggle for editing."
-			],
-			"type": [ 
-				"plugin",
-				"resource"
-			],
-			"author": ["Bluesatin"],
-			"authors": [{"name": "Bluesatin"}],
-			"version": "0.2.0",
-			"minimumCoreVersion": "0.7.0",
-			"compatibleCoreVersion": "0.7.10",
-			"size": 72
 		},
 		{
 			"name" : "🔌 Let's Trade 5e",
 			"source": "lets-trade-5e",
-			"manifesturl": "https://raw.githubusercontent.com/KageJittai/lets-trade-5e/main/module.json",
+			"manifesturl": "https://github.com/KageJittai/lets-trade-5e/releases/download/0.5.1/module.json",
 			"entries": [
 				"Let's Trade 5e allows players to trade items and currency with one another. Clicking the trade icon added to the character sheet next to the item or currency allows you to send a request to another player character who is online, and can accept the offer. After completion, a chat message is sent to all parties and the game masters informing them the transfer occurred."
 			],
@@ -582,16 +457,16 @@
 			"author": ["Kage"],
 			"authors": [{"name": "Kage"}],
 			"system": ["dnd5e"],
-			"version": "0.2.2",
-			"minimumCoreVersion": "0.7.9",
-			"minimumSystemVersion": "1.2.0",
-			"compatibleCoreVersion": "0.8.6",
+			"version": "0.5.1",
+			"minimumCoreVersion": "10",
+			"minimumSystemVersion": "2.1.5",
+			"compatibleCoreVersion": "10.291",
 			"size": 10
 		},
 		{
 			"name" : "🔌 Lib - ColorSettings",
 			"source": "colorsettings",
-			"manifesturl": "https://raw.githubusercontent.com/ardittristan/VTTColorSettings/master/module.json",
+			"manifesturl": "https://raw.githubusercontent.com/ardittristan/VTTColorSettings/2.9.1/module.json",
 			"entries": [
 				"Adds color picker as settings option and form option in Foundry VTT to use as library for module developers."
 			],
@@ -599,36 +474,17 @@
 				"plugin",
 				"resource"
 			],
-			"version": "2.5.9",
+			"version": "2.9.1",
 			"author": ["ardittristan#0001"],
 			"authors": [{"name": "ardittristan#0001"}],
-			"minimumCoreVersion": "0.5.5",
-			"compatibleCoreVersion": "0.8.1",
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion": "10",
 			"size": 66
-		},
-		{
-			"name" : "🔌 Library: DF Hotkeys",
-			"source": "dfhotkeys",
-			"manifesturl": "https://dragonflagon.cafe/mods/man/lib-df-hotkeys",
-			"entries": [
-				"Library for Foundry VTT module developers to use. It allows modules to register their own Keyboard Shortcuts and gives way for users to then customize those hotkey bindings.",
-				"This module comes with a single hotkey pre-assigned for the Select Tool mapped to the S key."
-			],
-			"type": [ 
-				"plugin",
-				"resource"
-			],
-			"version": "2.3.4",
-			"author": ["flamewave000#6766"],
-			"authors": [{"name": "flamewave000#6766"}],
-			"minimumCoreVersion": "0.7.9",
-			"compatibleCoreVersion": "0.7.9",
-			"size": 36
 		},
 		{
 			"name" : "🔌 Library: Scene Packer",
 			"source": "scene-packer",
-			"manifesturl" : "https://raw.githubusercontent.com/League-of-Foundry-Developers/scene-packer/master/module.json",
+			"manifesturl" : "https://raw.githubusercontent.com/League-of-Foundry-Developers/scene-packer/main/module.json",
 			"entries": [
 				"A library to help other developers package up Scenes and Adventures to solve the following:"
 			],
@@ -649,33 +505,15 @@
 				"plugin",
 				"resource"
 			],
-			"version": "2.2.16",
+			"version": "2.6.14",
 			"minimumCoreVersion": "0.7.9",
-			"compatibleCoreVersion": "0.8.6",
+			"compatibleCoreVersion": "10",
 			"size": 245
-		},
-		{
-			"name" : "🔌 LibWrapper",
-			"source": "libwrapper",
-			"manifesturl": "https://github.com/ruipin/fvtt-lib-wrapper/releases/download/v1.5.2.0/module.json",
-			"entries": [
-				"Library for Foundry VTT which provides module developers with a simple way to modify core Foundry VTT code, while reducing the likelihood of conflict with other modules."
-			],
-			"type": [ 
-				"plugin",
-				"resource"
-			],
-			"version": "1.6.2.0",
-			"author": ["rupin"],
-			"authors": [{"name": "rupin"}],
-			"minimumCoreVersion": "0.6.5",
-			"compatibleCoreVersion": "0.8.6",
-			"size": 87
 		},
 		{
 			"name" : "🔌 Loot Sheet NPC 5e",
 			"source": "lootsheetnpc5e",
-			"manifesturl": "https://raw.githubusercontent.com/jopeek/fvtt-loot-sheet-npc-5e/master/module.json",
+			"manifesturl": "https://raw.githubusercontent.com/jopeek/fvtt-loot-sheet-npc-5e/lootsheet-simple/module.json",
 			"entries": [
 				"This module adds an additional NPC sheet which can be used for loot containers such as chests. It also allows spells to be automatically converted into spell scrolls by dragging them onto this sheet."
 			],
@@ -684,76 +522,20 @@
 				"resource"
 			],
 			"system": [ "DnD5e"],
-			"version": "3.0.3",
+			"version": "5.0.2",
 			"author": ["Jan Ole Peek (ChalkOne)","Charles Miller (Kage)"],
 			"authors": [
 				{"name": "Jan Ole Peek (ChalkOne)"}, 
 				{"name": "Charles Miller (Kage)"}
 			],
-			"minimumCoreVersion": "0.7.9",
-			"compatibleCoreVersion": "0.5.7",
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion": "10.291",
 			"size": 962
-		},
-		{
-			"name" : "🔌 Loot Tavern Magic Item Compendium",
-			"source": "",
-			"manifesturl": "https://www.patreon.com/LootTavern",
-			"entries": [
-				"If you enjoy these items, please consider supporting Loot Tavern on Patreon (https://www.patreon.com/LootTavern) for even more fantastic Foundry VTT items (60+ items, with 20 new items added each month)."
-			],
-			"type": [ 
-				"plugin",
-				"resource"
-			],
-			"version": "1.4.0",
-			"author": ["MrVauxs"],
-			"authors": [{"name": "MrVauxs"}],
-			"minimumCoreVersion": "0.7.4",
-			"compatibleCoreVersion": "0.7.10"
-		},
-		{
-			"name" : "🔌 Manny's Languages",
-			"source": "manny-language",
-			"manifesturl": "https://raw.githubusercontent.com/MannyKSoSo/Manny-Language/1.0.3/module.json",
-			"entries": [
-				"This module adds the DND5e languages to the Foundry VTT Journals. Using the 'pre' tag will prevent the text from being encoded in the language font.",
-				"Module based off of https://github.com/Sanyella/FVTT-Custom-Journal-Theming. Both can be used at the same time, but the code is identical.",
-				"On each journal there will be a new \"Language\" button that will allow you to choose the font you want. Note that the fonts are generalized due to there not being a seperate font for each language. If there ends up being more fonts for each language I will add them to the library for use.",
-				"Warning: symbols like , ! ( ) [ ] do not work with the language tags as the font does not contain those symbols."
-			],
-			"type": [ 
-				"plugin",
-				"resource"
-			],
-			"version": "1.0.3",
-			"author": ["Manny K SoSo"],
-			"authors": [{"name": "Manny K SoSo"}],
-			"compatibleCoreVersion": "0.7.3",
-			"minimumCoreVersion": "0.6.6",
-			"space": 243
-		},
-		{
-			"name" : "🔌 Math.js",
-			"source": "_mathjs",
-			"manifesturl": "https://raw.githubusercontent.com/League-of-Foundry-Developers/mathjs-lib/master/module.json",
-			"entries": [
-				"Math.js is an extensive math library for JavaScript and Node.js. It features a flexible expression parser with support for symbolic computation, comes with a large set of built-in functions and constants, and offers an integrated solution to work with different data types like numbers, big numbers, complex numbers, fractions, units, and matrices. Powerful and easy to use."
-			],
-			"type": [ 
-				"plugin",
-				"resource"
-			],
-			"version": "7.5.1-fvtt2",
-			"author": ["zeel"],
-			"authors": [{"name": "zeel"}],
-			"minimumCoreVersion": "0.0.0",
-			"compatibleCoreVersion": "1.0.0",
-			"size": 740
 		},
 		{
 			"name" : "🔌 Merchant Sheet",
 			"source": "merchantsheetnpc",
-			"manifesturl": "https://raw.githubusercontent.com/whelan/fvtt-merchant-sheet-npc/0.1.0/module.json",
+			"manifesturl": "https://github.com/whelan/fvtt-merchant-sheet-npc/releases/download/2.9.1/module.json",
 			"entries": [
 				"This module adds an additional NPC sheet that can be used for Merchant NPCs."
 			],
@@ -761,17 +543,17 @@
 				"plugin",
 				"resource"
 			],
-			"version": "1.1.2",
+			"version": "2.9.1",
 			"author": ["whelan"],
 			"authors": [{"name": "whelan"}],
-			"minimumCoreVersion": "0.8.5",
-			"compatibleCoreVersion": "0.8.6",
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion": "10",
 			"size": 644
 		},
 		{
 			"name" : "🔌 Midi Quality of Life Improvements (Midi QoL)",
 			"source": "midi-qol",
-			"manifesturl": "https://gitlab.com/tposney/midi-qol/raw/master/package/module.json",
+			"manifesturl": "https://gitlab.com/tposney/midi-qol/raw/v10/package/module.json",
 			"entries": [
 				"Attack/Damage/Saving throw automation.",
 				"Replaces minor-qol with a superset of the existing functionality. Requires dnd5e 0.95",
@@ -807,14 +589,34 @@
 				"plugin",
 				"resource"
 			],
-			"version": "0.8.3",
+			"version": "10.0.30",
 			"author": ["tim posney"],
 			"authors": [{"name": "tim posney"}],
-			"minimumCoreVersion": "0.8.4",
-			"compatibleCoreVersion": "0.8.6",
-			"minimumSystemVersion": "1.3.2",
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion": "10.286",
+			"minimumSystemVersion": "2.1.5",
 			"size": 1174
 		},
+        {
+			"name" : "🔌 Monarch 🦋",
+			"source": "monarch",
+			"manifesturl": "https://github.com/zeel01/monarch/releases/download/v0.4.1/module.json",
+			"entries": [
+				"A card UI fit for royalty."
+			],
+			"type": [ 
+				"plugin",
+				"resource"
+			],
+			"version": "0.4.1",
+			"author": ["zeel"],
+			"authors": [
+				{"name": "zeel"}
+			],
+			"minimumCoreVersion": "9.236",
+			"compatibleCoreVersion": "10",
+			"size": 9904
+		},        
 		{
 			"name" : "🔌 Monster Blocks",
 			"source": "monsterblock",
@@ -827,7 +629,7 @@
 				"plugin",
 				"resource"
 			],
-			"version": "100.3.0.0",
+			"version": "3.3.5",
 			"author": ["Zeel"],
 			"authors": [{"name": "Zeel"}],
 			"dependencies": [
@@ -837,10 +639,10 @@
 					"manifest": "https://raw.githubusercontent.com/League-of-Foundry-Developers/mathjs-lib/master/module.json"
 				}
 			],			
-			"minimumCoreVersion": "0.6.6",
-			"compatibleCoreVersion": "0.8.6",
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion": "10",
 			"systems": ["dnd5e"],
-			"minimumSystemVersion": "1.3.0",
+			"minimumSystemVersion": "2.1.5",
 			"size": 63
 		},
 		{
@@ -862,37 +664,17 @@
 				"plugin",
 				"resource"
 			],
-			"version": "1.5.0",
+			"version": "1.6.0",
 			"author": ["grandseiken"],
 			"authors": [{"name": "grandseiken"}],
-			"minimumCoreVersion": "0.6.6",
-			"compatibleCoreVersion": "0.8.6",
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion": "10",
 			"size": 1766
-		},
-		{
-			"name" : "🔌 NPC Chatter",
-			"source": "npc-chatter",
-			"manifesturl": "https://raw.githubusercontent.com/cswendrowski/FoundryVtt-Npc-Chatter/master/module.json",
-			"entries": [
-				"Your NPCs have things to say. This Module provides a small API that allows your NPCs to randomly chatter off of roll tables defined for them.",
-				"Chatter is displayed as ChatBubbles only, and won't dump to the Chat Log.",
-				"I recommend you turn off the Core \"Pan to Token Speaker\" setting or else risk whiplash."
-			],
-			"type": [ 
-				"plugin",
-				"resource"
-			],
-			"version": "2.1.0",
-			"minimumCoreVersion": "0.6.2",
-			"compatibleCoreVersion": "0.8.5",
-			"author": ["Cody Swendrowski <cody@swendrowski.us>"],
-			"authors": [{"name": "Cody Swendrowski <cody@swendrowski.us>"}],
-			"size": 2769
 		},
 		{
 			"name" : "🔌 Perfect Vision",
 			"source": "perfect-vision",
-			"manifesturl": "https://raw.githubusercontent.com/dev7355608/perfect-vision/v1.8.6/module.json",
+			"manifesturl": "https://raw.githubusercontent.com/dev7355608/perfect-vision/v4.1.17/module.json",
 			"entries": [
 				"Darkvision rules and other vision-related improvements."
 			],
@@ -900,48 +682,49 @@
 				"plugin",
 				"resource"
 			],
-			"version": "1.9.4",
+			"version": "4.1.17",
 			"author": ["dev7355608"],
 			"authors": [{"name": "dev7355608"}],
-			"minimumCoreVersion": "0.7.8",
-			"compatibleCoreVersion": "0.8.6",
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion": "10.291",
 			"size": 1918
 		},
 		{
 			"name" : "🔌 Permission Viewer",
 			"source": "permission_viewer",
-			"manifesturl": "https://raw.githubusercontent.com/kakaroto/fvtt-module-permission-viewer/v0.7/module.json",
+			"manifesturl": "https://github.com/Malekal4699/fvtt-module-permission-viewer/releases/latest/download/module.json",
 			"entries": [
 				"Quickly see which entities (Journal entries, Actors, etc..) are visible to all players or visible to a specific player.",
-				"It also adds a quick share button in the sidebars and when showing journal entries to players, will ask if you want to share them, show them to all or show them only to players who have permission to view it."
+                "It also adds a quick share button in the sidebars and when showing journal entries to players, will ask if you want to share them, show them to all or show them only to players who have permission to view it."
 			],
 			"type": [ 
 				"plugin",
 				"resource"
 			],
-			"version": "0.8.7",
-			"minimumCoreVersion": "0.4.4",
-			"compatibleCoreVersion": "0.8.6",
-			"author": ["KaKaRoTo"],
-			"authors": [{"name": "KaKaRoTo"}],
+			"version": "0.10.0",
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion": "10",
+			"author": ["Malekal"],
+			"authors": [{"name": "Malekal"}],
 			"size": 4
 		},
 		{
-			"name" : "🔌 Pick-Up-Stix",
+			"name" : "🔌 Item Piles",
 			"source": "pick-up-stix",
-			"manifesturl": "https://raw.githubusercontent.com/kamcknig/pick-up-stix/master/src/module.json",
+			"manifesturl": "https://github.com/fantasycalendar/FoundryVTT-ItemPiles/releases/download/2.4.17/module.json",
 			"entries": [
-				"Pick-Up-Stix allows you to create items as Tokens that players can pick up. It will automatically add the items to the player's inventory.",
-				{
+				"What is Item Piles?",
+                "Have you ever wished you could represent items in your scenes? A pile of items, something to interact with - or perhaps chests whose appearance changes depending on what happens to it, whether it's open, closed, full, or empty. Do you want an easy way to split loot between players? Do you want easy to use merchants with great UIs?",
+                "Then you need Item Piles!",
+                "This module features:",
+                {
 					"type": "list",
 					"items": [
-						"Drop items from the items directory",
-						"Drop items from the compendiums without importing them",
-						"Create containers out of dropped items, lock them, add open and closed images",
-						"Players may pick items up",
-						"Players may drop items from their own inventories onto the map that other players can pick up",
-						"Drop Items directly onto a token to add it to the actor's inventory",
-						"Drag items from an actor's inventory onto another Token or another actor's inventory to transfer the item to that Actor's inventory"
+                        "Dropping items on the canvas to create piles of items",
+                        "Item piles acting as containers with the ability to switch its token image depending on its open/closed/empty state, and play sounds accordingly",
+                        "Turn characters into fully featured merchants, with complex item pricing, item quantity management, and more",
+                        "Robust player-to-player trading features",
+                        "Incredibly intuitive API and documentation"
 					]
 				}
 			],
@@ -949,17 +732,72 @@
 				"plugin",
 				"resource"
 			],
-			"version": "0.13.8",
-			"author": ["Kyle McKnight"],
-			"authors": [{"name": "Kyle McKnight"}],
-			"minimumCoreVersion": "0.7.5",
-			"compatibleCoreVersion": "0.7.7",
+			"version": "2.4.17",
+			"author": ["Wasp"],
+			"authors": [{"name": "Wasp"}],
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion": "10",
 			"size": 433
+		},
+		{
+			"name" : "🔌 Monk's Active Tile Triggers",
+			"source": "monks-active-tiles",
+			"manifesturl": "https://github.com/ironmonk88/monks-active-tiles/releases/latest/download/module.json",
+			"entries": [
+				"Want to teleport, or open doors, or hide characters, or display a message, or play a sound, or change a token's elevation when a token walks over a tile... now you can."
+			],
+			"type": [ 
+				"plugin",
+				"resource"
+			],
+			"version": "10.12",
+			"author": ["Ironmonk"],
+			"authors": [{"name": "Ironmonk"}],
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion": "10",
+			"size": 463
+		},
+		{
+			"name" : "🔌 Monk's Wall Enhancement",
+			"source": "monks-wall-enhancement",
+			"manifesturl": "https://github.com/ironmonk88/monks-wall-enhancement/releases/latest/download/module.json",
+			"entries": [
+				"Improvements to the Core Wall functionality, by adding the option to drag points together, double-click to split a wall, join points together, and free hand drawing of a wall"
+			],
+			"type": [ 
+				"plugin",
+				"resource"
+			],
+			"version": "10.3",
+			"author": ["ironmonk"],
+			"authors": [{"name": "ironmonk"}],
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion": "10",
+			"size": 463
+		},
+		{
+			"name" : "🔌 Monk's Shop",
+			"source": "monks-shops",
+			"manifesturl": "https://github.com/ironmonk88/monks-shops/releases/latest/download/module.json",
+			"entries": [
+				"This module is to provide some pre-generated shops for DnD5e that work with Monks Enhanced Journals.",
+                "As well as adding some roll tables for common items.  So you can create your own shops quickly."
+			],
+			"type": [ 
+				"plugin",
+				"resource"
+			],
+			"version": "1.0.2",
+			"author": ["Ironmonk"],
+			"authors": [{"name": "Ironmonk"}],
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion": "10",
+			"size": 463
 		},
 		{
 			"name" : "🔌 Polyglot",
 			"source": "polyglot",
-			"manifesturl": "https://raw.githubusercontent.com/kakaroto/fvtt-module-polyglot/v1.1.2/module.json",
+			"manifesturl": "https://github.com/League-of-Foundry-Developers/fvtt-module-polyglot/releases/latest/download/module.json",
 			"entries": [
 				"Talk to others using a language your selected character can understand and scrambles in-character text you can't understand."
 			],
@@ -967,17 +805,59 @@
 				"plugin",
 				"resource"
 			],
-			"version": "1.6.6",
-			"author": ["KaKaRoTo"],
-			"authors": [{"name": "KaKaRoTo"}],
-			"minimumCoreVersion": "0.7.6",
-			"compatibleCoreVersion": "0.8.6",
+			"version": "1.8",
+			"author": ["Matheus Clemente"],
+			"authors": [{"name": "Matheus Clemente"}],
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion": "10",
 			"size": 463
+		},
+		{
+			"name" : "🎣 Obligatory Fishing Minigame",
+			"source": "obligatory-fishing-minigame",
+			"manifesturl": "https://github.com/cswendrowski/FoundryVTT-Obligatory-Fishing-Minigame/releases/latest/download/module.json",
+			"entries": [
+				"Every game has to have one."
+			],
+			"type": [ 
+				"plugin",
+				"resource"
+			],
+            "version": "1.1.1",
+			"author": ["Matheus Clemente"],
+            "authors": [
+                {
+                    "name": "Cody Swendrowski",
+                    "discord": "cswendrowski#9701",
+                    "patreon": "ironmoose"
+                }
+            ],
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion": "10",
+			"size": 463
+		},
+		{
+			"name" : "🔌 Plutonium Addon: Automation",
+			"source": "plutonium-addon-automation",
+			"manifesturl": "https://github.com/TheGiddyLimit/plutonium-addon-automation/releases/latest/download/module.json",
+			"entries": [
+				"Plutonium automations for use with Midi-QOL, DAE, and friends."
+			],
+			"type": [ 
+				"plugin",
+				"resource"
+			],
+            "version": "0.3.7",
+			"author": ["TheGiddyLimit"],
+			"authors": [{"name": "TheGiddyLimit"}],
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion":"10.291",
+			"size": 99
 		},
 		{
 			"name" : "🔌 Quick Insert - Search Widget",
 			"source": "quick-insert",
-			"manifesturl": "https://gitlab.com/fvtt-modules-lab/quick-insert/-/jobs/artifacts/v2.4.1/raw/module.json?job=build-module",
+			"manifesturl": "https://gitlab.com/fvtt-modules-lab/quick-insert/-/jobs/artifacts/v2.8.0/raw/module.json?job=build-module",
 			"entries": [
 				"Quickly find characters, monsters, items, spells etc. and insert them wherever you need them right now - the map, character sheets, roll tables, journals, you name it.",
 				"Quick Insert provides a context-aware search/autocomplete tool that can be used in most parts of FoundryVTT. Integration with chat, character sheets (select systems), rich text editors, macro editors and the roll table editor."
@@ -986,17 +866,17 @@
 				"plugin",
 				"resource"
 			],
-			"version": "2.4.7",
+			"version": "2.8.0",
 			"author": ["Sunspots"],
 			"authors": [{"name": "Sunspots"}],
-			"minimumCoreVersion": "0.6.5",
-			"compatibleCoreVersion": "0.8.6",
+			"minimumCoreVersion": "10.276",
+			"compatibleCoreVersion":"10.276",
 			"size": 99
 		},
 		{
 			"name" : "🔌 Scene Transitions",
 			"source": "scene-transitions",
-			"manifesturl": "https://raw.githubusercontent.com/wsaunders1014/scene-transitions/master/module.json",
+			"manifesturl": "https://github.com/p4535992/foundryvtt-scene-transitions/releases/latest/download/module.json",
 			"entries": [
 				"Adds the ability to create transitions to play before activating scene. More settings and customization coming soon"
 			],
@@ -1004,17 +884,17 @@
 				"plugin",
 				"resource"
 			],
-			"version": "0.1.3",
-			"minimumCoreVersion": "0.7.9",
-			"compatibleCoreVersion":"0.8.6",
-			"author": ["DM_miX"],
-			"authors": [{"name": "DM_miX"}],
+			"version": "4.10.0",
+			"minimumCoreVersion": "10.276",
+			"compatibleCoreVersion":"10.276",
+			"author": ["4535992"],
+			"authors": [{"name": "4535992"}],
 			"size": 103
 		},
 		{
 			"name" : "🔌 Simple Calendar",
 			"source": "foundryvtt-simple-calendar",
-			"manifesturl": "https://github.com/vigoren/foundryvtt-simple-calendar/releases/download/v1.2.35/module.json",
+			"manifesturl": "https://github.com/vigoren/foundryvtt-simple-calendar/releases/download/v2.1.80/module.json",
 			"entries": [
 				"A simple calendar module for FoundryVTT that is system independent.",
 				"This module allows you to create a calendar with any number of months per year, any number of days per month and customizable hours, minutes and seconds for your game world. It is intended as a way for a GM to show a calendar like interface that maps to their in game world."
@@ -1023,11 +903,11 @@
 				"plugin",
 				"resource"
 			],
-			"version": "v1.2.63",
+			"version": "v2.1.80",
 			"author": ["vigorator"],
 			"authors": [{"name": "vigorator"}],
-			"minimumCoreVersion": "0.7.9",
-			"compatibleCoreVersion": "0.8.6",
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion": "10",
 			"size": 68
 		},
 		{
@@ -1041,36 +921,17 @@
 				"plugin",
 				"resource"
 			],
-			"version": "1.5.2",
-			"author": ["Blitz"],
-			"authors": [{"name": "Blitz"}],
-			"minimumCoreVersion": "0.6.2",
-			"compatibleCoreVersion": "0.8.6",
+			"version": "1.7.1",
+			"author": ["Blitzkraig"],
+			"authors": [{"name": "Blitzkraig"}],
+			"minimumCoreVersion": "9",
+			"compatibleCoreVersion": "10.291",
 			"size": 1866
 		},
 		{
-			"name" : "🔌 Trigger Happy",
-			"source": "trigger-happy",
-			"manifesturl": "https://raw.githubusercontent.com/kakaroto/fvtt-module-trigger-happy/v0.6/module.json",
-			"entries": [
-				"Automate everything in your world by creating triggers for your players to spring traps or anything you can think of!",
-				"Trigger Happy is a module which adds a powerful yet simple system for creating triggers and automating things within a world."
-			],
-			"type": [ 
-				"plugin",
-				"resource"
-			],
-			"version": "0.8.6",
-			"author": ["tim posney"],
-			"authors": [{"name": "tim posney"}],
-			"minimumCoreVersion": "0.5.3",
-			"compatibleCoreVersion": "0.8.6",
-			"size": 15
-		},
-		{
-			"name" : "🔌 Token HUD Wildcard",
-			"source": "TokenHUDWildcard",
-			"manifesturl": "https://raw.githubusercontent.com/javieros105/FVTT-TokenHUDWildcard/master/token-hud-wildcard/module.json",
+			"name" : "🔌 Argon - Combat HUD",
+			"source": "enhancedcombathud",
+			"manifesturl": "https://github.com/theripper93/enhancedcombathud/releases/download/1.4.9/module.json",
 			"entries": [
 				"This module adds a button to the Token HUD if the token has wildcard set and detects more than 1 image to choose from. Pressing the button displays a panel on the right side of the HUD with buttons for each image, pressing one of these allows to change the token image."
 			],
@@ -1078,17 +939,35 @@
 				"plugin",
 				"resource"
 			],
-			"author": ["javieros"],
-			"authors": [{"name": "javieros"}],
-			"version": "1.2.0",
-			"minimumCoreVersion": "0.6.0",
-			"compatibleCoreVersion": "0.6.6",
+			"author": ["theripper93"],
+			"authors": [{"name": "theripper93"}],
+			"version": "1.4.9",
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion": "10",
 			"size": 6
 		},
 		{
-			"name" : "🔌 Token Action HUD",
+			"name" : "🔌 Token HUD Wildcard",
 			"source": "token-action-hud",
-			"manifesturl" : "https://github.com/espositos/fvtt-tokenactionhud/raw/master/module.json",
+			"manifesturl": "https://github.com/Drental/fvtt-tokenactionhud/releases/download/3.0.19/module.json",
+			"entries": [
+				"This module populates a floating HUD, showing common actions for a controllable token. Supports 3.5e SRD, Alien RPG, Blades In The Dark, Call of Cthulhu 7th edition (Unofficial), Chroniques Oubliées Contemporain, Chroniques Oubliées Fantasy, Clé en main, Cthulhu Hack, Cypher System, DnD 4th Edition, DnD5e, Dungeon World, Dungeonslayers 4, Earthdawn 4th Edition, Forbidden Lands, GURPS 4th Edition Game Aid (Unofficial), Kamigakari: God Hunter, LANCER, OpenD6 Space, Pathfinder 1, Pathfinder Second Edition (Official), Savage Worlds Adventure Edition, Shadow of the Demon Lord, Star Wars FFG system for Foundry VTT, Starfinder, Symbaroum, Tagmar RPG, Tormenta20, Warhammer Fantasy Roleplay 4th Edition. The information shown is system dependent. In DND5e, for example, it shows items, feats, ability checks, and spells. Its intent is to save GMs and players from having to frequently open character sheets to access actions, and to allow people to focus on the table."
+			],
+			"type": [ 
+				"plugin",
+				"resource"
+			],
+			"author": ["javieros"],
+			"authors": [{"name": "javieros"}],
+			"version": "3.0.19",
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion": "10.291",
+			"size": 6
+		},
+		{
+			"name" : "🔌 Token Action HUD 5e",
+			"source": "token-action-hud",
+			"manifesturl" : "https://github.com/Larkinabout/fvtt-token-action-hud-dnd5e/releases/download/1.2.2/module.json",
 			"entries": [
 				"This module populates a floating HUD, showing common actions for a controllable token. Supports DND5e, Pathfinder 2E, Dungeon World, Starfinder RPG, and WFRP4e. The information shown is system dependent. In DND5e, for example, it shows items, feats, ability checks, and spells. its intent is to save GMs and players from having to frequently open character sheets to access actions, and to allow people to focus on the table.",
 				"I don't have time to add every system, but it is designed to be easily extensible. If you have some programming knowledge and would like to add support for your system, please get in touch."
@@ -1097,12 +976,12 @@
 				"plugin",
 				"resource"
 			],
-			"author": ["Esposito"],
-			"authors": [{"name": "Esposito"}],
-			"systems":["dnd5e","dungeonworld","pf2e","wfrp4e","sfrpg","sw5e","demonlord","pf1","lancer","D35E","swade","starwarsffg","tormenta20","blades-in-the-dark","symbaroum","od6s","alienrpg","cthack"],
-			"version": "1.0.22",
-			"minimumCoreVersion":"0.6.0",
-			"compatibleCoreVersion":"0.7.9",
+			"author": ["Russell"],
+			"authors": [{"name": "Russell"}],
+			"systems":["dnd5e"],
+			"version": "1.2.2",
+			"minimumCoreVersion":"10.291",
+			"compatibleCoreVersion":"10.291",
 			"size": 211
 		},
 		{
@@ -1129,106 +1008,31 @@
 				{ "name": "dev7355608"},
 				{ "name": "Mestre Digital"}
 			],
-			"version": "0.5.1",
-			"compatibleCoreVersion": "0.7.9",
-			"minimumCoreVersion": "0.8.6",
+			"version": "0.6.1.2",
+			"compatibleCoreVersion": "10.285",
+			"minimumCoreVersion": "10",
 			"size": 2488
 		},
 		{
-			"name" : "🔌 Tool Proficiencies for DnD5e",
-			"source": "tool-proficiencies-5e",
-			"manifesturl": "https://raw.githubusercontent.com/adriangaro/tool-proficiencies-5e/0.1.1/module.json",
-			"entries": [
-				"This module adds a new tab to the actor sheet which allows the user to roll any tools proficiencies declared on their character sheet.",
-				"For macros and other modules, the Actor class has a new function which is 'rollTool' which allows you to roll any tool check even if the actor doesn't have proficiency."
-			],
-			"type": [ 
-				"plugin",
-				"resource"
-			],
-			"version": "0.2.1",
-			"author": ["MrRoAdd"],
-			"authors": [{"name": "MrRoAdd"}],
-			"minimumCoreVersion": "0.7.0",
-			"compatibleCoreVersion": "0.7.9",
-			"size": 1096
-		},
-		{
-			"name" : "🔌 Turn Marker",
-			"source": "turnmarker",
-			"manifesturl": "https://raw.githubusercontent.com/kckaiwei/TurnMarker-alt/v2.7.3/dist/module.json",
-			"entries": [
-				"Adds an image under a token who is currently active in the combat tracker. This is completely system agnostic, and fully customizable to fit right into your game."
-			],
-			"type": [ 
-				"plugin",
-				"resource"
-			],
-			"author": ["kckaiwei"],
-			"authors": [{"name": "kckaiwei"}],
-			"version": "2.7.3",
-			"minimumCoreVersion": "0.7.5",
-			"compatibleCoreVersion": "0.7.9",
-			"size": 7469
-		},
-		{
-			"name" : "BOK! Attack of the Giant Chicken",
-			"source": "baotgc",
-			"manifesturl" : "https://foundry.5e.tools/plutonium/baotgc/module.json",
-			"download" : "https://foundry.5e.tools/plutonium/baotgc/baotgc.zip",
+			"name" : "Ready to use Cards",
+			"source": "decks",
+			"manifesturl" : "https://gitlab.com/adrien.schiehle/ready-to-use-cards/-/raw/release-1.12.1/module.json",
 			"description": [
-				"<h1>BOK! Attack of the Giant Chicken</h1>\n<p>Help a farmer with his giant chicken in this unusual adventure!</p>\n<p> </p>\n<p>Bok! Attack of the Giant Chicken is a Fifth Edition adventure designed for three-to-five 2nd-to-4th-level characters and is optimized for a party of four 2nd-level characters. This side quest fits easily into any campaign setting. Higher-level parties—especially those with access to dispel magic—won’t find this adventure challenging. Characters of 2nd level who complete this adventure should earn enough experience to advance to 3rd level. Award 3rd- and 4th-level parties experience points based on the adventure’s challenges.</p>\n<p> </p>\n<h2>Backstory</h2>\n<p>Farmer Hershel’s prize chicken, Hershel Junior, somehow got into an experimental potion of growth, causing Hershel Junior to go from a Tiny fowl to a Huge bird of doom. Herschel now stands over 20-feet tall!</p>\n<p> </p>\n<p>Supposedly, the potion will last for no longer than four hours. Trouble is, Hershel Junior in his bigger state is now extremely hard to control. To make things worse, Hershel Junior thinks everyone looks like an insect—and chickens eat insects!</p>\n<p> </p>\n<h2>Features</h2>\n<p>As a DMDave adventure, you can expect the following features and benefits:</p>\n<ul>\n<li><strong>Original Artwork</strong>. DMDave-brand products include their own original artwork for you to enjoy.</li>\n<li><strong>Professional Cartography.</strong> Tom Cartos designed the encounter maps around the farm in this adventure. His maps bring life to every adventure location with remarkable attention to detail.</li>\n<li><strong>One-Click Macros.</strong> Run faster combat sessions with one click macros. Simply select the token and watch as macros for core features pop up. The macro auto rolls the initiative, saving throws, and resistances to make your game run smoother.</li>\n<li><strong>Endless Customization Options</strong>. Thanks to its adaptable nature, the various locations in Ostenwold can fit into any campaign setting.</li>\n</ul>\n<p> </p>\n<h3>Product Information</h3>\n<blockquote>\n<ul>\n<li>System: <strong>D&amp;D 5E </strong></li>\n<li>Starting Level: <strong>Low (2-4)</strong></li>\n<li>Length: <strong>Long Campaign</strong></li>\n</ul>\n</blockquote>\n<p> </p>\n<hr />\n<p><strong>DISCLAIMER:</strong> The use of this is meant for use for your personal use, and only if you legally possess such in accordance with your local laws.</p>"		
-			],
-			"author": ["DMDave"],
-			"authors": [{"name": "DMDave"}],
-			"type": [ 
-				"homebrew"
-			],
-			"system": [ "dnd5e"],
-			"level": {
-					"min": 2,
-					"max": 4
-				},
-			"length": "short",			
-			"version": "0.3.1",
-			"minimumCoreVersion": "0.7.9",
-			"compatibleCoreVersion": "0.8.6",
-			"systemVersion": "1.3.2",
-			"minimumSystemVersion": "1.2.4",
-			"compatibleSystemVersion": "1.3.2",
-			"size": 162791
-		},
-		{
-			"name" : "Curse of Strahd",
-			"source": "cos",
-			"manifesturl" : "https://foundry.5e.tools/plutonium/cor-cos/module.json",
-			"download" : "https://foundry.5e.tools/plutonium/cor-cos/cor-cos.zip",
-			"description": [
-				"<p>Unravel the mysteries of Ravenloft in this dread adventure for the world’s greatest roleplaying game</p>\n<p> </p>\n<p>Under raging storm clouds, the vampire Count Strahd von Zarovich stands silhouetted against the ancient walls of Castle Ravenloft. Rumbling thunder pounds the castle spires. The wind’s howling increases as he turns his gaze down toward the village of Barovia. A lightning flash rips through the darkness, but Strahd is gone. Only the howling of the wind fills the midnight air. The master of Castle Ravenloft is having guests for dinner—and you are invited.</p>\n<p> </p>\n<p>• A fantasy-horror adventure for characters levels 1-10, Curse of Strahd provides everything a Dungeon Master needs to create an exciting and memorable play experience.</p>\n<p>• Fans of the Dungeons &amp; Dragons Roleplaying Game can have additional adventures in Ravenloft by participating in the D&amp;D Adventurers League organized play program.</p>\n<p>• Included: a 54-card deck by Gale Force Nine representing the Tarokka cards, used by the fortune-teller Madam Eva in the adventure to randomly determine key aspects of the adventure. Also available from GF9 is a Curse of Strahd Dungeon Master's Screen.</p>\n<p>• Written in consultation with Tracy Hickman and Laura Hickman, creators of the original Ravenloft adventure.</p>\n<p> </p>\n<p>Product Information</p>\n<p>System: D&amp;D 5E (Ravenloft)</p>\n<p>Starting Level: Low (1-10)</p>\n<p>Length: Long Campaign</p>\n<p>Installation: World</p>\n<p> </p>\n<p>Curse of Strahd is produced by Wizards of the Coast. It was written by Chris Perkins, edited by Kim Mohan and Jeremy Crawford, and art directed by Kate Irwin. The adventure incorporates material from the original Ravenloft adventure as well as new story content created by Tracy and Laura Hickman, Chris Perkins, Adam Lee, Richard Whitters, and Jeremy Crawford.</p>\n<p> </p>\n<p><strong>DISCLAIMER:</strong> The use of this is meant for your personal use, and only if you legally possess such in accordance with your local laws.</p>"
+				"Module to help with the use of cards"
 			],
 			"type": [ 
-				"core"
-			],			
-			"length": "campaign",
-			"setting": "ravenloft",
-			"level": {
-				"min": 1,
-				"max": 10
-			},			
-			"author": ["Wizards of the Coast","Chris Perkins","Kim Mohan","Jeremy Crawford","Kate Irwin","Tracy and Laura Hickman","Adam Lee","Richard Whitters"],
+				 "resource"
+			],		
+			"author": ["didilchichi"],	
 			"authors": [
-				{"name": "Wizards of the Coast"},
-				{"name": "Chris Perkins"},
-				{"name": "Kim Mohan"},
-				{"name": "Jeremy Crawford"},
-				{"name": "Kate Irwin"},
-				{"name": "Tracy and Laura Hickman"},
-				{"name": "Adam Lee"},
-				{"name": "Richard Whitters"}
+				{
+				  "name" : "didilchichi"
+				}
 			],
-			"system": [ "dnd5e"],
-			"version": "0.3.4",
-			"size": 158792
+			"version": "1.12.1",
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion": "10",
+			"size": 214005		
 		},
 		{
 			"name" : "Deck Resources",
@@ -1283,381 +1087,6 @@
 			"minimumSystemVersion": "1.2.4",
 			"compatibleSystemVersion": "1.2.4",
 			"size": 214005		
-		},
-		{
-			"name" : "Tales from the Yawning Portal: The Forge of Fury",
-			"source": "cor-tftyp-tfof",
-			"manifesturl" : "https://foundry.5e.tools/plutonium/cor-tftyp-tfof/module.json",
-			"download" : "https://foundry.5e.tools/plutonium/cor-tftyp-tfof/cor-tftyp-tfof.zip",
-			"description": [
-				"<p>The Forge of Fury, written by Richard Baker, was published in 2000 shortly after The Sunless Citadel. Characters who succeeded in that mission and advanced to 3rd level were now ready to take on the challenges of a ruined dwarven fortress.</p>\n<p> </p>\n<p>Like its predecessor, The Forge of Fury is tailored to provide increasingly tougher threats as the characters make their way through the fortress. Those who survive the experience can expect to advance to 5th level—seasoned adventurers ready to strive for greater glory and renown.</p>\n<p> </p>\n<p>You can purchase this adventure individually, or buy all seven adventures at once in the full bundle of Tales from the Yawning Portal.</p>\n<p> </p>\n<h3>Product Information</h3>\n<blockquote>\n<ul>\n<li>System: <strong>D&amp;D 5E</strong></li>\n<li>Starting Level: <strong>Low (3)</strong></li>\n<li>Length: <strong>One Shot</strong></li>\n</ul>\n</blockquote>\n<p> </p>\n<p> </p>\n<hr />\n<p><strong>DISCLAIMER:</strong> The use of this is meant for use for your personal use, and only if you legally possess such in accordance with your local laws.</p>"
-			],
-			"type": [ 
-				"core"
-			],
-			"level": {
-					"min": 3,
-					"max": 3
-			},
-			"length": "one shot",
-		    "author":[
-				"Richard Baker",
-				"WotC", 
-				"Foundry Worlds Team" 
-		    ],
-			"authors": [
-				{
-				  "name" : "Richard Baker"
-				},
-				{
-				  "name" : "WotC",
-				  "url": "https://www.wizards.com"
-				},
-				{
-				  "name" : "Foundry Worlds Team"
-				}
-			],
-			"system": [ "DND5e"],
-			"version":"0.3.0",
-			"coreVersion":"0.7.10",
-			"minimumCoreVersion":"0.7.9",
-			"compatibleCoreVersion":"0.7.10",
-			"minimumSystemVersion":"1.2.2",
-			"compatibleSystemVersion":"1.2.4",
-			"size": 158911
-		},
-		{
-			"name" : "Mini-Dungeon Collection",
-			"source": "min-dun",
-			"manifesturl" : "https://foundry.5e.tools/plutonium/min-dun/module.json",
-			"download" : "https://foundry.5e.tools/plutonium/min-dun/min-dun.zip",
-			"entries": [
-				"<h1>10 Mini Adventures for Level 3 Heroes</h1>\n<p>From the depths of the darkest dungeons to primal dangers of the untamed wilderness, these adventures bind ancient mysteries, forgotten lore, and the allure of epic quests. Adventurers will explore realms unknown, face deadly foes, and discover tantalizing treasures and magnificent artifacts.</p>\n<p>&nbsp;</p>\n<p>AAW Games brings you this collection of 10 complete and ready-to-run scenarios designed especially for discerning Game Masters who want exciting adventures and need them now. Begin the next chapter of your campaign!</p>\n<p>&nbsp;</p>\n<p>Themed and organized for convenience, the Mini-Dungeon Tome for Level 3 PCs provides setting-neutral fantasy adventures suitable for parties at level 3. With all reference material included, this add-on holds everything you for hours of adventuring.</p>\n<p>&nbsp;</p>\n<p>Offering contributions from all-star authors and game designers, the Mini-Dungeon Tome for Roll20 is the series you have been searching for. Always have a new adventure at the ready and test the mettle of even the most experienced players!</p>\n<p>&nbsp;</p>\n<p>The following adventures are included in this add-on:</p>\n<p>&nbsp;</p>\n<h2>The Case of the Scrupulous Pawnbroker</h2>\n<p style=\"text-align: right;\"><em>by Stefanos Patelis for 4 heroes at level 3</em></p>\n<p>The PCs may have used the services of a local half-elven pawnbroker, Latricus, known to be stern but fair in his dealings. Now they find his store open, none of his assistants present, and the door to his basement office (where serious transactions took place) invitingly ajar. Maron, a nasty sorcerer, and her thugs have recently decided to change the nature of their transaction with the pawnbroker and the PCs are just in time.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<h2>The Blight</h2>\n<p style=\"text-align: right;\"><em>by Colin Stricklin for 4 heroes at level 3</em></p>\n<p>For nearly a thousand years this mighty oak stood as monarch of the forest, with its dryad as proud steward. When a self-absorbed local druid sought a new home, however, both dryad and tree became ill. This once-comfortable treetop dwelling now lies at the heart of a rotting forest. For even the greatest trees can die, going slowly bad from within.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<h2>The Unquenched Thirst</h2>\n<p style=\"text-align: right;\"><em>by Michael Allen for 4-5 heroes at level 3</em></p>\n<p>The tiny isle of Sandspit is a favorite place to maroon recalcitrant shipmates, for across the bay, the headland falls are visible to castaways. Wicked currents prevent escape from Sandspit, and the unfortunates discarded there slowly die of thirst in sight of the lifegiving waters. One such piece of tortured jetsam was Captain Staid Merrik, who rose as a wight and walked under the currents to reach the cup of life long denied. The foul magic of undeath clinging to Merrik ripped the sustenance out of the waters at the base of the falls, and as long as Merrik's shade resides in a cave behind them, will continue to do so, to the detriment of creatures native to the headland, or watering parties from passing vessels.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<h2>The Phase Spider Lair</h2>\n<p style=\"text-align: right;\"><em>by JJonathan Ely for 4-6 heroes at level 3</em></p>\n<p>TThe mountain town of Kraga has changed hands many times; strategically important for its location close to rich veins of iron and copper, it was originally a dwarven community who built structures both above and deep below the ground. Periodically attacked and razed by various tribes of orcs, ogres, stone giants, and humans, it has been rebuilt at least four times, leaving the deepest and most ancient structures accessible only by the sewers and subterranean water courses.</p>\n<p>&nbsp;</p>\n<p>Now a heavily defended border town providing refuge for many travelers passing through the mountains, it also purifies much of the ore pulled from the many mines near the town. Recently the town militia have noted a number of missing people who have entered the town but have never left&mdash;investigations have led them to the warren of ancient tunnels and sewers under the city, and they will pay handsomely for adventurers to investigate these disappearances&hellip;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<h2>Lair of the Mad Druid</h2>\n<p style=\"text-align: right;\"><em>by Louis Agresta for 4-6 heroes at level 3</em></p>\n<p>The forest primeval. Brave settlers seeking better lives gather their families and venture beneath her branches. They walk her leaf-dappled aisles, violate her ancient green stillness. They fell trees, build homes, plow the earth, and&hellip;vanish.</p>\n<p>&nbsp;</p>\n<p>The local magistrate, tired of discovering blood-smeared doorways where she should find cringing taxpayers, hires the party to investigate the disappearances. Of course, she fails to mention her first wave of would-be settlers massacred a tribe of forest gnomes in the very valley where her peasants now disappear, nor does she know a forest gnome druid survived. A Mad Druid bent on vengeance for his murdered people.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<h2>Neotomas' Paradise</h2>\n<p style=\"text-align: right;\"><em>by Michael Smith for 3-4 heroes at level 3-4</em></p>\n<p>Recently, the homeless of the city have begun to disappear. Few seem to care, and many are actually happy to see them gone. The local magistrate is not, however, and wants these disappearances looked into. Rumors have circulated that, under the cover of night, someone, or something, has been seen descending into the sewers below the market district via a grate in the street. The magistrate has tasked the PCs with investigating the sewers to see if any clues can be found relating to the recent disappearances.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<h2>Fitcher's</h2>\n<p style=\"text-align: right;\"><em>by Stephen Yeardley for 3-4 heroes at level 3-4</em></p>\n<p>\"Fitcher\" Lintu is a necromancer, avant-garde taxidermist, and one of the most intelligent, successful, and evil people in Morsain. Outwardly helpful about undead, he's a serial killer that happily sources &ldquo;raw materials&rdquo; himself.</p>\n<p>&nbsp;</p>\n<p>Lintu has almost finished his masterpiece secret tableau: two idealized humanoids as aerial lovers. But he can't resist adding &ldquo;perfect&rdquo; body parts, and he goes to bizarre lengths to get them. Every hook has happened recently; the PCs effectively follow up on all three.</p>\n<p>&nbsp;</p>\n<p>Additionally, Lintu wants part of a charismatic PC. Unless the PCs are careful, they might walk into a trap. His raven familiar secretly watches for approaching humanoids from a hidden perch, informs Lintu of arrivals via a talk-tube before they enter, and then chats to people while Lintu prepares. This is a no-holds-barred show-down with a powerful caster&mdash;the PCs had best take care!</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<h2>When Goblins Die, No Comets Are Seen</h2>\n<p style=\"text-align: right;\"><em>by Stephen Yeardley for 4-6 heroes at level 3-4</em></p>\n<p>After delving into the upper tunnels of a recently abandoned mine pursuing mutated goblins (in Doubt Not the Stars Are Fire), the party follows some buckled minecart rails, finding rough tunnels with unexpected chambers at their end. A palpable sense of fear pervades the area.</p>\n<p>&nbsp;</p>\n<p>The last members of a decimated tribe fled into these depths, but have no idea what to do now. They reached Area 5, but felt the sudden appearance of a worked room meant more trouble. Infamous amongst their kind, and fearing an unheralded death, they're currently psyching themselves to fight back to the surface.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<h2>Last Stand of the Forgotten Pirate</h2>\n<p style=\"text-align: right;\"><em>by Michael McCarthy for 4 heroes at level 3-5</em></p>\n<p>After losing his ship, his crew, and his leg to a sea monster, the pirate Gnarltooth retired to a much more peaceful profession: fishing. Yet even after two decades spent mostly ashore, Gnarltooth never quite forgot about the creature that scuttled him, nor did it forget him. The pair clashed repeatedly over the years, until Gnarltooth decided to end things one way or another. He hired a druid to call and bind &ldquo;The Beast&rdquo; here until one of them finally bested the other for good.</p>\n<p>&nbsp;</p>\n<p>That same druid has asked the PCs to check in on Gnarltooth. The old orc had made a lot of promises about what he'd do after The Beast was finally put down, and his few friends would like to see him able to pay out. Of course if he didn't make it, there was no telling what treasures the old salt still had hidden in his modest shack.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<h2>With a Candlestick</h2>\n<p style=\"text-align: right;\"><em>by Michael McCarthy for 4 heroes at level 3-5</em></p>\n<p>Lord and Lady Scarlet are wealthy, well connected and generally well liked&mdash;for nobility. Their social talents have lead to them hosting a national embassy on their estate, which now see a constant exchange of visiting nobility of all stripes.</p>\n<p>&nbsp;</p>\n<p>As one of the most well connected people in politics, Lord Scarlet is a perfect person to ask for a favor that requires political clout, which is why the PCs are paying him a visit. Yet they arrive at an unfortunate time. Mere minutes ago, Lord Scarlet was found dead in the library of his own embassy, in the middle of hosting a small group of business partners to discuss an upcoming venture.</p>\n<p>&nbsp;</p>\n<p>This Version of MDT 5E: Level 3 Adventures includes the entire content of these 5e adventures, fully integrated into the platform.&nbsp;</p>\n<ul>\n<li>10 encounter maps with Dynamic Lighting, Advanced Fog of War, and location numbers separated onto the GM layer</li>\n<li>47 NPCs and monsters linked to Character entries in the Journal, with Roll20 5th Edition OGL character sheets and clickable actions</li>\n<li>Cross-linked handouts throughout the adventure with links into the 5e compendium and automated damage dice rolls for traps</li>\n<li>Rollable tables for random events and shapeshifters</li>\n</ul>\n<p>&nbsp;</p>\n<hr />\n<p><strong>DISCLAIMER:</strong>&nbsp;The use of this is meant for use for your personal use, and only if you legally possess such in accordance with your local laws.</p>"
-			],
-			"author": ["AAW (Adventure A Week)"],
-			"authors": [{"name": "AAW (Adventure A Week)"}],
-			"type": [ 
-				"homebrew",
-				"collection"
-			],
-			"level": {
-					"min": 3,
-					"max": 5
-			},
-			"length": "one shot",
-			"coreVersion": "0.7.9",
-			"minimumCoreVersion": "0.5.3",
-			"compatibleCoreVersion": "0.8.6",
-			"systemVersion": "1.3.2",
-			"minimumSystemVersion": "1.2.4",
-			"compatibleSystemVersion": "1.3.2",
-			"system": [ "dnd5e"],
-			"version": "0.3.0",
-			"size": 265236
-		},
-		{
-			"name": "The Delian Tomb",
-			"source": "tDT",
-			"manifesturl" : "https://foundry.5e.tools/plutonium/brw-tdt/module.json",
-			"download" : "https://foundry.5e.tools/plutonium/brw-tdt/brw-tdt.zip",
-			"description": [
-				"The Delian Tomb is a low-level one-shot introduction adventure featuring a tomb of an ancient order of knights infested by goblins.\n\n<blockquote>\n<em>System: <strong>D&amp;D 5E<br/></strong></em>\n\n<em>Starting Level: <strong>1st-3rd</strong></em>\n\n<em>Length: <strong>One Shot</strong></em>\n</blockquote>\n\nThe Delian Tomb is an adventure originally outlined in <a href=\"https://www.youtube.com/watch?v=zTD2RZz6mlo \" target=\"_blank\">Matt Colville's first running the game video</a>."
-			],
-			"type": [ 
-				"homebrew"
-			],
-			"level": {
-					"min": 1,
-					"max": 3
-			},
-			"length": "one shot",
-			"author": ["Foundry Worlds Team"],
-			"authors": [{"name": "Foundry Worlds Team"}],
-			"minimumCoreVersion": "0.7.9",
-			"compatibleCoreVersion": "0.7.9",
-			"systemVersion": "1.2.4",
-			"minimumSystemVersion": "1.2.4",
-			"compatibleSystemVersion": "1.3.2",
-			"version": "0.3.5",
-			"size": 10279
-		}
-	],
-	"world": [
-		{
-			"name" : "BOK! Attack of the Giant Chicken",
-			"source": "baotgc",
-			"manifesturl" : "https://foundry.5e.tools/plutonium/baotgc/world.json",
-			"download" : "https://foundry.5e.tools/plutonium/baotgc/baotgc.zip",
-			"description": [
-				"<h1>BOK! Attack of the Giant Chicken</h1>\n<p>Help a farmer with his giant chicken in this unusual adventure!</p>\n<p> </p>\n<p>Bok! Attack of the Giant Chicken is a Fifth Edition adventure designed for three-to-five 2nd-to-4th-level characters and is optimized for a party of four 2nd-level characters. This side quest fits easily into any campaign setting. Higher-level parties—especially those with access to dispel magic—won’t find this adventure challenging. Characters of 2nd level who complete this adventure should earn enough experience to advance to 3rd level. Award 3rd- and 4th-level parties experience points based on the adventure’s challenges.</p>\n<p> </p>\n<h2>Backstory</h2>\n<p>Farmer Hershel’s prize chicken, Hershel Junior, somehow got into an experimental potion of growth, causing Hershel Junior to go from a Tiny fowl to a Huge bird of doom. Herschel now stands over 20-feet tall!</p>\n<p> </p>\n<p>Supposedly, the potion will last for no longer than four hours. Trouble is, Hershel Junior in his bigger state is now extremely hard to control. To make things worse, Hershel Junior thinks everyone looks like an insect—and chickens eat insects!</p>\n<p> </p>\n<h2>Features</h2>\n<p>As a DMDave adventure, you can expect the following features and benefits:</p>\n<ul>\n<li><strong>Original Artwork</strong>. DMDave-brand products include their own original artwork for you to enjoy.</li>\n<li><strong>Professional Cartography.</strong> Tom Cartos designed the encounter maps around the farm in this adventure. His maps bring life to every adventure location with remarkable attention to detail.</li>\n<li><strong>One-Click Macros.</strong> Run faster combat sessions with one click macros. Simply select the token and watch as macros for core features pop up. The macro auto rolls the initiative, saving throws, and resistances to make your game run smoother.</li>\n<li><strong>Endless Customization Options</strong>. Thanks to its adaptable nature, the various locations in Ostenwold can fit into any campaign setting.</li>\n</ul>\n<p> </p>\n<h3>Product Information</h3>\n<blockquote>\n<ul>\n<li>System: <strong>D&amp;D 5E </strong></li>\n<li>Starting Level: <strong>Low (2-4)</strong></li>\n<li>Length: <strong>Long Campaign</strong></li>\n</ul>\n</blockquote>\n<p> </p>\n<hr />\n<p><strong>DISCLAIMER:</strong> The use of this is meant for use for your personal use, and only if you legally possess such in accordance with your local laws.</p>"
-			],
-			"author": ["DMDave"],
-			"authors": [
-				{"name": "DMDave"}
-			],
-			"system": ["DND5e"],
-			"version": "0.3.1",
-			"minimumCoreVersion": "0.7.9",
-			"compatibleCoreVersion": "0.8.1",
-			"systemVersion": "1.3.0",
-			"minimumSystemVersion": "1.2.4",
-			"compatibleSystemVersion": "1.3.2",
-			"size": 162791
-		},
-		{
-			"name" : "Curse of Strahd",
-			"source": "cos",
-			"manifesturl" : "https://foundry.5e.tools/plutonium/cor-cos/world.json",
-			"download" : "https://foundry.5e.tools/plutonium/cor-cos/cor-cos.zip",
-			"description": [
-				"<p>Unravel the mysteries of Ravenloft in this dread adventure for the world’s greatest roleplaying game</p>\n<p> </p>\n<p>Under raging storm clouds, the vampire Count Strahd von Zarovich stands silhouetted against the ancient walls of Castle Ravenloft. Rumbling thunder pounds the castle spires. The wind’s howling increases as he turns his gaze down toward the village of Barovia. A lightning flash rips through the darkness, but Strahd is gone. Only the howling of the wind fills the midnight air. The master of Castle Ravenloft is having guests for dinner—and you are invited.</p>\n<p> </p>\n<p>• A fantasy-horror adventure for characters levels 1-10, Curse of Strahd provides everything a Dungeon Master needs to create an exciting and memorable play experience.</p>\n<p>• Fans of the Dungeons &amp; Dragons Roleplaying Game can have additional adventures in Ravenloft by participating in the D&amp;D Adventurers League organized play program.</p>\n<p>• Included: a 54-card deck by Gale Force Nine representing the Tarokka cards, used by the fortune-teller Madam Eva in the adventure to randomly determine key aspects of the adventure. Also available from GF9 is a Curse of Strahd Dungeon Master's Screen.</p>\n<p>• Written in consultation with Tracy Hickman and Laura Hickman, creators of the original Ravenloft adventure.</p>\n<p> </p>\n<p>Product Information</p>\n<p>System: D&amp;D 5E (Ravenloft)</p>\n<p>Starting Level: Low (1-10)</p>\n<p>Length: Long Campaign</p>\n<p>Installation: World</p>\n<p> </p>\n<p>Curse of Strahd is produced by Wizards of the Coast. It was written by Chris Perkins, edited by Kim Mohan and Jeremy Crawford, and art directed by Kate Irwin. The adventure incorporates material from the original Ravenloft adventure as well as new story content created by Tracy and Laura Hickman, Chris Perkins, Adam Lee, Richard Whitters, and Jeremy Crawford.</p>\n<p> </p>\n<p><strong>DISCLAIMER:</strong> The use of this is meant for your personal use, and only if you legally possess such in accordance with your local laws.</p>"
-			],
-			"author": ["Wizards of the Coast", "Chris Perkins", "Kim Mohan","Jeremy Crawford","Kate Irwin","Tracy and Laura Hickman","Adam Lee","Richard Whitters","Foundry modules Team"],
-			"authors": [
-				{
-					"name": "Wizards of the Coast"
-				},
-				{
-					"name": "Chris Perkins"
-				},
-				{
-					"name": "Kim Mohan"
-				},
-				{
-					"name": "Jeremy Crawford"
-				},
-				{
-					"name": "Kate Irwin"
-				},
-				{
-					"name": "Tracy and Laura Hickman"
-				},
-				{
-					"name": "Adam Lee"
-				}, 
-				{
-					"name": "Richard Whitters"
-				},
-				{
-					"name": "Foundry modules Team"
-				}
-			],
-			"system": [ "DND5e"],
-			"version": "0.3.4",
-			"size": 158792
-		},
-		{
-			"name" : "Deck Resources",
-			"source": "decks",
-			"manifesturl" : "https://foundry.5e.tools/worlds/decks/world.json",
-			"download" : "https://foundry.5e.tools/worlds/decks/decks.zip",
-			"description": [
-				"<p>A Collection of Various Decks for Tabletop Games, or as Accessories with another Games</p>"
-			],
-			"author": ["Nord Game","Paul Weber","WotC","Nord Game","Paizo","Deck of Many (HitPoint Press)","VoivodeVukodlak","Epic Isometric (Alex Drummand)"],
-			"authors": [
-				{
-				  "name" : "Nord Game",
-				  "url": "https://nordgamesllc.com/"
-				},
-				{
-				  "name" : "Paul Weber",
-				  "url": "https://dm-paul-weber.tumblr.com/post/149233853987/over-300-downloadable-printable-dd-cards-i"
-				},
-				{
-				  "name" : "WotC",
-				  "url": "https://wotc.com/"
-				},
-				{
-				  "name" : "Nord Game",
-				  "url": "https://nordgamesllc.com/"
-				},
-				{
-				  "name" : "Paizo",
-				  "url": "https://paizo.com/"
-				},
-				{
-				  "name" : "Deck of Many (HitPoint Press)",
-				  "url": "https://hitpointpress.com/"
-				},
-				{
-				  "name" : "VoivodeVukodlak"
-				},
-				{
-				  "name" : "Epic Isometric (Alex Drummand)",
-				  "url": "https://epicisometric.com/"
-				}
-			],
-			"system": [ "DND5e"],
-			"version": "0.3.0.2",
-			"minimumCoreVersion": "0.7.9",
-			"compatibleCoreVersion": "0.8.6",
-			"systemVersion": "1.3.2",
-			"minimumSystemVersion": "1.2.4",
-			"compatibleSystemVersion": "1.3.2",
-			"size": 214005
-		},
-		{
-			"name": "🎲Board Game Launcher🎲",
-			"source": "board_game",
-			"manifesturl": "https://foundry.5e.tools/worlds/board_game/world.json",
-			"download": "https://foundry.5e.tools/worlds/board_game/board_game.zip",  
-			"entries": [""],
-			"author": [ "Foundry Worlds Creator Team"],
-			"authors": [
-				{
-					"name": "Foundry Worlds Creator Team",
-					"url": "https://discord.gg/pxbbxtC7Hp"
-				}
-			],
-			"type": [ 
-				"board game",
-				"resource"
-			],
-			"version": "0.4.0",
-			"system": ["dnd5e"],
-			"systemVersion": "1.3.4",
-			"minimumCoreVersion": "0.7.10",
-			"compatibleCoreVersion": "0.8.9",
-			"dependencies": [
-				{
-				    	"name": "plutonium",
-					"manifest": "https://get.5e.tools/plutonium/module.json",
-					"version": "2.32.1",
-					"author": "Giddy",
-					"type": "module"
-				},
-				{
-					"name": "dice-so-nice",
-					"manifest": "https://gitlab.com/riccisi/foundryvtt-dice-so-nice/-/raw/master/module/module.json",
-					"version": "4.0.6",
-					"author": "Simone, JDW",
-					"type": "module"
-				},
-				{
-				    	"name": "vassal-import",
-					"manifest": "https://raw.githubusercontent.com/Bryan-Legend/vassal-import/master/module.json",
-					"version": "0.6.0",
-					"author": "Bryan Livingston",
-					"type": "module"
-				},
-				{
-					"name": "cardsupport",
-					"manifest": "https://github.com/spacemandev-git/fvtt-card-support/releases/download/latest/module.json",
-					"version": "1.1.0",
-					"author": "pacemandev, Norc",
-					"type": "module"
-				},
-				{
-					"name": "moar-folders",
-					"manifest": "https://raw.githubusercontent.com/KayelGee/moar-folders/master/module.json",
-					"version": "1.1.0",
-					"author": "KayelGee - KayelGee#524",
-					"type": "module"
-				},
-				{
-					"name": "token-hud-wildcard",
-					"manifest": "https://raw.githubusercontent.com/javieros105/FVTT-TokenHUDWildcard/master/token-hud-wildcard/module.json",
-					"version": "1.2.0",
-					"author": "Javieros"
-    				},
-				{
-					"name": "df-scene-enhance",
-					"author": "flamewave000#6766",
-					"version": "3.4.1",
-					"manifest": "https://dragonflagon.cafe/mods/man/df-scene-enhance"
-				},
-				{
-					"name": "dice-calculator",
-					"manifest": "https://gitlab.com/asacolips-projects/foundry-mods/foundry-vtt-dice-calculator/raw/master/module.json",
-					"version": "1.2.1",
-					"author": "Asacolips",
-					"type": "module"
-				},
-				{
-					"name": "resource-icons",
-					"manifest": "https://github.com/jessev14/resource-icons/releases/latest/download/module.json",
-					"version": "1.1.6",
-					"author": "enso#0361",
-					"type": "module"
-				}
-			],
-			"coreVersion": "0.8.8",
-			"size": 214005
-		},
-		{
-			"name" : "Tales from the Yawning Portal: The Forge of Fury",
-			"source": "cor-tftyp-tfof",
-			"manifesturl" : "https://foundry.5e.tools/plutonium/cor-tftyp-tfof/world.json",
-			"download" : "https://foundry.5e.tools/plutonium/cor-tftyp-tfof/cor-tftyp-tfof.zip",
-			"description": [
-				"<p>The Forge of Fury, written by Richard Baker, was published in 2000 shortly after The Sunless Citadel. Characters who succeeded in that mission and advanced to 3rd level were now ready to take on the challenges of a ruined dwarven fortress.</p>\n<p> </p>\n<p>Like its predecessor, The Forge of Fury is tailored to provide increasingly tougher threats as the characters make their way through the fortress. Those who survive the experience can expect to advance to 5th level—seasoned adventurers ready to strive for greater glory and renown.</p>\n<p> </p>\n<p>You can purchase this adventure individually, or buy all seven adventures at once in the full bundle of Tales from the Yawning Portal.</p>\n<p> </p>\n<h3>Product Information</h3>\n<blockquote>\n<ul>\n<li>System: <strong>D&amp;D 5E</strong></li>\n<li>Starting Level: <strong>Low (3)</strong></li>\n<li>Length: <strong>One Shot</strong></li>\n</ul>\n</blockquote>\n<p> </p>\n<p> </p>\n<hr />\n<p><strong>DISCLAIMER:</strong> The use of this is meant for use for your personal use, and only if you legally possess such in accordance with your local laws.</p>"
-			],
-			"type": [ 
-				"core"
-			],
-			"level": {
-					"min": 3,
-					"max": 5
-			},
-			"length": "one shot",
-		    "author":[
-				"Richard Baker",
-				"WotC", 
-				"Foundry Worlds Team" 
-		    ],
-			"authors": [
-				{
-				  "name" : "Richard Baker"
-				},
-				{
-				  "name" : "WotC",
-				  "url": "https://www.wizards.com"
-				},
-				{
-				  "name" : "Foundry Worlds Team"
-				}
-			],
-			"system": [ "DND5e"],
-			"version":"0.3.0",
-			"coreVersion":"0.7.10",
-			"minimumCoreVersion":"0.7.9",
-			"compatibleCoreVersion":"0.7.10",
-			"minimumSystemVersion":"1.2.2",
-			"compatibleSystemVersion":"1.2.4",
-			"size": 158911
-		},
-		{
-			"name" : "Mini-Dungeon Collection",
-			"source": "min-dun",
-			"manifesturl" : "https://foundry.5e.tools/plutonium/min-dun/world.json",
-			"download" : "https://foundry.5e.tools/plutonium/min-dun/min-dun.zip",
-			"description": [
-				"<h1>10 Mini Adventures for Level 3 Heroes</h1>\n<p>From the depths of the darkest dungeons to primal dangers of the untamed wilderness, these adventures bind ancient mysteries, forgotten lore, and the allure of epic quests. Adventurers will explore realms unknown, face deadly foes, and discover tantalizing treasures and magnificent artifacts.</p>\n<p>&nbsp;</p>\n<p>AAW Games brings you this collection of 10 complete and ready-to-run scenarios designed especially for discerning Game Masters who want exciting adventures and need them now. Begin the next chapter of your campaign!</p>\n<p>&nbsp;</p>\n<p>Themed and organized for convenience, the Mini-Dungeon Tome for Level 3 PCs provides setting-neutral fantasy adventures suitable for parties at level 3. With all reference material included, this add-on holds everything you for hours of adventuring.</p>\n<p>&nbsp;</p>\n<p>Offering contributions from all-star authors and game designers, the Mini-Dungeon Tome for Roll20 is the series you have been searching for. Always have a new adventure at the ready and test the mettle of even the most experienced players!</p>\n<p>&nbsp;</p>\n<p>The following adventures are included in this add-on:</p>\n<p>&nbsp;</p>\n<h2>The Case of the Scrupulous Pawnbroker</h2>\n<p style=\"text-align: right;\"><em>by Stefanos Patelis for 4 heroes at level 3</em></p>\n<p>The PCs may have used the services of a local half-elven pawnbroker, Latricus, known to be stern but fair in his dealings. Now they find his store open, none of his assistants present, and the door to his basement office (where serious transactions took place) invitingly ajar. Maron, a nasty sorcerer, and her thugs have recently decided to change the nature of their transaction with the pawnbroker and the PCs are just in time.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<h2>The Blight</h2>\n<p style=\"text-align: right;\"><em>by Colin Stricklin for 4 heroes at level 3</em></p>\n<p>For nearly a thousand years this mighty oak stood as monarch of the forest, with its dryad as proud steward. When a self-absorbed local druid sought a new home, however, both dryad and tree became ill. This once-comfortable treetop dwelling now lies at the heart of a rotting forest. For even the greatest trees can die, going slowly bad from within.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<h2>The Unquenched Thirst</h2>\n<p style=\"text-align: right;\"><em>by Michael Allen for 4-5 heroes at level 3</em></p>\n<p>The tiny isle of Sandspit is a favorite place to maroon recalcitrant shipmates, for across the bay, the headland falls are visible to castaways. Wicked currents prevent escape from Sandspit, and the unfortunates discarded there slowly die of thirst in sight of the lifegiving waters. One such piece of tortured jetsam was Captain Staid Merrik, who rose as a wight and walked under the currents to reach the cup of life long denied. The foul magic of undeath clinging to Merrik ripped the sustenance out of the waters at the base of the falls, and as long as Merrik's shade resides in a cave behind them, will continue to do so, to the detriment of creatures native to the headland, or watering parties from passing vessels.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<h2>The Phase Spider Lair</h2>\n<p style=\"text-align: right;\"><em>by JJonathan Ely for 4-6 heroes at level 3</em></p>\n<p>TThe mountain town of Kraga has changed hands many times; strategically important for its location close to rich veins of iron and copper, it was originally a dwarven community who built structures both above and deep below the ground. Periodically attacked and razed by various tribes of orcs, ogres, stone giants, and humans, it has been rebuilt at least four times, leaving the deepest and most ancient structures accessible only by the sewers and subterranean water courses.</p>\n<p>&nbsp;</p>\n<p>Now a heavily defended border town providing refuge for many travelers passing through the mountains, it also purifies much of the ore pulled from the many mines near the town. Recently the town militia have noted a number of missing people who have entered the town but have never left&mdash;investigations have led them to the warren of ancient tunnels and sewers under the city, and they will pay handsomely for adventurers to investigate these disappearances&hellip;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<h2>Lair of the Mad Druid</h2>\n<p style=\"text-align: right;\"><em>by Louis Agresta for 4-6 heroes at level 3</em></p>\n<p>The forest primeval. Brave settlers seeking better lives gather their families and venture beneath her branches. They walk her leaf-dappled aisles, violate her ancient green stillness. They fell trees, build homes, plow the earth, and&hellip;vanish.</p>\n<p>&nbsp;</p>\n<p>The local magistrate, tired of discovering blood-smeared doorways where she should find cringing taxpayers, hires the party to investigate the disappearances. Of course, she fails to mention her first wave of would-be settlers massacred a tribe of forest gnomes in the very valley where her peasants now disappear, nor does she know a forest gnome druid survived. A Mad Druid bent on vengeance for his murdered people.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<h2>Neotomas' Paradise</h2>\n<p style=\"text-align: right;\"><em>by Michael Smith for 3-4 heroes at level 3-4</em></p>\n<p>Recently, the homeless of the city have begun to disappear. Few seem to care, and many are actually happy to see them gone. The local magistrate is not, however, and wants these disappearances looked into. Rumors have circulated that, under the cover of night, someone, or something, has been seen descending into the sewers below the market district via a grate in the street. The magistrate has tasked the PCs with investigating the sewers to see if any clues can be found relating to the recent disappearances.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<h2>Fitcher's</h2>\n<p style=\"text-align: right;\"><em>by Stephen Yeardley for 3-4 heroes at level 3-4</em></p>\n<p>\"Fitcher\" Lintu is a necromancer, avant-garde taxidermist, and one of the most intelligent, successful, and evil people in Morsain. Outwardly helpful about undead, he's a serial killer that happily sources &ldquo;raw materials&rdquo; himself.</p>\n<p>&nbsp;</p>\n<p>Lintu has almost finished his masterpiece secret tableau: two idealized humanoids as aerial lovers. But he can't resist adding &ldquo;perfect&rdquo; body parts, and he goes to bizarre lengths to get them. Every hook has happened recently; the PCs effectively follow up on all three.</p>\n<p>&nbsp;</p>\n<p>Additionally, Lintu wants part of a charismatic PC. Unless the PCs are careful, they might walk into a trap. His raven familiar secretly watches for approaching humanoids from a hidden perch, informs Lintu of arrivals via a talk-tube before they enter, and then chats to people while Lintu prepares. This is a no-holds-barred show-down with a powerful caster&mdash;the PCs had best take care!</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<h2>When Goblins Die, No Comets Are Seen</h2>\n<p style=\"text-align: right;\"><em>by Stephen Yeardley for 4-6 heroes at level 3-4</em></p>\n<p>After delving into the upper tunnels of a recently abandoned mine pursuing mutated goblins (in Doubt Not the Stars Are Fire), the party follows some buckled minecart rails, finding rough tunnels with unexpected chambers at their end. A palpable sense of fear pervades the area.</p>\n<p>&nbsp;</p>\n<p>The last members of a decimated tribe fled into these depths, but have no idea what to do now. They reached Area 5, but felt the sudden appearance of a worked room meant more trouble. Infamous amongst their kind, and fearing an unheralded death, they're currently psyching themselves to fight back to the surface.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<h2>Last Stand of the Forgotten Pirate</h2>\n<p style=\"text-align: right;\"><em>by Michael McCarthy for 4 heroes at level 3-5</em></p>\n<p>After losing his ship, his crew, and his leg to a sea monster, the pirate Gnarltooth retired to a much more peaceful profession: fishing. Yet even after two decades spent mostly ashore, Gnarltooth never quite forgot about the creature that scuttled him, nor did it forget him. The pair clashed repeatedly over the years, until Gnarltooth decided to end things one way or another. He hired a druid to call and bind &ldquo;The Beast&rdquo; here until one of them finally bested the other for good.</p>\n<p>&nbsp;</p>\n<p>That same druid has asked the PCs to check in on Gnarltooth. The old orc had made a lot of promises about what he'd do after The Beast was finally put down, and his few friends would like to see him able to pay out. Of course if he didn't make it, there was no telling what treasures the old salt still had hidden in his modest shack.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<h2>With a Candlestick</h2>\n<p style=\"text-align: right;\"><em>by Michael McCarthy for 4 heroes at level 3-5</em></p>\n<p>Lord and Lady Scarlet are wealthy, well connected and generally well liked&mdash;for nobility. Their social talents have lead to them hosting a national embassy on their estate, which now see a constant exchange of visiting nobility of all stripes.</p>\n<p>&nbsp;</p>\n<p>As one of the most well connected people in politics, Lord Scarlet is a perfect person to ask for a favor that requires political clout, which is why the PCs are paying him a visit. Yet they arrive at an unfortunate time. Mere minutes ago, Lord Scarlet was found dead in the library of his own embassy, in the middle of hosting a small group of business partners to discuss an upcoming venture.</p>\n<p>&nbsp;</p>\n<p>This Version of MDT 5E: Level 3 Adventures includes the entire content of these 5e adventures, fully integrated into the platform.&nbsp;</p>\n<ul>\n<li>10 encounter maps with Dynamic Lighting, Advanced Fog of War, and location numbers separated onto the GM layer</li>\n<li>47 NPCs and monsters linked to Character entries in the Journal, with Roll20 5th Edition OGL character sheets and clickable actions</li>\n<li>Cross-linked handouts throughout the adventure with links into the 5e compendium and automated damage dice rolls for traps</li>\n<li>Rollable tables for random events and shapeshifters</li>\n</ul>\n<p>&nbsp;</p>\n<hr />\n<p><strong>DISCLAIMER:</strong>&nbsp;The use of this is meant for use for your personal use, and only if you legally possess such in accordance with your local laws.</p>"
-			],
-			"author": ["AAW (Adventure A Week)"],
-			"authors": [{"name": "AAW (Adventure A Week)"}],
-			"system": [ "DND5e"],
-			"version": "0.3.0",
-			"size": 265236
-		},
-		{
-			"name": "The Delian Tomb",
-			"source": "tDT",
-			"manifesturl" : "https://foundry.5e.tools/plutonium/brw-tdt/world.json",
-			"download" : "https://foundry.5e.tools/plutonium/brw-tdt/brw-tdt.zip",
-			"description": [
-				"The Delian Tomb is a low-level one-shot introduction adventure featuring a tomb of an ancient order of knights infested by goblins.\n\n<blockquote>\n<em>System: <strong>D&amp;D 5E<br/></strong></em>\n\n<em>Starting Level: <strong>1st-3rd</strong></em>\n\n<em>Length: <strong>One Shot</strong></em>\n</blockquote>\n\nThe Delian Tomb is an adventure originally outlined in <a href=\"https://www.youtube.com/watch?v=zTD2RZz6mlo \" target= \"_blank\">Matt Colville's first running the game video</a>."
-			],
-			"author": ["Foundry Worlds Team"],
-			"authors": [{"name": "Foundry Worlds Team"}],
-			"minimumCoreVersion": "0.7.9",
-			"compatibleCoreVersion": "0.7.10",
-			"systemVersion": "1.2.4",
-			"minimumSystemVersion": "1.2.4",
-			"compatibleSystemVersion": "1.3.3",
-			"version": "0.3.5",
-			"size": 10279
 		}
 	]
 }
