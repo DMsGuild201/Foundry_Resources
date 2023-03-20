@@ -18,7 +18,6 @@
 				"resource"
 			],
 			"version": "10.0.0.1",
-			"author": ["tim posney"],
 			"authors": [{"name": "tim posney"}],
 			"coreVersion": "10",
 			"minimumCoreVersion": "10",
@@ -26,7 +25,7 @@
 			"system": [
 				"dnd5e"
 			],			
-			"size": 2288
+			"size": 2430
 		},
 		{
 			"name" : "🔌 Animated Spell Effects",
@@ -40,12 +39,11 @@
 				"resource"
 			],
 			"version": "0.6.8",
-			"author": ["jackkerouac"],
 			"authors": [{"name": "jackkerouac"}],
 			"coreVersion": "string",
 			"minimumCoreVersion": "0.5.5",
 			"compatibleCoreVersion": "10",
-			"size": 1076766
+			"size": 22100
 		},
 		{
 			"name" : "🔌 Monarch",
@@ -59,7 +57,6 @@
 				"resource"
 			],
 			"version": "0.4.1",
-			"author": ["zeel"],
 			"authors": [
 				{"name": "zeel"}
 			],
@@ -79,11 +76,10 @@
 				"resource"
 			],
 			"version": "0.3.1",
-			"author": ["errational"],
 			"authors": [{"name": "errational"}],
 			"minimumCoreVersion": "10.275",
 			"compatibleCoreVersion": "10.290",
-			"size": 3690000
+			"size": 369000
 		},
 		{
 			"name" : "🔌 Combat Enhancements",
@@ -97,11 +93,10 @@
 				"resource"
 			],
 			"version": "1.2.0",
-			"author": ["Asacolips"],
 			"authors": [{"name": "Asacolips"}],
 			"minimumCoreVersion": "10",
 			"compatibleCoreVersion": "10.273",
-			"size": 62
+			"size": 9360
 		},
 		{
 			"name" : "🔌 DF Scene Enhancements",
@@ -115,11 +110,10 @@
 				"resource"
 			],
 			"version": "3.6.0",
-			"author": ["flamewave000"],
 			"authors": [{"name": "flamewave000"}],
 			"minimumCoreVersion": "10",
 			"compatibleCoreVersion": "10.288",
-			"size": 78400
+			"size": 29400
 		},
 		{
 			"name" : "🔌 DF Active Lights",
@@ -133,11 +127,10 @@
 				"resource"
 			],
 			"version": "1.3.1",
-			"author": ["flamewave000"],
 			"authors": [{"name": "flamewave000"}],
 			"minimumCoreVersion": "10",
 			"compatibleCoreVersion": "10.290",
-			"size": 78400
+			"size": 26600
 		},
 		{
 			"name" : "🔌 DF Architech",
@@ -152,11 +145,10 @@
 				"resource"
 			],
 			"version": "4.0.0",
-			"author": ["flamewave000"],
 			"authors": [{"name": "flamewave000"}],
 			"minimumCoreVersion": "10",
 			"compatibleCoreVersion": "10.286",
-			"size": 78400
+			"size": 2620
 		},
 		{
 			"name" : "🔌 DF Curvy Walls",
@@ -170,11 +162,10 @@
 				"resource"
 			],
 			"version": "3.4.0",
-			"author": ["flamewave000"],
 			"authors": [{"name": "flamewave000"}],
 			"minimumCoreVersion": "10",
 			"compatibleCoreVersion": "10.288",
-			"size": 78400
+			"size": 10400
 		},
 		{
 			"name" : "🔌 DFreds Droppables",
@@ -188,11 +179,10 @@
 				"resource"
 			],
 			"version": "2.0.5",
-			"author": ["DFreds"],
 			"authors": [{"name": "DFreds"}],
 			"minimumCoreVersion": "10",
 			"compatibleCoreVersion": "10.291",
-			"size": 10
+			"size": 11100
 		},
 		{
 			"name" : "🔌 DFreds Pocket Change",
@@ -207,11 +197,10 @@
 				"resource"
 			],
 			"version": "4.0.1",
-			"author": ["DFreds"],
 			"authors": [{"name": "DFreds"}],
 			"minimumCoreVersion": "10",
 			"compatibleCoreVersion": "10.286",
-			"size": 10
+			"size": 14500
 		},
 		{
 			"name" : "🔌 Dynamic Active Effects",
@@ -248,13 +237,12 @@
 				"resource"
 			],
 			"version": "10.0.20",
-			"author": ["tim posney"],
 			"authors": [{"name": "tim posney"}],
 			"compatibleCoreVersion": "10.279",
 			"minimumCoreVersion": "10",
 			"minimumSystemVersion": "2.1.5",
 			"systems": ["dnd5e", "sw5e"],
-			"size": 475
+			"size": 93300
 		},
 		{
 			"name" : "🔌 Dynamic Active Effects SRD",
@@ -270,11 +258,10 @@
 			],
 			"version": "6.0.01",
 			"system": [ "DnD5e"],
-			"author": ["Kandashi"],
 			"authors": [{"name": "Kandashi"}],
 			"minimumCoreVersion": "9",
 			"compatibleCoreVersion": "9",
-			"size": 806
+			"size": 66100
 		},
 		{
 			"name" : "🔌 Enhanced Terrain Layer",
@@ -295,11 +282,10 @@
 				"resource"
 			],
 			"version": "10.6",
-			"author": ["Ironmonk"],
 			"authors": [{"name": "Ironmonk"}],
 			"minimumCoreVersion": "10",
 			"compatibleCoreVersion": "10",
-			"size": 284
+			"size": 32000
 			
 		},
 		{
@@ -314,11 +300,10 @@
 				"resource"
 			],
 			"version": "1.4.3",
-			"author": ["Moerill"],
 			"authors": [{"name": "Moerill"}],
 			"minimumCoreVersion": "9",
 			"compatibleCoreVersion": "10",
-			"size": 5
+			"size": 5640
 		},
 		{
 			"name" : "🔌 FXMaster",
@@ -333,11 +318,10 @@
 				"resource"
 			],
 			"version": "3.5.2",
-			"author": ["U-man", "Ghost"],
 			"authors": [{"name": "U-man"}],
 			"compatibleCoreVersion": "10.278",
 			"minimumCoreVersion": "10",
-			"size": 13737
+			"size": 18200
 		},
 		{
 			"name" : "🔌 Grape Juice Isometrics",
@@ -357,11 +341,10 @@
 					"name": "lib-wrapper"
 				}
 			],
-			"author": ["Grape Juice"],
 			"authors": [{"name": "Grape Juice"}],
 			"minimumCoreVersion": "10",
 			"compatibleCoreVersion": "10",
-			"size": 115408
+			"size": 16400
 		},
 		{
 			"name" : "🔌 Health Estimate",
@@ -374,12 +357,11 @@
 				"plugin",
 				"resource"
 			],
-			"author": ["Shylight", "Matheus Clemente"],
 			"authors": [{"name": "Shylight"},{"name": "Matheus Clemente"}],
 			"version": "29",
 			"minimumCoreVersion": "10",
 			"compatibleCoreVersion": "10",
-			"size": 81
+			"size": 11200
 		},
 		{
 			"name" : "🔌 Innocenti Looting",
@@ -392,14 +374,13 @@
 				"plugin",
 				"resource"
 			],
-			"author": ["Innocenti"],
 			"authors": [{"name": "Innocenti"}],
 			"system": [ "DnD5e"],
 			"version": "0.2.43",
 			"minimumCoreVersion": "0.9.5",
 			"compatibleCoreVersion": "10",
 			"systems": [ "dnd5e" ],
-			"size": 442
+			"size": 94800
 		},
 		{
 			"name" : "🔌 JB2A Animated Assets",
@@ -417,7 +398,6 @@
 			"version": "0.5.4",
 			"minimumCoreVersion": "0.8.0",
 			"compatibleCoreVersion": "10",
-			"author": ["Gazkhan#8192","Wassily#8035"],
 			"authors": [
 				{"name": "Gazkhan#8192"}, 
 				{"name": "Wassily#8035"}
@@ -436,7 +416,6 @@
 				"plugin",
 				"resource"
 			],
-			"author": ["Jinker (Jinker#8073)"],
 			"authors": [{"name": "Jinker (Jinker#8073)"}],
 			"version": "0.8",
 			"minimumCoreVersion": "0.7.5",
@@ -454,7 +433,6 @@
 				"plugin",
 				"resource"
 			],
-			"author": ["Kage"],
 			"authors": [{"name": "Kage"}],
 			"system": ["dnd5e"],
 			"version": "0.5.1",
@@ -475,7 +453,6 @@
 				"resource"
 			],
 			"version": "2.9.1",
-			"author": ["ardittristan#0001"],
 			"authors": [{"name": "ardittristan#0001"}],
 			"minimumCoreVersion": "10",
 			"compatibleCoreVersion": "10",
@@ -488,7 +465,6 @@
 			"entries": [
 				"A library to help other developers package up Scenes and Adventures to solve the following:"
 			],
-			"author": ["Blair McMillan","The League of Extraordinary FoundryVTT Developers"],
 			"authors": [
 				{
 					"name": "Blair McMillan",
@@ -523,7 +499,6 @@
 			],
 			"system": [ "DnD5e"],
 			"version": "5.0.2",
-			"author": ["Jan Ole Peek (ChalkOne)","Charles Miller (Kage)"],
 			"authors": [
 				{"name": "Jan Ole Peek (ChalkOne)"}, 
 				{"name": "Charles Miller (Kage)"}
@@ -544,7 +519,6 @@
 				"resource"
 			],
 			"version": "2.9.1",
-			"author": ["whelan"],
 			"authors": [{"name": "whelan"}],
 			"minimumCoreVersion": "10",
 			"compatibleCoreVersion": "10",
@@ -590,14 +564,13 @@
 				"resource"
 			],
 			"version": "10.0.30",
-			"author": ["tim posney"],
 			"authors": [{"name": "tim posney"}],
 			"minimumCoreVersion": "10",
 			"compatibleCoreVersion": "10.286",
 			"minimumSystemVersion": "2.1.5",
 			"size": 1174
 		},
-        {
+        	{
 			"name" : "🔌 Monarch 🦋",
 			"source": "monarch",
 			"manifesturl": "https://github.com/zeel01/monarch/releases/download/v0.4.1/module.json",
@@ -609,7 +582,6 @@
 				"resource"
 			],
 			"version": "0.4.1",
-			"author": ["zeel"],
 			"authors": [
 				{"name": "zeel"}
 			],
@@ -665,7 +637,6 @@
 				"resource"
 			],
 			"version": "1.6.0",
-			"author": ["grandseiken"],
 			"authors": [{"name": "grandseiken"}],
 			"minimumCoreVersion": "10",
 			"compatibleCoreVersion": "10",
@@ -683,7 +654,6 @@
 				"resource"
 			],
 			"version": "4.1.17",
-			"author": ["dev7355608"],
 			"authors": [{"name": "dev7355608"}],
 			"minimumCoreVersion": "10",
 			"compatibleCoreVersion": "10.291",
@@ -704,7 +674,6 @@
 			"version": "0.10.0",
 			"minimumCoreVersion": "10",
 			"compatibleCoreVersion": "10",
-			"author": ["Malekal"],
 			"authors": [{"name": "Malekal"}],
 			"size": 4
 		},
@@ -733,7 +702,6 @@
 				"resource"
 			],
 			"version": "2.4.17",
-			"author": ["Wasp"],
 			"authors": [{"name": "Wasp"}],
 			"minimumCoreVersion": "10",
 			"compatibleCoreVersion": "10",
@@ -751,7 +719,6 @@
 				"resource"
 			],
 			"version": "10.12",
-			"author": ["Ironmonk"],
 			"authors": [{"name": "Ironmonk"}],
 			"minimumCoreVersion": "10",
 			"compatibleCoreVersion": "10",
@@ -769,7 +736,6 @@
 				"resource"
 			],
 			"version": "10.3",
-			"author": ["ironmonk"],
 			"authors": [{"name": "ironmonk"}],
 			"minimumCoreVersion": "10",
 			"compatibleCoreVersion": "10",
@@ -788,7 +754,6 @@
 				"resource"
 			],
 			"version": "1.0.2",
-			"author": ["Ironmonk"],
 			"authors": [{"name": "Ironmonk"}],
 			"minimumCoreVersion": "10",
 			"compatibleCoreVersion": "10",
@@ -806,7 +771,6 @@
 				"resource"
 			],
 			"version": "1.8",
-			"author": ["Matheus Clemente"],
 			"authors": [{"name": "Matheus Clemente"}],
 			"minimumCoreVersion": "10",
 			"compatibleCoreVersion": "10",
@@ -823,15 +787,14 @@
 				"plugin",
 				"resource"
 			],
-            "version": "1.1.1",
-			"author": ["Matheus Clemente"],
-            "authors": [
-                {
-                    "name": "Cody Swendrowski",
-                    "discord": "cswendrowski#9701",
-                    "patreon": "ironmoose"
-                }
-            ],
+           		 "version": "1.1.1",
+            		"authors": [
+                		{
+                    			"name": "Cody Swendrowski",
+                    			"discord": "cswendrowski#9701",
+                    			"patreon": "ironmoose"
+                		}
+            		],
 			"minimumCoreVersion": "10",
 			"compatibleCoreVersion": "10",
 			"size": 463
@@ -847,12 +810,11 @@
 				"plugin",
 				"resource"
 			],
-            "version": "0.3.7",
-			"author": ["TheGiddyLimit"],
+            		"version": "0.3.7",
 			"authors": [{"name": "TheGiddyLimit"}],
 			"minimumCoreVersion": "10",
 			"compatibleCoreVersion":"10.291",
-			"size": 99
+			"size": 25000
 		},
 		{
 			"name" : "🔌 Quick Insert - Search Widget",
@@ -867,11 +829,10 @@
 				"resource"
 			],
 			"version": "2.8.0",
-			"author": ["Sunspots"],
 			"authors": [{"name": "Sunspots"}],
 			"minimumCoreVersion": "10.276",
 			"compatibleCoreVersion":"10.276",
-			"size": 99
+			"size": 129000
 		},
 		{
 			"name" : "🔌 Scene Transitions",
@@ -887,9 +848,8 @@
 			"version": "4.10.0",
 			"minimumCoreVersion": "10.276",
 			"compatibleCoreVersion":"10.276",
-			"author": ["4535992"],
 			"authors": [{"name": "4535992"}],
-			"size": 103
+			"size": 20000
 		},
 		{
 			"name" : "🔌 Simple Calendar",
@@ -904,11 +864,10 @@
 				"resource"
 			],
 			"version": "v2.1.80",
-			"author": ["vigorator"],
 			"authors": [{"name": "vigorator"}],
 			"minimumCoreVersion": "10",
 			"compatibleCoreVersion": "10",
-			"size": 68
+			"size": 274000
 		},
 		{
 			"name" : "🔌 SoundBoard",
@@ -926,7 +885,7 @@
 			"authors": [{"name": "Blitzkraig"}],
 			"minimumCoreVersion": "9",
 			"compatibleCoreVersion": "10.291",
-			"size": 1866
+			"size": 182000
 		},
 		{
 			"name" : "🔌 Argon - Combat HUD",
@@ -939,12 +898,11 @@
 				"plugin",
 				"resource"
 			],
-			"author": ["theripper93"],
 			"authors": [{"name": "theripper93"}],
 			"version": "1.4.9",
 			"minimumCoreVersion": "10",
 			"compatibleCoreVersion": "10",
-			"size": 6
+			"size": 174000
 		},
 		{
 			"name" : "🔌 Token HUD Wildcard",
@@ -957,12 +915,11 @@
 				"plugin",
 				"resource"
 			],
-			"author": ["javieros"],
 			"authors": [{"name": "javieros"}],
 			"version": "3.0.19",
 			"minimumCoreVersion": "10",
 			"compatibleCoreVersion": "10.291",
-			"size": 6
+			"size": 20600
 		},
 		{
 			"name" : "🔌 Token Action HUD 5e",
@@ -976,13 +933,12 @@
 				"plugin",
 				"resource"
 			],
-			"author": ["Russell"],
 			"authors": [{"name": "Russell"}],
 			"systems":["dnd5e"],
 			"version": "1.2.2",
 			"minimumCoreVersion":"10.291",
 			"compatibleCoreVersion":"10.291",
-			"size": 211
+			"size": 24200
 		},
 		{
 			"name" : "🔌 Token Magic FX",
@@ -997,7 +953,6 @@
 				"plugin",
 				"resource"
 			],
-			"author": ["SecretFire","sPOiDar","Zimm","Lozalojo","Moerill","KLO","dev7355608","Mestre Digital"],
 			"authors": [
 				{ "name": "SecretFire"},
 				{ "name": "sPOiDar"},
@@ -1011,7 +966,7 @@
 			"version": "0.6.1.2",
 			"compatibleCoreVersion": "10.285",
 			"minimumCoreVersion": "10",
-			"size": 2488
+			"size": 320000
 		},
 		{
 			"name" : "Ready to use Cards",
@@ -1022,8 +977,7 @@
 			],
 			"type": [ 
 				 "resource"
-			],		
-			"author": ["didilchichi"],	
+			],
 			"authors": [
 				{
 				  "name" : "didilchichi"
@@ -1032,20 +986,19 @@
 			"version": "1.12.1",
 			"minimumCoreVersion": "10",
 			"compatibleCoreVersion": "10",
-			"size": 214005		
+			"size": 1860000		
 		},
 		{
 			"name" : "Deck Resources",
 			"source": "decks",
-			"manifesturl" : "https://foundry.5e.tools/plutonium/decks/module.json",
-			"download" : "https://foundry.5e.tools/worlds/decks/decks.zip",
+			"manifesturl" : "https://foundry.5e.tools/package/decks/current/module.json",
+			"download" : "https://foundry.5e.tools/package/decks/current/decks.zip",
 			"description": [
 				"<p>A Collection of Various Decks for Tabletop Games, or as Accessories with another Games</p>"
 			],
 			"type": [ 
 				 "resource"
-			],		
-			"author": ["Nord Game","Paul Weber","WotC","Paizo","Deck of Many (HitPoint Press)","VoivodeVukodlak","Epic Isometric (Alex Drummand)"],	
+			],
 			"authors": [
 				{
 				  "name" : "Nord Game",
