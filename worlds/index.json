@@ -5,7 +5,17 @@
 			"name" : "🔌 About Time",
 			"source": "about-time",
 			"manifesturl": "https://gitlab.com/tposney/about-time/raw/master/package/module.json",
-			"entries": [
+			"coreVersion": "10",
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion": "10",
+			"system": [
+				"dnd5e"
+			],	
+
+			"title" : "🔌 About Time",
+			"id": "about-time",
+			"manifest": "https://gitlab.com/tposney/about-time/raw/master/package/module.json",
+			"description": [
 				"A module to support a game time clock in Foundry VTT. Arbitrary calendars are supported Gregorian and Greyhawk supplied but it is easy to add your own. See notes in the Readme.md and please have a look at Gettingstarted.md it has more information.",
 				"DateTime Arithmentic is supported allowing calculations like DateTime.Now().add({days:1}) (increments can be negative, but must be integers)",
 				"DateTime represents a date and time comprising ({years, months, days, hours, minutes, seconds}) and repsents an actual date and time. DTMod is a class for representing time intervals, game.Gametime.DTMod.create({years, months, days, hours. minutes, seconds}) only represents an interval to be applied to a DateTime. Typically you would do things like DateTime.now().add({days: 5})",
@@ -13,456 +23,689 @@
 				"You can trigger fairly arbitrary events to occur at specified times or intervals.",
 				"The real use for the clock is having events fire at predefined times or intervals. You can call arbitrary code or macros based off the game time clock. Allowing things like game.Gametime.doEvery({hours:24}, \"Eat Food\")"
 			],
-			"type": [ 
+			"keyworkds": [ 
 				"plugin",
 				"resource"
 			],
 			"version": "10.0.0.1",
 			"authors": [{"name": "tim posney"}],
-			"coreVersion": "10",
-			"minimumCoreVersion": "10",
-			"compatibleCoreVersion": "10",
-			"system": [
-				"dnd5e"
-			],			
+			"compatibility": {
+				"minimum": 10,
+				"verified": 10,
+				"maximum": 10
+			},
+			"relationships": {
+				"systems": [{
+					"id": "DnD5e",
+					"type": "system",
+					"manifest": "https://raw.githubusercontent.com/foundryvtt/dnd5e/master/system.json",
+					"compatibilty": {
+						"maximum": "1.3.0",
+						"verified": "1.2.4"
+					}
+				}]
+			},		
 			"size": 2430
 		},
 		{
 			"name" : "🔌 Animated Spell Effects",
 			"source": "animated-spell-effects",
 			"manifesturl": "https://github.com/jackkerouac/animated-spell-effects-cartoon/releases/download/latest/module.json",
-			"entries": [
-				"More than 450 (and growing!) animated effects for spells for use with various VTT's in the top-down/overhead perspective. All files are in transparent webm format. In Foundry VTT, fiiles will be located in your \"Data\\modules\\animated-spell-effects\\spell-effects\" folder. If you like my work, consider saying thanks on Discord: jackkerouac#0624."
-			],
-			"type": [ 
-				"plugin",
-				"resource"
-			],
-			"version": "0.6.8",
-			"authors": [{"name": "jackkerouac"}],
-			"coreVersion": "string",
 			"minimumCoreVersion": "0.5.5",
 			"compatibleCoreVersion": "10",
+
+			"title" : "🔌 Animated Spell Effects",
+			"id": "animated-spell-effects",
+			"manifest": "https://github.com/jackkerouac/animated-spell-effects-cartoon/releases/download/latest/module.json",
+			"description": [
+				"More than 450 (and growing!) animated effects for spells for use with various VTT's in the top-down/overhead perspective. All files are in transparent webm format. In Foundry VTT, fiiles will be located in your \"Data\\modules\\animated-spell-effects\\spell-effects\" folder. If you like my work, consider saying thanks on Discord: jackkerouac#0624."
+			],
+			"keywords": [ "plugin","resource","effects"],
+			"version": "0.6.8",
+			"authors": [{"name": "jackkerouac"}],			
+			"compatibility": {
+				"minimum": 10,
+				"verified": 10,
+				"maximum": "0.8.1"
+			},
 			"size": 22100
 		},
 		{
 			"name" : "🔌 Monarch",
 			"source": "monarch",
 			"manifesturl": "https://github.com/zeel01/monarch/releases/download/v0.4.1/module.json",
-			"entries": [
+			"minimumCoreVersion": "9",
+			"compatibleCoreVersion": "10",
+
+			"title" : "🔌 Monarch",
+			"id": "monarch",
+			"manifest": "https://github.com/zeel01/monarch/releases/download/v0.4.1/module.json",
+			"description": [
 				"Monarch is currently in beta. There are some rough edges and incomplete features. Feel free to open issues if you find problems.                Monarch is an enhanced card UI for Foundry VTT v9+ which provides replacements for card, hand, deck, and pile sheets."
 			],
-			"type": [ 
-				"plugin",
-				"resource"
-			],
+			"keywords": [ "plugin","resource"],
 			"version": "0.4.1",
 			"authors": [
 				{"name": "zeel"}
 			],
-			"minimumCoreVersion": "9",
-			"compatibleCoreVersion": "10",
+						"compatibility": {
+				"minimum": 9,
+				"verified": 10,
+				"maximum": 10
+			},
 			"size": 41900
 		},
 		{
 			"name" : "🔌 Combat Carousel",
 			"source": "combat-carousel",
 			"manifesturl": "https://raw.githubusercontent.com/death-save/combat-carousel-public/main/module.json",
-			"entries": [
-				"A Foundry VTT module to display CRPG-style Combatant cards in carousel-like format."
-			],
-			"type": [ 
-				"plugin",
-				"resource"
-			],
-			"version": "0.3.1",
-			"authors": [{"name": "errational"}],
 			"minimumCoreVersion": "10.275",
 			"compatibleCoreVersion": "10.290",
+
+			"title" : "🔌 Combat Carousel",
+			"id": "combat-carousel",
+			"manifest": "https://raw.githubusercontent.com/death-save/combat-carousel-public/main/module.json",
+			"description": [
+				"A Foundry VTT module to display CRPG-style Combatant cards in carousel-like format."
+			],
+			"keywords": [ "plugin","resource"],
+			"version": "0.3.1",
+			"authors": [{"name": "errational"}],
+			
+			"compatibility": {
+				"minimum": 10,
+				"verified": 10,
+				"maximum": "0.8.1"
+			},
 			"size": 369000
 		},
 		{
 			"name" : "🔌 Combat Enhancements",
 			"source": "combat-enhancements",
 			"manifesturl": "https://gitlab.com/asacolips-projects/foundry-mods/combat-enhancements/raw/1.2.0/module.json",
-			"entries": [
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion": "10.273",
+
+			"tile" : "🔌 Combat Enhancements",
+			"id": "combat-enhancements",
+			"manifest": "https://gitlab.com/asacolips-projects/foundry-mods/combat-enhancements/raw/1.2.0/module.json",
+			"description": [
 				"This small module adds a radial health bar, an editable HP field, and drag/drop re-ordering to the combat tracker."
 			],
-			"type": [ 
+			"keywords": [ 
 				"plugin",
 				"resource"
 			],
 			"version": "1.2.0",
 			"authors": [{"name": "Asacolips"}],
-			"minimumCoreVersion": "10",
-			"compatibleCoreVersion": "10.273",
+			
+			"compatibility": {
+				"minimum": 10,
+				"verified": "10.273"
+			},
 			"size": 9360
 		},
 		{
 			"name" : "🔌 DF Scene Enhancements",
 			"source": "df-scene-enhance",
 			"manifesturl": "https://dragonflagon.cafe/mods/man/df-scene-enhance",
-			"entries": [
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion": "10.288",
+
+			"title" : "🔌 DF Scene Enhancements",
+			"id": "df-scene-enhance",
+			"manifest": "https://dragonflagon.cafe/mods/man/df-scene-enhance",
+			"description": [
 				"A few enhancements to scene management for players and GMs."
 			],
-			"type": [ 
+			"keywords": [ 
 				"plugin",
 				"resource"
 			],
 			"version": "3.6.0",
 			"authors": [{"name": "flamewave000"}],
-			"minimumCoreVersion": "10",
-			"compatibleCoreVersion": "10.288",
+			"compatibility": {
+				"minimum": 10,
+				"verified": "10.288"
+			},
 			"size": 29400
 		},
 		{
 			"name" : "🔌 DF Active Lights",
 			"source": "df-active-lights",
 			"manifesturl": "https://dragonflagon.cafe/mods/man/df-active-lights",
-			"entries": [
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion": "10.290",
+
+			"title" : "🔌 DF Active Lights",
+			"id": "df-active-lights",
+			"manifest": "https://dragonflagon.cafe/mods/man/df-active-lights",
+			"description": [
 				"Lights can now have complex animations attached to their various properties such as the direction or colour."
 			],
-			"type": [ 
+			"keywords": [ 
 				"plugin",
 				"resource"
 			],
 			"version": "1.3.1",
 			"authors": [{"name": "flamewave000"}],
-			"minimumCoreVersion": "10",
-			"compatibleCoreVersion": "10.290",
+
+			"compatibility": {
+				"minimum": 10,
+				"verified": "10.290"
+			},
 			"size": 26600
 		},
 		{
 			"name" : "🔌 DF Architech",
 			"source": "dfarchitech",
 			"manifesturl": "https://dragonflagon.cafe/mods/man/df-architect",
-			"entries": [
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion": "10.286",
+
+			"title" : "🔌 DF Architech",
+			"id": "dfarchitech",
+			"manifest": "https://dragonflagon.cafe/mods/man/df-architect",
+			"description": [
 				"Welcome to the great big Architect’s Tool Suite. This module provides many many many new Quality of Life features to the Foundry Walls and Lighting layers. As well as a few extras that are just fun to have and make life a little easier.",
 				"I hate big walls of text, so I’ve done my best to provide some animated previews of what each feature does. I hope you enjoy what this module brings to your FoundryVTT experience!"
 			],
-			"type": [ 
+			"keywords": [ 
 				"plugin",
 				"resource"
 			],
 			"version": "4.0.0",
-			"authors": [{"name": "flamewave000"}],
-			"minimumCoreVersion": "10",
-			"compatibleCoreVersion": "10.286",
+			"authors": [{"name": "flamewave000"}],			
+			"compatibility": {
+				"minimum": 10,
+				"verified": "10.286"
+			},
 			"size": 2620
 		},
 		{
 			"name" : "🔌 DF Curvy Walls",
 			"source": "df-curvy-walls",
 			"manifesturl": "https://dragonflagon.cafe/mods/man/df-curvy-walls",
-			"entries": [
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion": "10.288",
+
+			"title" : "🔌 DF Curvy Walls",
+			"id": "df-curvy-walls",
+			"manifest": "https://dragonflagon.cafe/mods/man/df-curvy-walls",
+			"description": [
 				"Creates wall segments along a Bezier Cubic or Quadratic curve, an ellipse, or a rectangle."
 			],
-			"type": [ 
+			"keywords": [ 
 				"plugin",
 				"resource"
 			],
 			"version": "3.4.0",
-			"authors": [{"name": "flamewave000"}],
-			"minimumCoreVersion": "10",
-			"compatibleCoreVersion": "10.288",
+			"authors": [{"name": "flamewave000"}],			
+			"compatibility": {
+				"minimum": 10,
+				"verified": "10.288"
+			},
 			"size": 10400
 		},
 		{
 			"name" : "🔌 DFreds Droppables",
 			"source": "dfreds-droppables",
 			"manifesturl": "https://github.com/DFreds/dfreds-droppables/releases/download/v2.0.5/module.json",
-			"entries": [
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion": "10.291",
+
+			"title" : "🔌 DFreds Droppables",
+			"id": "dfreds-droppables",
+			"manifest": "https://github.com/DFreds/dfreds-droppables/releases/download/v2.0.5/module.json",
+			"description": [
 				"DFreds Droppables is a FoundryVTT module which allows you to drag and drop an entire folder of tokens or journal entries onto the canvas."
 			],
-			"type": [ 
+			"keywords": [ 
 				"plugin",
 				"resource"
 			],
 			"version": "2.0.5",
 			"authors": [{"name": "DFreds"}],
-			"minimumCoreVersion": "10",
-			"compatibleCoreVersion": "10.291",
+			
+			"compatibility": {
+				"minimum": 10,
+				"verified": "10.291"
+			},
 			"size": 11100
 		},
 		{
 			"name" : "🔌 DFreds Pocket Change",
 			"source": "dfreds-pocket-change",
 			"manifesturl": "https://github.com/DFreds/dfreds-pocket-change/releases/download/v4.0.1/module.json",
-			"entries": [
-				"Have you ever watched as the peaceful NPCs of the town you've lovingly crafted get slaughtered by your players, only for them to ask how much money was in their pockets so they could loot them afterwards? Well, now you can automate that part. The money part. Not the slaughter. That would be weird.",
-                "Oh yeah. This module is useless without Loot Sheet NPC 5e by ChalkOne. So get that bad boy."
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion": "10.286",
+
+			"title" : "🔌 DFreds Pocket Change",
+			"id": "dfreds-pocket-change",
+			"manifest": "https://github.com/DFreds/dfreds-pocket-change/releases/download/v4.0.1/module.json",
+			"description": [
+				"<p>Have you ever watched as the peaceful NPCs of the town you've lovingly crafted get slaughtered by your players, only for them to ask how much money was in their pockets so they could loot them afterwards? Well, now you can automate that part. The money part. Not the slaughter. That would be weird.</p><p>Oh yeah. This module is useless without Loot Sheet NPC 5e by ChalkOne. So get that bad boy.</p>"
 			],
-			"type": [ 
+			"keyword": [ 
 				"plugin",
-				"resource"
+				"loot"
 			],
 			"version": "4.0.1",
 			"authors": [{"name": "DFreds"}],
-			"minimumCoreVersion": "10",
-			"compatibleCoreVersion": "10.286",
+			"relationships": {
+				"requires": [{
+					"id": "lootsheet-simple",
+					"type": "module",
+					"manifest": "https://raw.githubusercontent.com/jopeek/fvtt-loot-sheet-npc-5e/lootsheet-simple/module.json",
+					"compatibilty": {
+						"maximum": "1.3.0",
+						"verified": "5.0.6"
+					}
+				}]
+			},
+			"compatibility": {
+				"minimum": 10,
+				"verified": "10.286"
+			},
 			"size": 14500
 		},
 		{
 			"name" : "🔌 Dynamic Active Effects",
 			"source": "dae",
 			"manifesturl": "https://gitlab.com/tposney/dae/raw/v10/package/module.json",
-			"entries": [
-				"DAE is the successor to Dyanmiceffects and dynamic effects does not work in 0.7+",
-				"You do not need to use DAE for most of the active effect funcitonality to work. You might choose to use it if you want one or more or of:",
-				{
-					"type": "list",
-					"items": [
-						"Automatic Armor calculation",
-						"The ability to reference other fields in active effect calculations (core only allows numbers or strings)",
-						"The ability to change more fields on the charactersDynamic effects lets you apply item based effects to your character or targeted tokens, adding/decreasing attack/damage bonuses, increasing/decreasing maximum hit points, changing alignment, in fact almost any field on the character sheet can be adjusted by dynamiceffects."
-					]
-				},
-				"DAE adds some features to core Active Effects.",
-				{
-					"type": "list",
-					"items": [
-						"Transfer effects (item linked) are enabled/disbled according to the following rule",
-						"If the \"Always Enabled\" flag is set on the item the effect is enabled.",
-						"If the \"Enabled on Equip\" flags is set on the item and the item is equiped the effect is enabled.",
-						"Otherwise if the item is attuned and equipped the effect is active.",
-						"The ability to reference actor data in effect value definitions. i.e. @abilities.dex.mod.",
-						"An extended set of custom fields, like all of the traits.",
-						"The ability to update derived fields, such as abilities.dex.mod",
-						"A slightly extended active effect editor that provides a list of valid fields, a drop down list of options and drop down lists for restricted fields."
-					]
-				}
-			],
-			"type": [ 
-				"plugin",
-				"resource"
-			],
-			"version": "10.0.20",
-			"authors": [{"name": "tim posney"}],
 			"compatibleCoreVersion": "10.279",
 			"minimumCoreVersion": "10",
 			"minimumSystemVersion": "2.1.5",
 			"systems": ["dnd5e", "sw5e"],
+
+			"title" : "🔌 Dynamic Active Effects",
+			"id": "dae",
+			"manifest": "https://gitlab.com/tposney/dae/raw/v10/package/module.json",
+			"description": [
+				"<p>DAE is the successor to Dyanmiceffects and dynamic effects does not work in 0.7+</p><p>You do not need to use DAE for most of the active effect funcitonality to work. You might choose to use it if you want one or more or of:</p><ul><li>Automatic Armor calculation</li><li>The ability to reference other fields in active effect calculations (core only allows numbers or strings</li>)<li>The ability to change more fields on the charactersDynamic effects lets you apply item based effects to your character or targeted tokens, adding/decreasing attack/damage bonuses, increasing/decreasing maximum hit points, changing alignment, in fact almost any field on the character sheet can be adjusted by dynamiceffects.</li></ul><p>A Collection of Various Decks for Tabletop Games, or as Accessories with another Games</ul><p>DAE adds some features to core Active Effects.</p><ul><li>Transfer effects (item linked) are enabled/disbled according to the following rule <li>If the \"Always Enabled\" flag is set on the item the effect is enabled.</li><li>If the \"Enabled on Equip\" flags is set on the item and the item is equiped the effect is enabled.</li><li>Otherwise if the item is attuned and equipped the effect is active.</li><li>The ability to reference actor data in effect value definitions. i.e. @abilities.dex.mod.</li><li>An extended set of custom fields, like all of the traits.</li><li>The ability to update derived fields, such as abilities.dex.mod</li><li>A slightly extended active effect editor that provides a list of valid fields, a drop down list of options and drop down lists for restricted fields.</li>"
+			],
+			"keywords": [ 
+				"plugin",
+				"QoL"
+			],
+			"version": "10.0.20",
+			"authors": [{"name": "tim posney"}],
+			
+			"compatibility": {
+				"minimum": 10,
+				"verified": 10,
+				"maximum": "10.279"
+			},
+			"relationships": {
+				"systems": [
+					{
+						"id": "DnD5e",
+						"type": "system",
+						"manifest": "https://raw.githubusercontent.com/foundryvtt/dnd5e/master/system.json",
+						"compatibilty": {
+							"maximum": "2.1.5",
+							"verified": "2.1.5"
+						}
+					},
+					{
+						"id": "sw5e",
+						"type": "system",
+						"manifest": "https://raw.githubusercontent.com/unrealkakeman89/sw5e/master/system.json",
+						"compatibilty": {
+							"maximum": "1.3.0",
+							"verified": "1.2.4"
+						}
+					}
+				]
+			},
 			"size": 93300
 		},
 		{
 			"name" : "🔌 Dynamic Active Effects SRD",
 			"source": "Dynamic-Effects-SRD",
 			"manifesturl": "https://github.com/kandashi/Dynamic-Effects-SRD/releases/latest/download/module.json",
-			"entries": [
+			"minimumCoreVersion": "9",
+			"compatibleCoreVersion": "9",
+
+			"title" : "🔌 Dynamic Active Effects SRD",
+			"id": "Dynamic-Effects-SRD",
+			"manifest": "https://github.com/kandashi/Dynamic-Effects-SRD/releases/latest/download/module.json",
+			"description": [
 				"A compendium pack of DnD 5e SRD items, spells and features all configured specificly for use with Dynamic Active Effects. Now includes items configured with Magic Items module too. Currently contains Spells upto level 6, most Items and a few Features. Easily automate your shield spells; barbarian rages; cloak of protection and many more (as they are added).",
 				"Midi QoL and Furnace (with advanced macros enabled) are needed for auto effect application (effects without macro calls do not need Furnace)."
 			],
-			"type": [ 
-				"plugin",
-				"resource"
+			"keywords": [ 
+				"plugin", "effects", ""
 			],
 			"version": "6.0.01",
 			"system": [ "DnD5e"],
-			"authors": [{"name": "Kandashi"}],
-			"minimumCoreVersion": "9",
-			"compatibleCoreVersion": "9",
+			"authors": [{"name": "Kandashi"}],			
+			"compatibility": {
+				"minimum": 9,
+				"verified": 9
+			},
+			"relationships": {
+				"systems": [{
+					"id": "DnD5e",
+					"type": "system",
+					"manifest": "https://raw.githubusercontent.com/foundryvtt/dnd5e/master/system.json"
+				}]
+			},
 			"size": 66100
 		},
 		{
 			"name" : "🔌 Enhanced Terrain Layer",
 			"source": "enhanced-terrain-layer",
+			"manifestUrl": "https://github.com/ironmonk88/enhanced-terrain-layer/releases/latest/download/module.json",
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion": "10",
+			
+			"title" : "🔌 Enhanced Terrain Layer",
+			"id": "enhanced-terrain-layer",
 			"manifest": "https://github.com/ironmonk88/enhanced-terrain-layer/releases/latest/download/module.json",
-			"entries": [
-				"Adds a Terrain Layer to Foundry that can be used by other modules to calculate difficult terrain.",
-				"Currently you can draw a polygon onto the map to represent the terrain at that location. This tool functions the same way you would use the polygon tool to draw polygons shapes to the scene. Left drag to start the shape, left click to add a point, right click to remove a point, and double-click to close the shape when you're done. You can then set how difficult that terrain is to move through, and what type of terrain it is, and if it affects ground based tokens or air based tokens.",
-				"Switching to the select tool you can resize an area or reposition the area as you would with most object in Foundry. You can also delete an area by pressing the delete key while the the area is selected.",
-				"The Terrain Layer will also let you assign difficulty to a measured templates. You can use this for spells that set difficult terrain.",
-				"And it will also calculate other tokens so that when you're moving through another creatures square it will count as difficult terrain.",
-				"Terrain Layer can either be shown all the time, or hidden until a token is selected and dragged across the screen. This can be changed using the Enable/Disable Terrain button with the other terrain controls.",
-				"You can also set blocks of Terrain to be shown or not shown, so if the difficult terrain is only temporary or conditional you can control it.",
-				"As of version 1.0.21 you can set the colour of each environmental terrain as well as setting the default colour of terrain for a scene, and the overall default colour."
+			"description": [
+				"<p>Adds a Terrain Layer to Foundry that can be used by other modules to calculate difficult terrain.</p><p>Currently you can draw a polygon onto the map to represent the terrain at that location. This tool functions the same way you would use the polygon tool to draw polygons shapes to the scene. Left drag to start the shape, left click to add a point, right click to remove a point, and double-click to close the shape when you're done. You can then set how difficult that terrain is to move through, and what type of terrain it is, and if it affects ground based tokens or air based tokens.</p><p>Switching to the select tool you can resize an area or reposition the area as you would with most object in Foundry. You can also delete an area by pressing the delete key while the the area is selected.</p><p>The Terrain Layer will also let you assign difficulty to a measured templates. You can use this for spells that set difficult terrain.</p><p>And it will also calculate other tokens so that when you're moving through another creatures square it will count as difficult terrain.</p><p>Terrain Layer can either be shown all the time, or hidden until a token is selected and dragged across the screen. This can be changed using the Enable/Disable Terrain button with the other terrain controls.</p><p>You can also set blocks of Terrain to be shown or not shown, so if the difficult terrain is only temporary or conditional you can control it.</p><p>As of version 1.0.21 you can set the colour of each environmental terrain as well as setting the default colour of terrain for a scene, and the overall default colour.</p>"
 			],
-			"type": [ 
+			"keywords": [ 
 				"plugin",
 				"resource"
 			],
 			"version": "10.6",
 			"authors": [{"name": "Ironmonk"}],
-			"minimumCoreVersion": "10",
-			"compatibleCoreVersion": "10",
+			"compatibility": {
+				"minimum": 10,
+				"verified": 10
+			},
 			"size": 32000
-			
 		},
 		{
 			"name" : "🔌 Find the culprit!",
 			"source": "find-the-culprit",
 			"manifesturl": "https://raw.githubusercontent.com/Moerill/fvtt-find-the-culprit/v1.4.3/module.json",
-			"entries": [
+			"minimumCoreVersion": "9",
+			"compatibleCoreVersion": "10",
+			
+			"title" : "🔌 Find the culprit!",
+			"id": "find-the-culprit",
+			"manifest": "https://raw.githubusercontent.com/Moerill/fvtt-find-the-culprit/v1.4.3/module.json",
+			"description": [
 				"This module helps you debug compatibility issues of modules, by finding the module that is responsible for the issue, without having to manually activate and deactivate all your modules yourself. Just click the Find the culprit button in Module Management to start the process."
 			],
-			"type": [ 
+			"keywords": [ 
 				"plugin",
-				"resource"
+				"support"
 			],
 			"version": "1.4.3",
 			"authors": [{"name": "Moerill"}],
-			"minimumCoreVersion": "9",
-			"compatibleCoreVersion": "10",
+			"compatibility": {
+				"minimum": 9,
+				"verified": 10
+			},
 			"size": 5640
 		},
 		{
 			"name" : "🔌 FXMaster",
 			"source": "fxmaster",
 			"manifesturl": "https://github.com/ghost-fvtt/fxmaster/releases/download/v3.5.2/module.json",
-			"entries": [
-				"FXMaster brings unique and configurable weather effects, filters and also special effects activated on click.",
-				"And yes, you can throw fireballs."
+			"compatibleCoreVersion": "10.278",
+			"minimumCoreVersion": "10",
+			
+			"title" : "🔌 FXMaster",
+			"id": "fxmaster",
+			"manifest": "https://github.com/ghost-fvtt/fxmaster/releases/download/v3.5.2/module.json",
+			"description": [
+				"<p>FXMaster brings unique and configurable weather effects, filters and also special effects activated on click.</p><p>And yes, you can throw fireballs."
 			],
-			"type": [ 
+			"keywords": [ 
 				"plugin",
 				"resource"
 			],
 			"version": "3.5.2",
 			"authors": [{"name": "U-man"}],
-			"compatibleCoreVersion": "10.278",
-			"minimumCoreVersion": "10",
+			"compatibility": {
+				"minimum": 10,
+				"verified": "10.278"
+			},
 			"size": 18200
 		},
 		{
 			"name" : "🔌 Grape Juice Isometrics",
 			"source": "grape_juice-isometrics",
 			"manifesturl": "https://gitlab.com/jesusafier/grape_juice-isometrics/-/raw/0.10.291.0/module.json",
-			"entries": [
-				"Adds the isometric effect/structure to a game."
-			],
-			"type": [ 
-				"plugin",
-				"resource",
-				"isometric"
-			],
-			"version": "0.10.291.0",
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion": "10",
 			"dependencies": [
 				{
 					"name": "lib-wrapper"
 				}
 			],
+			
+			"title" : "🔌 Grape Juice Isometrics",
+			"id": "grape_juice-isometrics",
+			"manifest": "https://gitlab.com/jesusafier/grape_juice-isometrics/-/raw/0.10.291.0/module.json",
+			"description": [
+				"Adds the isometric effect/structure to a game."
+			],
+			"keywords": [ 
+				"plugin",
+				"resource",
+				"isometric"
+			],
+			"version": "0.10.291.0",
 			"authors": [{"name": "Grape Juice"}],
-			"minimumCoreVersion": "10",
-			"compatibleCoreVersion": "10",
+			"compatibility": {
+				"minimum": 10,
+				"verified": 10
+			},
+			"relationships": {
+				"requires": [{
+					"id": "lib-wrapper",
+					"type": "module",
+					"manifest": "https://raw.githubusercontent.com/ruipin/fvtt-lib-wrapper/master/module.json",
+					"compatibility": {
+					  "verified": "1.12.12.0"
+					}
+				  }]
+			},
 			"size": 16400
 		},
 		{
 			"name" : "🔌 Health Estimate",
 			"source": "HealthEstimate",
 			"manifesturl" : "https://github.com/mclemente/healthEstimate/releases/latest/download/module.json",
-			"entries": [
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion": "10",
+
+			"title" : "🔌 Health Estimate",
+			"id": "HealthEstimate",
+			"manifest" : "https://github.com/mclemente/healthEstimate/releases/latest/download/module.json",
+			"description": [
 				"A simple module for showing estimated health level of an enemy on mouseover, similar to Baldur's Gate games. Comes with a wide array of options to customize its behavior."
 			],
-			"type": [ 
+			"worlds": [ 
 				"plugin",
 				"resource"
 			],
 			"authors": [{"name": "Shylight"},{"name": "Matheus Clemente"}],
 			"version": "29",
-			"minimumCoreVersion": "10",
-			"compatibleCoreVersion": "10",
+			"compatibility": {
+				"minimum": 10,
+				"verified": 10
+			},
 			"size": 11200
 		},
 		{
 			"name" : "🔌 Innocenti Looting",
 			"source": "innocenti-looting",
 			"manifesturl" : "https://raw.githubusercontent.com/rinnocenti/innocenti-loot/master/module.json",
+			"minimumCoreVersion": "0.9.5",
+			"compatibleCoreVersion": "10",
+			"system": [ "DnD5e"],
+			"systems": [ "dnd5e" ],
+
+			"title" : "🔌 Innocenti Looting",
+			"id": "innocenti-looting",
+			"manifest" : "https://raw.githubusercontent.com/rinnocenti/innocenti-loot/master/module.json",
 			"entries": [
 				"A simple module to use for looting dead NPCs tokens. With it the token's targets will have their items moved to the user's sheet. (with the exception of some like natural weapons, feats and spells). Some items have a chance of not being in good use and will not be sent to the sheet (configurable percentage)."
 			],
-			"type": [ 
+			"keywords": [ 
 				"plugin",
-				"resource"
+				"loot"
 			],
 			"authors": [{"name": "Innocenti"}],
-			"system": [ "DnD5e"],
 			"version": "0.2.43",
-			"minimumCoreVersion": "0.9.5",
-			"compatibleCoreVersion": "10",
-			"systems": [ "dnd5e" ],
+			
+			"compatibility": {
+				"minimum": 10,
+				"verified": 10
+			},
+			"relationships": {
+				"systems": [{
+					"id": "DnD5e",
+					"type": "system",
+					"manifest": "https://raw.githubusercontent.com/foundryvtt/dnd5e/master/system.json"
+				}]
+			},
 			"size": 94800
 		},
 		{
 			"name" : "🔌 JB2A Animated Assets",
 			"source": "JB2A_DnD5e",
 			"manifesturl": "https://github.com/Jules-Bens-Aa/JB2A_DnD5e/releases/download/0.5.4/module.json",
-			"entries": [
-				"A Library of animated spell templates and tokens for DnD5e.",
-				"The module is system agnostic but we have defined the spells names, styles and sizes* from the DnD5e ruleset.",
-				"Now with compendiums of premade actors and macros to use our assets efficiently!"
+			"minimumCoreVersion": "0.8.0",
+			"compatibleCoreVersion": "10",
+
+			"title" : "🔌 JB2A Animated Assets",
+			"id": "JB2A_DnD5e",
+			"manifest": "https://github.com/Jules-Bens-Aa/JB2A_DnD5e/releases/download/0.5.4/module.json",
+			"description": [
+				"A Library of animated spell templates and tokens for DnD5e. The module is system agnostic but we have defined the spells names, styles and sizes* from the DnD5e ruleset. Now with compendiums of premade actors and macros to use our assets efficiently!"
 			],
-			"type": [ 
+			"keywords": [ 
 				"plugin",
 				"resource"
 			],
 			"version": "0.5.4",
-			"minimumCoreVersion": "0.8.0",
-			"compatibleCoreVersion": "10",
 			"authors": [
 				{"name": "Gazkhan#8192"}, 
 				{"name": "Wassily#8035"}
 			],
+			"compatibility": {
+				"minimum": "0.8.0",
+				"verified": 10
+			},
+			"relationships": {
+				"systems": [{
+					"id": "DnD5e",
+					"type": "system",
+					"manifest": "https://raw.githubusercontent.com/foundryvtt/dnd5e/master/system.json"
+				}]
+			},
 			"size": 201623
 		},
 		{
 			"name" : "🔌 Jinker's Animated Art Pack",
 			"source": "jaamod",
 			"manifesturl" : "https://raw.githubusercontent.com/jinkergm/JAA/master/module.json",
-			"entries": [
+			"minimumCoreVersion": "0.7.5",
+			"compatibleCoreVersion": "10",
+
+			"title" : "🔌 Jinker's Animated Art Pack",
+			"id": "jaamod",
+			"manifest" : "https://raw.githubusercontent.com/jinkergm/JAA/master/module.json",
+			"description": [
 				"Collection of Animated Art for use with VTT's in the top-down/overhead perspective. All files are in transparent webm format. Files will be located in your \"Data\\modules\\jaamod\\AnimatedArt\" folder. If you like my work consider becoming a Patron to ensure I keep creating content for Foundry.",
 				"{@link https://www.patreon.com/jinker}"
 			],
-			"type": [ 
+			"keywords": [ 
 				"plugin",
 				"resource"
 			],
 			"authors": [{"name": "Jinker (Jinker#8073)"}],
 			"version": "0.8",
-			"minimumCoreVersion": "0.7.5",
-			"compatibleCoreVersion": "10",
+			"compatibility": {
+				"minimum": "0.7.5",
+				"verified": 10
+			},
 			"size": 243662
 		},
 		{
 			"name" : "🔌 Let's Trade 5e",
 			"source": "lets-trade-5e",
 			"manifesturl": "https://github.com/KageJittai/lets-trade-5e/releases/download/0.5.1/module.json",
-			"entries": [
-				"Let's Trade 5e allows players to trade items and currency with one another. Clicking the trade icon added to the character sheet next to the item or currency allows you to send a request to another player character who is online, and can accept the offer. After completion, a chat message is sent to all parties and the game masters informing them the transfer occurred."
-			],
-			"type": [ 
-				"plugin",
-				"resource"
-			],
-			"authors": [{"name": "Kage"}],
-			"system": ["dnd5e"],
-			"version": "0.5.1",
 			"minimumCoreVersion": "10",
 			"minimumSystemVersion": "2.1.5",
 			"compatibleCoreVersion": "10.291",
+			"system": ["dnd5e"],
+			
+			"title" : "🔌 Let's Trade 5e",
+			"id": "lets-trade-5e",
+			"manifest": "https://github.com/KageJittai/lets-trade-5e/releases/download/0.5.1/module.json",
+			"description": [
+				"Let's Trade 5e allows players to trade items and currency with one another. Clicking the trade icon added to the character sheet next to the item or currency allows you to send a request to another player character who is online, and can accept the offer. After completion, a chat message is sent to all parties and the game masters informing them the transfer occurred."
+			],
+			"keywords": [ 
+				"plugin",
+				"inventory"
+			],
+			"authors": [{"name": "Kage"}],
+			"version": "0.5.1",
+			"compatibility": {
+				"minimum": 10,
+				"verified": 10,
+				"maximum": "10.291"
+			},
+			"relationships": {
+				"systems": [{
+					"id": "DnD5e",
+					"type": "system",
+					"manifest": "https://raw.githubusercontent.com/foundryvtt/dnd5e/master/system.json",
+					"compatibilty": {
+						"minimum": "2.1.0",
+						"maximum": "2.1.5",
+						"verified": "2.1.5"
+					}
+				}]
+			},
 			"size": 10
 		},
 		{
 			"name" : "🔌 Lib - ColorSettings",
 			"source": "colorsettings",
 			"manifesturl": "https://raw.githubusercontent.com/ardittristan/VTTColorSettings/2.9.1/module.json",
-			"entries": [
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion": "10",
+
+			"title" : "🔌 Lib - ColorSettings",
+			"id": "colorsettings",
+			"manifest": "https://raw.githubusercontent.com/ardittristan/VTTColorSettings/2.9.1/module.json",
+			"description": [
 				"Adds color picker as settings option and form option in Foundry VTT to use as library for module developers."
 			],
-			"type": [ 
+			"keywords": [ 
 				"plugin",
 				"resource"
 			],
 			"version": "2.9.1",
 			"authors": [{"name": "ardittristan#0001"}],
-			"minimumCoreVersion": "10",
-			"compatibleCoreVersion": "10",
+			"compatibility": {
+				"minimum": 10,
+				"verified": 10
+			},
 			"size": 66
 		},
 		{
 			"name" : "🔌 Library: Scene Packer",
 			"source": "scene-packer",
 			"manifesturl" : "https://raw.githubusercontent.com/League-of-Foundry-Developers/scene-packer/main/module.json",
-			"entries": [
+			"minimumCoreVersion": "0.7.9",
+			"compatibleCoreVersion": "10",
+
+			"title" : "🔌 Library: Scene Packer",
+			"id": "scene-packer",
+			"manifest" : "https://raw.githubusercontent.com/League-of-Foundry-Developers/scene-packer/main/module.json",
+			"description": [
 				"A library to help other developers package up Scenes and Adventures to solve the following:"
 			],
 			"authors": [
@@ -477,132 +720,169 @@
 					"url": "https://github.com/League-of-Foundry-Developers"
 				}
 			],
-			"type": [ 
+			"keywords": [ 
 				"plugin",
-				"resource"
+				"resource",
+				"tool"
 			],
-			"version": "2.6.14",
-			"minimumCoreVersion": "0.7.9",
-			"compatibleCoreVersion": "10",
+			"version": "2.6.14",			
+			"compatibility": {
+				"minimum": "0.7.9",
+				"verified": 10
+			},
 			"size": 245
 		},
 		{
 			"name" : "🔌 Loot Sheet NPC 5e",
 			"source": "lootsheetnpc5e",
 			"manifesturl": "https://raw.githubusercontent.com/jopeek/fvtt-loot-sheet-npc-5e/lootsheet-simple/module.json",
-			"entries": [
+			"system": [ "DnD5e"],
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion": "10.291",
+			
+			"title" : "🔌 Loot Sheet NPC 5e",
+			"id": "lootsheetnpc5e",
+			"manifest": "https://raw.githubusercontent.com/jopeek/fvtt-loot-sheet-npc-5e/lootsheet-simple/module.json",
+			"description": [
 				"This module adds an additional NPC sheet which can be used for loot containers such as chests. It also allows spells to be automatically converted into spell scrolls by dragging them onto this sheet."
 			],
-			"type": [ 
+			"keywords": [ 
 				"plugin",
-				"resource"
+				"character sheet",
+				"NPC"
 			],
-			"system": [ "DnD5e"],
 			"version": "5.0.2",
 			"authors": [
 				{"name": "Jan Ole Peek (ChalkOne)"}, 
 				{"name": "Charles Miller (Kage)"}
 			],
-			"minimumCoreVersion": "10",
-			"compatibleCoreVersion": "10.291",
+			"compatibility": {
+				"minimum": 10,
+				"verified": "10.291"
+			},
+			"relationships": {
+				"systems": [{
+					"id": "DnD5e",
+					"type": "system",
+					"manifest": "https://raw.githubusercontent.com/foundryvtt/dnd5e/master/system.json",
+					"compatibility": {
+						"verified": "2.1.5"
+					}					
+				}]
+			},
 			"size": 962
 		},
 		{
 			"name" : "🔌 Merchant Sheet",
 			"source": "merchantsheetnpc",
 			"manifesturl": "https://github.com/whelan/fvtt-merchant-sheet-npc/releases/download/2.9.1/module.json",
-			"entries": [
-				"This module adds an additional NPC sheet that can be used for Merchant NPCs."
-			],
-			"type": [ 
-				"plugin",
-				"resource"
-			],
-			"version": "2.9.1",
-			"authors": [{"name": "whelan"}],
 			"minimumCoreVersion": "10",
 			"compatibleCoreVersion": "10",
+
+			"title" : "🔌 Merchant Sheet",
+			"id": "merchantsheetnpc",
+			"manifest": "https://github.com/whelan/fvtt-merchant-sheet-npc/releases/download/2.9.1/module.json",
+			"description": [
+				"This module adds an additional NPC sheet that can be used for Merchant NPCs."
+			],
+			"keywords": [ 
+				"plugin",
+				"character sheet",
+				"NPC",
+				"store"
+			],
+			"version": "2.9.1",
+			"authors": [{"name": "whelan"}],			
+			"compatibility": {
+				"minimum": 10,
+				"verified": 10
+			},
 			"size": 644
 		},
 		{
 			"name" : "🔌 Midi Quality of Life Improvements (Midi QoL)",
 			"source": "midi-qol",
 			"manifesturl": "https://gitlab.com/tposney/midi-qol/raw/v10/package/module.json",
-			"entries": [
-				"Attack/Damage/Saving throw automation.",
-				"Replaces minor-qol with a superset of the existing functionality. Requires dnd5e 0.95",
-				"Uses dnd5e system rolls for items, attack, damage and saves",
-				"Please see the changelog for changes.",
-				"Midi-qol goes through a standard sequence to complete the attack/spell cast. Midi-qol assumes that when you click the roll button you mean it. Midi-qol always applies damage/healing to the targeted tokens. If the item specifies a target of \"self\" midi-qol uses that instead (usually the targeted token).",
-				{
-					"type": "list",
-					"items": [
-						"Consume any resources that should be consumed (ammunition, charges, spell slot etc).",
-						"If the item specifies a target template place the template and if enabled select targets inside that template.",
-						"If the item has an attack roll the attack.",
-						"If auto check hits is enabled modify the set of targets to be only those that were hit by the attack roll if there was one. If disabled the attack is assumed to hit all targets.",
-						"Roll the damage if auto roll damage is enabled.",
-						"Roll any saving throws for the affected targets (note there are options for players to roll their own saves). If disabled it is assumed that all targets failed their save.",
-						"Apply damage if enabled taking into account damage resitance/immunities if enabled. Midi-qol knows that damage can have different types so supports 10 pts of slahsing damage and 15 points of fire damage and applies immunities to each part seperately."
-					]
-				},
-				"Known Bugs",
-				"probably many however....",
-				{
-					"type": "list",
-					"items": [
-						"add chat damage buttons does not work with merged cards - yet.",
-						"The combined card does not play nicely with dice-so-nice.",
-						"Language translations are not up to date.",
-						"Unselect targets at end of turn not implemented yet.",
-						"There are several incompatibilities with Mess."
-					]
-				}
-			],
-			"type": [ 
-				"plugin",
-				"resource"
-			],
-			"version": "10.0.30",
-			"authors": [{"name": "tim posney"}],
 			"minimumCoreVersion": "10",
 			"compatibleCoreVersion": "10.286",
 			"minimumSystemVersion": "2.1.5",
+
+			"title" : "🔌 Midi Quality of Life Improvements (Midi QoL)",
+			"id": "midi-qol",
+			"manifest": "https://gitlab.com/tposney/midi-qol/raw/v10/package/module.json",
+			"description": [
+				"<p>Attack/Damage/Saving throw automation.</p><p>Replaces minor-qol with a superset of the existing functionality. Requires dnd5e 0.95</p><p>Uses dnd5e system rolls for items, attack, damage and saves</p><p>Please see the changelog for changes.</p><p>Midi-qol goes through a standard sequence to complete the attack/spell cast. Midi-qol assumes that when you click the roll button you mean it. Midi-qol always applies damage/healing to the targeted tokens. If the item specifies a target of \"self\" midi-qol uses that instead (usually the targeted token).</p><ul><li><li>Consume any resources that should be consumed (ammunition, charges, spell slot etc).<li>If the item specifies a target template place the template and if enabled select targets inside that template.</li><li>If the item has an attack roll the attack.</li><li>If auto check hits is enabled modify the set of targets to be only those that were hit by the attack roll if there was one. If disabled the attack is assumed to hit all targets.</li><li>Roll the damage if auto roll damage is enabled.</li><li>Roll any saving throws for the affected targets (note there are options for players to roll their own saves). If disabled it is assumed that all targets failed their save.</li><li>Apply damage if enabled taking into account damage resitance/immunities if enabled. Midi-qol knows that damage can have different types so supports 10 pts of slahsing damage and 15 points of fire damage and applies immunities to each part seperately.</li></ul><p>Known Bugs</p><p>probably many however....</p><ul><li>add chat damage buttons does not work with merged cards - yet.</li><li>The combined card does not play nicely with dice-so-nice.</li><li>Language translations are not up to date</li>.<li>Unselect targets at end of turn not implemented yet.</li><li>There are several incompatibilities with Mess.</li></ul>"
+			],
+			"keywords": [ 
+				"plugin",
+				"QoL"
+			],
+			"version": "10.0.30",
+			"authors": [{"name": "tim posney"}],
+			"compatibility": {
+				"minimum": 10,
+				"verified": 10,
+				"maximum": "10.286"
+			},
+			"relationships": {				
+				"systems": [{
+					"id": "DnD5e",
+					"type": "system",
+					"manifest": "https://raw.githubusercontent.com/foundryvtt/dnd5e/master/system.json",
+					"compatibility": {
+						"verified": "2.1.5"
+					}					
+				}]
+			},
 			"size": 1174
 		},
-        	{
+        {
 			"name" : "🔌 Monarch 🦋",
 			"source": "monarch",
 			"manifesturl": "https://github.com/zeel01/monarch/releases/download/v0.4.1/module.json",
-			"entries": [
+			"minimumCoreVersion": "9.236",
+			"compatibleCoreVersion": "10",
+			
+			"title" : "🔌 Monarch 🦋",
+			"id": "monarch",
+			"manifest": "https://github.com/zeel01/monarch/releases/download/v0.4.1/module.json",
+			"description": [
 				"A card UI fit for royalty."
 			],
-			"type": [ 
-				"plugin",
-				"resource"
+			"keywords": [ 
+				"plugin", "deck", "cards"
 			],
 			"version": "0.4.1",
 			"authors": [
 				{"name": "zeel"}
 			],
-			"minimumCoreVersion": "9.236",
-			"compatibleCoreVersion": "10",
+			"compatibility": {
+				"minimum": "9.236",
+				"verified": 10
+			},
 			"size": 9904
 		},        
 		{
 			"name" : "🔌 Monster Blocks",
 			"source": "monsterblock",
 			"manifesturl": "https://raw.githubusercontent.com/jackkerouac/animated-spell-effects/master/module.json",
-			"entries": [
-				"An NPC sheet for FoundryVTT designed to faithfully reproduce the apperance of D&D 5e monster statblocks.",
-				"A few quick settings can be toggled from the special cog menu in the upper left corner. This includes enabling and disabling certain features, themes, and a toggle for editing."
+			"author": ["Zeel"],		
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion": "10",
+			"systems": ["dnd5e"],
+			"minimumSystemVersion": "2.1.5",
+			
+			"title" : "🔌 Monster Blocks",
+			"id": "monsterblock",
+			"manifest": "https://raw.githubusercontent.com/jackkerouac/animated-spell-effects/master/module.json",
+			"description": [
+				"<p>An NPC sheet for FoundryVTT designed to faithfully reproduce the apperance of D&D 5e monster statblocks.</p><p>A few quick settings can be toggled from the special cog menu in the upper left corner. This includes enabling and disabling certain features, themes, and a toggle for editing.</p>"
 			],
-			"type": [ 
+			"keywords": [ 
 				"plugin",
-				"resource"
+				"QoL"
 			],
 			"version": "3.3.5",
-			"author": ["Zeel"],
 			"authors": [{"name": "Zeel"}],
 			"dependencies": [
 				{
@@ -610,18 +890,34 @@
 					"type": "module",
 					"manifest": "https://raw.githubusercontent.com/League-of-Foundry-Developers/mathjs-lib/master/module.json"
 				}
-			],			
-			"minimumCoreVersion": "10",
-			"compatibleCoreVersion": "10",
-			"systems": ["dnd5e"],
-			"minimumSystemVersion": "2.1.5",
+			],
+			"compatibility": {
+				"minimum": 10,
+				"verified": 10
+			},
+			"relationships": {				
+				"systems": [{
+					"id": "DnD5e",
+					"type": "system",
+					"manifest": "https://raw.githubusercontent.com/foundryvtt/dnd5e/master/system.json",
+					"compatibility": {
+						"verified": "2.1.5"
+					}					
+				}]
+			},
 			"size": 63
 		},
 		{
 			"name" : "🔌 Multi-level Tokens",
 			"source": "multilevel-tokens",
 			"manifesturl": "https://raw.githubusercontent.com/grandseiken/foundryvtt-multilevel-tokens/master/module.json",
-			"entries": [
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion": "10",
+			
+			"title" : "🔌 Multi-level Tokens",
+			"id": "multilevel-tokens",
+			"manifest": "https://raw.githubusercontent.com/grandseiken/foundryvtt-multilevel-tokens/master/module.json",
+			"description": [
 				"Adds several helpful token automation features, particularly (but not only) suited to maps with multiple levels.",
 				{
 					"type": "list",
@@ -632,283 +928,463 @@
 					]
 				}
 			],
-			"type": [ 
+			"keywords": [ 
 				"plugin",
 				"resource"
 			],
 			"version": "1.6.0",
 			"authors": [{"name": "grandseiken"}],
-			"minimumCoreVersion": "10",
-			"compatibleCoreVersion": "10",
+			"compatibility": {
+				"minimum": 10,
+				"verified": 10
+			},
 			"size": 1766
 		},
 		{
 			"name" : "🔌 Perfect Vision",
 			"source": "perfect-vision",
 			"manifesturl": "https://raw.githubusercontent.com/dev7355608/perfect-vision/v4.1.17/module.json",
-			"entries": [
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion": "10.291",
+			
+			"title" : "🔌 Perfect Vision",
+			"id": "perfect-vision",
+			"manifest": "https://raw.githubusercontent.com/dev7355608/perfect-vision/v4.1.17/module.json",
+			"description": [
 				"Darkvision rules and other vision-related improvements."
 			],
-			"type": [ 
+			"keywords": [ 
 				"plugin",
 				"resource"
 			],
 			"version": "4.1.17",
 			"authors": [{"name": "dev7355608"}],
-			"minimumCoreVersion": "10",
-			"compatibleCoreVersion": "10.291",
+			"compatibility": {
+				"minimum": 10,
+				"verified": "10.291",
+				"maximum": "10.291"
+			},
 			"size": 1918
 		},
 		{
 			"name" : "🔌 Permission Viewer",
 			"source": "permission_viewer",
 			"manifesturl": "https://github.com/Malekal4699/fvtt-module-permission-viewer/releases/latest/download/module.json",
-			"entries": [
-				"Quickly see which entities (Journal entries, Actors, etc..) are visible to all players or visible to a specific player.",
-                "It also adds a quick share button in the sidebars and when showing journal entries to players, will ask if you want to share them, show them to all or show them only to players who have permission to view it."
-			],
-			"type": [ 
-				"plugin",
-				"resource"
-			],
-			"version": "0.10.0",
 			"minimumCoreVersion": "10",
 			"compatibleCoreVersion": "10",
+
+			"title" : "🔌 Permission Viewer",
+			"id": "permission_viewer",
+			"manifest": "https://github.com/Malekal4699/fvtt-module-permission-viewer/releases/latest/download/module.json",
+			"description": [
+				"<p>Quickly see which entities (Journal entries, Actors, etc..) are visible to all players or visible to a specific player.</p><p>It also adds a quick share button in the sidebars and when showing journal entries to players, will ask if you want to share them, show them to all or show them only to players who have permission to view it.</p>"
+			],
+			"keywords": [ 
+				"plugin",
+				"resource",
+				"roll20"
+			],
+			"version": "0.10.0",
 			"authors": [{"name": "Malekal"}],
+			
+			"compatibility": {
+				"minimum": 10,
+				"verified": 10
+			},
 			"size": 4
 		},
 		{
 			"name" : "🔌 Item Piles",
 			"source": "pick-up-stix",
 			"manifesturl": "https://github.com/fantasycalendar/FoundryVTT-ItemPiles/releases/download/2.4.17/module.json",
-			"entries": [
-				"What is Item Piles?",
-                "Have you ever wished you could represent items in your scenes? A pile of items, something to interact with - or perhaps chests whose appearance changes depending on what happens to it, whether it's open, closed, full, or empty. Do you want an easy way to split loot between players? Do you want easy to use merchants with great UIs?",
-                "Then you need Item Piles!",
-                "This module features:",
-                {
-					"type": "list",
-					"items": [
-                        "Dropping items on the canvas to create piles of items",
-                        "Item piles acting as containers with the ability to switch its token image depending on its open/closed/empty state, and play sounds accordingly",
-                        "Turn characters into fully featured merchants, with complex item pricing, item quantity management, and more",
-                        "Robust player-to-player trading features",
-                        "Incredibly intuitive API and documentation"
-					]
-				}
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion": "10",
+			
+			"title" : "🔌 Item Piles",
+			"id": "pick-up-stix",
+			"manifest": "https://github.com/fantasycalendar/FoundryVTT-ItemPiles/releases/download/2.4.17/module.json",
+			"description": [
+				"<h3>What is Item Piles?</h3><p>Have you ever wished you could represent items in your scenes? A pile of items, something to interact with - or perhaps chests whose appearance changes depending on what happens to it, whether it's open, closed, full, or empty. Do you want an easy way to split loot between players? Do you want easy to use merchants with great UIs?</p><p>Then you need Item Piles!</p><p>This module features:</p><ul><li>Dropping items on the canvas to create piles of items</li><li>Item piles acting as containers with the ability to switch its token image depending on its open/closed/empty state, and play sounds accordingly</li><li>Turn characters into fully featured merchants, with complex item pricing, item quantity management, and more</li><li>Robust player-to-player trading features</li><li>Incredibly intuitive API and documentation</li></ul>"
 			],
-			"type": [ 
+			"keywords": [ 
 				"plugin",
-				"resource"
+				"resource",
+				"loot"
 			],
 			"version": "2.4.17",
 			"authors": [{"name": "Wasp"}],
-			"minimumCoreVersion": "10",
-			"compatibleCoreVersion": "10",
+			"compatibility": {
+				"minimum": 10,
+				"verified": 10
+			},
 			"size": 433
 		},
 		{
 			"name" : "🔌 Monk's Active Tile Triggers",
 			"source": "monks-active-tiles",
 			"manifesturl": "https://github.com/ironmonk88/monks-active-tiles/releases/latest/download/module.json",
-			"entries": [
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion": "10",
+
+			"title" : "🔌 Monk's Active Tile Triggers",
+			"id": "monks-active-tiles",
+			"manifest": "https://github.com/ironmonk88/monks-active-tiles/releases/latest/download/module.json",
+			"description": [
 				"Want to teleport, or open doors, or hide characters, or display a message, or play a sound, or change a token's elevation when a token walks over a tile... now you can."
 			],
-			"type": [ 
+			"keywords": [ 
 				"plugin",
 				"resource"
 			],
 			"version": "10.12",
 			"authors": [{"name": "Ironmonk"}],
-			"minimumCoreVersion": "10",
-			"compatibleCoreVersion": "10",
+			"compatibility": {
+				"minimum": 10,
+				"verified": 10
+			},			
 			"size": 463
 		},
 		{
 			"name" : "🔌 Monk's Wall Enhancement",
 			"source": "monks-wall-enhancement",
 			"manifesturl": "https://github.com/ironmonk88/monks-wall-enhancement/releases/latest/download/module.json",
-			"entries": [
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion": "10",
+			
+			"title" : "🔌 Monk's Wall Enhancement",
+			"id": "monks-wall-enhancement",
+			"manifest": "https://github.com/ironmonk88/monks-wall-enhancement/releases/latest/download/module.json",
+			"description": [
 				"Improvements to the Core Wall functionality, by adding the option to drag points together, double-click to split a wall, join points together, and free hand drawing of a wall"
 			],
-			"type": [ 
+			"keywords": [ 
 				"plugin",
-				"resource"
+				"resource",
+				"GM",
+				"Design"
 			],
 			"version": "10.3",
 			"authors": [{"name": "ironmonk"}],
-			"minimumCoreVersion": "10",
-			"compatibleCoreVersion": "10",
+			"compatibility": {
+				"minimum": 10,
+				"verified": 10,
+				"maximum": 10
+			},
 			"size": 463
 		},
 		{
 			"name" : "🔌 Monk's Shop",
 			"source": "monks-shops",
 			"manifesturl": "https://github.com/ironmonk88/monks-shops/releases/latest/download/module.json",
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion": "10",
+			
+			"title" : "🔌 Monk's Shop",
+			"id": "monks-shops",
+			"manifest": "https://github.com/ironmonk88/monks-shops/releases/latest/download/module.json",
 			"entries": [
-				"This module is to provide some pre-generated shops for DnD5e that work with Monks Enhanced Journals.",
-                "As well as adding some roll tables for common items.  So you can create your own shops quickly."
+				"<p>This module is to provide some pre-generated shops for DnD5e that work with Monks Enhanced Journals.</p><p>As well as adding some roll tables for common items.  So you can create your own shops quickly.</p>"
 			],
-			"type": [ 
+			"keywords": [ 
 				"plugin",
-				"resource"
+				"resource",
+				"market"
 			],
 			"version": "1.0.2",
 			"authors": [{"name": "Ironmonk"}],
-			"minimumCoreVersion": "10",
-			"compatibleCoreVersion": "10",
+			"compatibility": {
+				"minimum": 10,
+				"verified": 10
+			},
 			"size": 463
 		},
 		{
 			"name" : "🔌 Polyglot",
 			"source": "polyglot",
 			"manifesturl": "https://github.com/League-of-Foundry-Developers/fvtt-module-polyglot/releases/latest/download/module.json",
-			"entries": [
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion": "10",
+			
+			"title" : "🔌 Polyglot",
+			"id": "polyglot",
+			"manifest": "https://github.com/League-of-Foundry-Developers/fvtt-module-polyglot/releases/latest/download/module.json",
+			"description": [
 				"Talk to others using a language your selected character can understand and scrambles in-character text you can't understand."
 			],
-			"type": [ 
+			"keywords": [ 
 				"plugin",
-				"resource"
+				"resource",
+				"language"
 			],
 			"version": "1.8",
 			"authors": [{"name": "Matheus Clemente"}],
-			"minimumCoreVersion": "10",
-			"compatibleCoreVersion": "10",
+			"compatibility": {
+				"minimum": 10,
+				"verified": 10
+			},
 			"size": 463
 		},
 		{
 			"name" : "🎣 Obligatory Fishing Minigame",
 			"source": "obligatory-fishing-minigame",
 			"manifesturl": "https://github.com/cswendrowski/FoundryVTT-Obligatory-Fishing-Minigame/releases/latest/download/module.json",
-			"entries": [
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion": "10",
+			
+			"title" : "🎣 Obligatory Fishing Minigame",
+			"id": "obligatory-fishing-minigame",
+			"manifest": "https://github.com/cswendrowski/FoundryVTT-Obligatory-Fishing-Minigame/releases/latest/download/module.json",
+			"description": [
 				"Every game has to have one."
 			],
 			"type": [ 
 				"plugin",
 				"resource"
 			],
-           		 "version": "1.1.1",
-            		"authors": [
-                		{
-                    			"name": "Cody Swendrowski",
-                    			"discord": "cswendrowski#9701",
-                    			"patreon": "ironmoose"
-                		}
-            		],
-			"minimumCoreVersion": "10",
-			"compatibleCoreVersion": "10",
+           	"version": "1.1.1",
+            "authors": [
+            	{
+            		"name": "Cody Swendrowski",
+            		"discord": "cswendrowski#9701",
+            		"patreon": "ironmoose"
+            	}
+			],
+			"compatibility": {
+				"minimum": 10,
+				"verified": 10,
+				"maximum": 10
+			},
 			"size": 463
 		},
 		{
 			"name" : "🔌 Plutonium Addon: Automation",
 			"source": "plutonium-addon-automation",
 			"manifesturl": "https://github.com/TheGiddyLimit/plutonium-addon-automation/releases/latest/download/module.json",
-			"entries": [
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion":"10.291",
+
+			"title" : "🔌 Plutonium Addon: Automation",
+			"id": "plutonium-addon-automation",
+			"manifest": "https://github.com/TheGiddyLimit/plutonium-addon-automation/releases/latest/download/module.json",
+			"description": [
 				"Plutonium automations for use with Midi-QOL, DAE, and friends."
 			],
-			"type": [ 
+			"keywords": [ 
 				"plugin",
-				"resource"
+				"resource",
+				"automation",
+				"plutonium"
 			],
             		"version": "0.3.7",
 			"authors": [{"name": "TheGiddyLimit"}],
-			"minimumCoreVersion": "10",
-			"compatibleCoreVersion":"10.291",
+			
+			"compatibility": {
+				"minimum": 10,
+				"verified": "10.291",
+				"maximum": "10.291"
+			},	
+			"relationships": {
+				"requires": [
+					{
+						"id": "midi-qol",
+						"type": "module",
+						"manifest": "https://gitlab.com/tposney/midi-qol/raw/v10/package/module.json"
+					},
+					{
+						"id": "dae",
+						"type": "module",
+						"manifest": "https://gitlab.com/tposney/dae/raw/v10/package/module.json"
+					},
+					{
+						"id": "times-up",
+						"type": "module",
+						"manifest": "https://gitlab.com/tposney/times-up/raw/v10/package/module.json"
+					},
+					{
+						"id": "dfreds-convenient-effects",
+						"type": "module",
+						"manifest": "https://github.com/DFreds/dfreds-convenient-effects/releases/latest/download/module.json"
+					}
+				],
+				"conflicts": [
+					{
+						"id": "combat-utility-belt",
+						"type": "module",
+						"reason": "Redundant when used with Plutonium Addon: Automation module dependencies, and often conflicts with them."
+					},
+					{
+						"id": "betterrolls5e",
+						"type": "module",
+						"reason": "May cause issues with features which require rolls; use with caution."
+					},
+					{
+						"id": "mars-5e",
+						"type": "module",
+						"reason": "May cause issues with features which require rolls; use with caution."
+					},
+					{
+						"id": "mre-dnd5e",
+						"type": "module",
+						"reason": "May cause issues with features which require rolls; use with caution."
+					},
+					{
+						"id": "ready-set-roll-5e",
+						"type": "module",
+						"reason": "May cause issues with features which require rolls; use with caution."
+					},
+					{
+						"id": "wire",
+						"type": "module",
+						"reason": "May cause issues with features which require rolls; use with caution."
+					}
+				]
+			},
 			"size": 25000
 		},
 		{
 			"name" : "🔌 Quick Insert - Search Widget",
 			"source": "quick-insert",
 			"manifesturl": "https://gitlab.com/fvtt-modules-lab/quick-insert/-/jobs/artifacts/v2.8.0/raw/module.json?job=build-module",
-			"entries": [
+			"minimumCoreVersion": "10.276",
+			"compatibleCoreVersion":"10.276",
+
+			"title" : "🔌 Quick Insert - Search Widget",
+			"id": "quick-insert",
+			"manifest": "https://gitlab.com/fvtt-modules-lab/quick-insert/-/jobs/artifacts/v2.8.0/raw/module.json?job=build-module",
+			"description": [
 				"Quickly find characters, monsters, items, spells etc. and insert them wherever you need them right now - the map, character sheets, roll tables, journals, you name it.",
 				"Quick Insert provides a context-aware search/autocomplete tool that can be used in most parts of FoundryVTT. Integration with chat, character sheets (select systems), rich text editors, macro editors and the roll table editor."
 			],
-			"type": [ 
+			"keywords": [ 
 				"plugin",
-				"resource"
+				"resource",
+				"search"
 			],
 			"version": "2.8.0",
 			"authors": [{"name": "Sunspots"}],
-			"minimumCoreVersion": "10.276",
-			"compatibleCoreVersion":"10.276",
+			
+			"compatibility": {
+				"minimum": 10,
+				"verified": "10.276"
+			},
 			"size": 129000
 		},
 		{
 			"name" : "🔌 Scene Transitions",
 			"source": "scene-transitions",
 			"manifesturl": "https://github.com/p4535992/foundryvtt-scene-transitions/releases/latest/download/module.json",
-			"entries": [
+			"minimumCoreVersion": "10.276",
+			"compatibleCoreVersion":"10.276",
+
+			"title" : "🔌 Scene Transitions",
+			"id": "scene-transitions",
+			"manifest": "https://github.com/p4535992/foundryvtt-scene-transitions/releases/latest/download/module.json",
+			"description": [
 				"Adds the ability to create transitions to play before activating scene. More settings and customization coming soon"
 			],
-			"type": [ 
+			"keywords": [ 
 				"plugin",
 				"resource"
 			],
 			"version": "4.10.0",
-			"minimumCoreVersion": "10.276",
-			"compatibleCoreVersion":"10.276",
 			"authors": [{"name": "4535992"}],
+			"compatibility": {
+				"minimum": 10,
+				"verified": "10.276"
+			},
 			"size": 20000
 		},
 		{
 			"name" : "🔌 Simple Calendar",
 			"source": "foundryvtt-simple-calendar",
 			"manifesturl": "https://github.com/vigoren/foundryvtt-simple-calendar/releases/download/v2.1.80/module.json",
-			"entries": [
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion": "10",
+			
+			"title" : "🔌 Simple Calendar",
+			"id": "foundryvtt-simple-calendar",
+			"manifest": "https://github.com/vigoren/foundryvtt-simple-calendar/releases/download/v2.1.80/module.json",
+			"description": [
 				"A simple calendar module for FoundryVTT that is system independent.",
 				"This module allows you to create a calendar with any number of months per year, any number of days per month and customizable hours, minutes and seconds for your game world. It is intended as a way for a GM to show a calendar like interface that maps to their in game world."
 			],
-			"type": [ 
+			"keywords": [ 
 				"plugin",
 				"resource"
 			],
 			"version": "v2.1.80",
 			"authors": [{"name": "vigorator"}],
-			"minimumCoreVersion": "10",
-			"compatibleCoreVersion": "10",
+			"compatibility": {
+				"minimum": 10,
+				"verified": 10
+			},
 			"size": 274000
 		},
 		{
 			"name" : "🔌 SoundBoard",
 			"source": "SoundBoard",
 			"manifesturl": "https://raw.githubusercontent.com/BlitzKraig/fvtt-SoundBoard/master/module.json",
-			"entries": [
+			"minimumCoreVersion": "9",
+			"compatibleCoreVersion": "10.291",
+			"author": ["Blitzkraig"],
+
+			"title" : "🔌 SoundBoard",
+			"id": "SoundBoard",
+			"manifest": "https://raw.githubusercontent.com/BlitzKraig/fvtt-SoundBoard/master/module.json",
+			"description": [
 				"Simple soundboard for the Gamemaster, broadcasted to all connected clients."
 			],
-			"type": [ 
+			"keywords": [ 
 				"plugin",
 				"resource"
 			],
 			"version": "1.7.1",
-			"author": ["Blitzkraig"],
-			"authors": [{"name": "Blitzkraig"}],
-			"minimumCoreVersion": "9",
-			"compatibleCoreVersion": "10.291",
+			"authors": [{"name": "Blitzkraig"}],			
+			"compatibility": {
+				"minimum": 9,
+				"verified": "10.291",
+				"maximum": 11
+			},
 			"size": 182000
 		},
 		{
 			"name" : "🔌 Argon - Combat HUD",
 			"source": "enhancedcombathud",
 			"manifesturl": "https://github.com/theripper93/enhancedcombathud/releases/download/1.4.9/module.json",
-			"entries": [
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion": "10",
+
+			"title" : "🔌 Argon - Combat HUD",
+			"id": "enhancedcombathud",
+			"manifest": "https://github.com/theripper93/enhancedcombathud/releases/download/1.4.9/module.json",
+			"description": [
 				"This module adds a button to the Token HUD if the token has wildcard set and detects more than 1 image to choose from. Pressing the button displays a panel on the right side of the HUD with buttons for each image, pressing one of these allows to change the token image."
 			],
 			"type": [ 
 				"plugin",
-				"resource"
+				"QoL",
+				"combat"
 			],
 			"authors": [{"name": "theripper93"}],
 			"version": "1.4.9",
-			"minimumCoreVersion": "10",
-			"compatibleCoreVersion": "10",
+			
+			"compatibility": {
+				"minimum": 10,
+				"verified": 10
+			},
 			"size": 174000
 		},
 		{
 			"name" : "🔌 Token HUD Wildcard",
 			"source": "token-action-hud",
 			"manifesturl": "https://github.com/Drental/fvtt-tokenactionhud/releases/download/3.0.19/module.json",
-			"entries": [
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion": "10.291",
+			
+			"title" : "🔌 Token HUD Wildcard",
+			"id": "token-action-hud",
+			"manifest": "https://github.com/Drental/fvtt-tokenactionhud/releases/download/3.0.19/module.json",
+			"description": [
 				"This module populates a floating HUD, showing common actions for a controllable token. Supports 3.5e SRD, Alien RPG, Blades In The Dark, Call of Cthulhu 7th edition (Unofficial), Chroniques Oubliées Contemporain, Chroniques Oubliées Fantasy, Clé en main, Cthulhu Hack, Cypher System, DnD 4th Edition, DnD5e, Dungeon World, Dungeonslayers 4, Earthdawn 4th Edition, Forbidden Lands, GURPS 4th Edition Game Aid (Unofficial), Kamigakari: God Hunter, LANCER, OpenD6 Space, Pathfinder 1, Pathfinder Second Edition (Official), Savage Worlds Adventure Edition, Shadow of the Demon Lord, Star Wars FFG system for Foundry VTT, Starfinder, Symbaroum, Tagmar RPG, Tormenta20, Warhammer Fantasy Roleplay 4th Edition. The information shown is system dependent. In DND5e, for example, it shows items, feats, ability checks, and spells. Its intent is to save GMs and players from having to frequently open character sheets to access actions, and to allow people to focus on the table."
 			],
 			"type": [ 
@@ -917,15 +1393,23 @@
 			],
 			"authors": [{"name": "javieros"}],
 			"version": "3.0.19",
-			"minimumCoreVersion": "10",
-			"compatibleCoreVersion": "10.291",
+			"compatibility": {
+				"minimum": 10,
+				"verified": "10.291"
+			},
 			"size": 20600
 		},
 		{
 			"name" : "🔌 Token Action HUD 5e",
 			"source": "token-action-hud",
 			"manifesturl" : "https://github.com/Larkinabout/fvtt-token-action-hud-dnd5e/releases/download/1.2.2/module.json",
-			"entries": [
+			"minimumCoreVersion":"10.291",
+			"compatibleCoreVersion":"10.291",
+
+			"title" : "🔌 Token Action HUD 5e",
+			"id": "token-action-hud",
+			"manifest" : "https://github.com/Larkinabout/fvtt-token-action-hud-dnd5e/releases/download/1.2.2/module.json",
+			"description": [
 				"This module populates a floating HUD, showing common actions for a controllable token. Supports DND5e, Pathfinder 2E, Dungeon World, Starfinder RPG, and WFRP4e. The information shown is system dependent. In DND5e, for example, it shows items, feats, ability checks, and spells. its intent is to save GMs and players from having to frequently open character sheets to access actions, and to allow people to focus on the table.",
 				"I don't have time to add every system, but it is designed to be easily extensible. If you have some programming knowledge and would like to add support for your system, please get in touch."
 			],
@@ -936,22 +1420,37 @@
 			"authors": [{"name": "Russell"}],
 			"systems":["dnd5e"],
 			"version": "1.2.2",
-			"minimumCoreVersion":"10.291",
-			"compatibleCoreVersion":"10.291",
+			
+			"compatibility": {
+				"minimum": 10,
+				"verified": "10.291",
+				"maximum": "10.291"
+			},
+			"relationships": {
+				"systems": [{
+					"id": "DnD5e",
+					"type": "system",
+					"manifest": "https://raw.githubusercontent.com/foundryvtt/dnd5e/master/system.json"
+				}]
+			},
 			"size": 24200
 		},
 		{
 			"name" : "🔌 Token Magic FX",
 			"source": "tokenmagic",
 			"manifesturl": "https://raw.githubusercontent.com/Feu-Secret/Tokenmagic/master/tokenmagic/module.json",
-			"entries": [
-				"Add visual effects to templates, drawings, tokens and tiles. The special effects can be animated. Token Magic FX comes with a compendium of macros for each effect, easily modifiable to suit your needs. A graphical interface is provided for templates. A graphical interface will be added in later version for other placeables.",
-				"The following FX are supported :",
-				"Bloom, distortion, old film effect, glow, outline, bevel, shadow drop, shadow zap, twist, blur, zoom blur, shockwave, bulge, pinch, inner rays, inner fog, color adjustment, spider webs, and many more advanced effects. All properties linked to these FX can be animated."
+			"compatibleCoreVersion": "10.285",
+			"minimumCoreVersion": "10",
+
+			"title" : "🔌 Token Magic FX",
+			"id": "tokenmagic",
+			"manifest": "https://raw.githubusercontent.com/Feu-Secret/Tokenmagic/master/tokenmagic/module.json",
+			"description": [
+				"<p>Add visual effects to templates, drawings, tokens and tiles. The special effects can be animated. Token Magic FX comes with a compendium of macros for each effect, easily modifiable to suit your needs. A graphical interface is provided for templates. A graphical interface will be added in later version for other placeables.</p><p>The following FX are supported :</p>Bloom, distortion, old film effect, glow, outline, bevel, shadow drop, shadow zap, twist, blur, zoom blur, shockwave, bulge, pinch, inner rays, inner fog, color adjustment, spider webs, and many more advanced effects. All properties linked to these FX can be animated.</p>"
 			],
-			"type": [ 
+			"keywords": [ 
 				"plugin",
-				"resource"
+				"resource", "effects"
 			],
 			"authors": [
 				{ "name": "SecretFire"},
@@ -964,19 +1463,27 @@
 				{ "name": "Mestre Digital"}
 			],
 			"version": "0.6.1.2",
-			"compatibleCoreVersion": "10.285",
-			"minimumCoreVersion": "10",
+			"compatibility": {
+				"minimum": 10,
+				"verified": "10.285"
+			},			
 			"size": 320000
 		},
 		{
 			"name" : "Ready to use Cards",
 			"source": "decks",
 			"manifesturl" : "https://gitlab.com/adrien.schiehle/ready-to-use-cards/-/raw/release-1.12.1/module.json",
+			"minimumCoreVersion": "10",
+			"compatibleCoreVersion": "10",
+
+			"title" : "Ready to use Cards",
+			"id": "decks",
+			"manifest" : "https://gitlab.com/adrien.schiehle/ready-to-use-cards/-/raw/release-1.12.1/module.json",
 			"description": [
 				"Module to help with the use of cards"
 			],
-			"type": [ 
-				 "resource"
+			"keywords": [ 
+				 "resource", "deck", "cards"
 			],
 			"authors": [
 				{
@@ -984,20 +1491,27 @@
 				}
 			],
 			"version": "1.12.1",
-			"minimumCoreVersion": "10",
-			"compatibleCoreVersion": "10",
+
+			"compatibility": {
+				"minimum": 10,
+				"verified": 10
+			},		
 			"size": 1860000		
 		},
 		{
 			"name" : "Deck Resources",
 			"source": "decks",
 			"manifesturl" : "https://foundry.5e.tools/package/decks/current/module.json",
+			"systemVersion": "1.3.0",
+			"compatibleSystemVersion": "1.2.4",
+			"system": [ "DND5e"],
+
+			"title" : "Deck Resources",
+			"id": "decks",
+			"manifest" : "https://foundry.5e.tools/package/decks/current/module.json",
 			"download" : "https://foundry.5e.tools/package/decks/current/decks.zip",
 			"description": [
 				"<p>A Collection of Various Decks for Tabletop Games, or as Accessories with another Games</p>"
-			],
-			"type": [ 
-				 "resource"
 			],
 			"authors": [
 				{
@@ -1032,14 +1546,52 @@
 				  "url": "https://epicisometric.com/"
 				}
 			],
-			"system": [ "DND5e"],
 			"version": "0.3.0.2",
-			"minimumCoreVersion": "0.7.9",
-			"compatibleCoreVersion": "0.8.1",
-			"systemVersion": "1.3.0",
-			"minimumSystemVersion": "1.2.4",
-			"compatibleSystemVersion": "1.2.4",
+			"compatibility": {
+				"minimum": "0.7.0",
+				"verified": "0.7.9",
+				"maximum": "0.8.1"
+			},
+			"relationships": {				
+				"systems": [{
+					"id": "DnD5e",
+					"type": "system",
+					"manifest": "https://raw.githubusercontent.com/foundryvtt/dnd5e/master/system.json",
+					"compatibility": {
+						"maximum": "1.3.0",
+						"verified": "1.2.4"
+					}
+				}]
+			},
 			"size": 214005		
 		}
-	]
+	],
+	"system":[
+		{
+			"id": "sw5e",
+			"title": "SW 5th Edition",
+			"description": "A comprehensive game system for running games of SW 5th Edition in the Foundry VTT environment.",
+			"version": "2.0.3.2.3.8",
+			"compatibility": {
+				"minimum": "10",
+				"verified": "10",
+				"maximum": "10"
+			},
+			"url": "https://github.com/unrealkakeman89/sw5e",
+			"manifest": "https://raw.githubusercontent.com/unrealkakeman89/sw5e/master/system.json",
+			"download": "https://github.com/unrealkakeman89/sw5e/archive/master.zip",
+			"authors": [
+				{
+					"name": "The Dev Team",
+					"url": "https://github.com/unrealkakeman89/sw5eus",
+					"discord": "https://discord.gg/HUNHVhDQka"
+				}
+			],
+			"keywords": ["Star Wars", "Homebrew", "DnD 5e"],
+			"flags": {
+				"needsMigrationVersion": "2.0.0",
+				"compatibleMigrationVersion": "0.8"
+			}
+		}
+	]	
 }
